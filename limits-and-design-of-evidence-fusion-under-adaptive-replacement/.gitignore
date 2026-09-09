@@ -1,0 +1,6 @@
+.lake/
+*.olean
+*.ilean
+*.so
+__pycache__/
+fresh_*.log

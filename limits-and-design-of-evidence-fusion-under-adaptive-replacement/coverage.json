@@ -1,0 +1,214 @@
+{
+  "scope": "Completed formal formulations of all fifteen numbered mathematical results S1 through S15, with the explicit translations and exclusions below.",
+  "status_definition": {
+    "Completed formulation": "The stated formal theorem and the identified supporting arguments are proved in Lean without admissions. The recorded fresh build and axiom audit determine acceptance."
+  },
+  "statements": [
+    {
+      "paper_id": "S1",
+      "title": "Complete class",
+      "checked": "Both directions on arbitrary probability spaces, including the affine converse, nonnegative normalized coefficients and domination of every valid rule. The converse is proved by finite-dimensional convex separation.",
+      "formulation_notes": "The probability formulation requires measurability of the evaluated rule and integrability of the clean inputs. It applies in particular to the paper's nonnegative Borel rules.",
+      "key_declarations": [
+        "complete_class_probability",
+        "complete_affine_converse"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S2",
+      "title": "Exact admissibility",
+      "checked": "The exact empty-intersection criterion for maximal projected attack sets, with necessity, exposing configurations and sufficiency against all valid competitors. The cardinality criterion is also proved.",
+      "formulation_notes": "The allowed attack family is finite, nonempty and downward closed. Intercepts and weights are nonnegative and sum to one.",
+      "key_declarations": [
+        "exact_probability_admissibility",
+        "cardinality_admissibility"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S3",
+      "title": "Symmetric rules",
+      "checked": "Permutation averaging proves the symmetric complete class. Its members are admissible against nonsymmetric competitors. A complete finite probability construction proves failure of the alternative normalization; neutrality is also proved.",
+      "formulation_notes": "The normalized coefficients are represented as a and c with a plus n times c equal to one. This is the paper's parametrization after setting lambda equal to n times c. The counterexample uses uniform permutations of a fixed subset.",
+      "key_declarations": [
+        "symmetric_complete_class",
+        "symmetric_rule_admissible",
+        "adaptive_normalization_counterexample",
+        "symmetric_neutrality"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S4",
+      "title": "Design duality and failure domains",
+      "checked": "Strong finite-game duality includes attained primal and dual strategies. The failure-domain optimum, equal domain allocation and admissibility of positive allocations are proved. The graph identity follows from a proved fractional-cover scaling theorem.",
+      "formulation_notes": "A surjective source-to-domain map represents a partition into nonempty domains. Positive-allocation admissibility assumes at least two domains. The fractional chromatic number is defined by its standard independent-set covering program.",
+      "key_declarations": [
+        "finite_game_duality",
+        "failure_domain_optimum",
+        "positive_domain_admissibility",
+        "graph_retention_identity"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S5",
+      "title": "Anytime validity",
+      "checked": "The clean betting product is a nonnegative supermartingale. Its integrability, conditional expectation inequality, domination of the corrected process, bounded stopping expectations and infinite-horizon supremum bound are proved.",
+      "formulation_notes": "Fractions are predictable, clean inputs satisfy the conditional mean bound, and replacements satisfy the deterministic count envelope almost surely. The formal validity theorem permits a fraction of one as well as the paper's smaller fractions.",
+      "key_declarations": [
+        "conditional_mul_integrable",
+        "clean_betting_supermartingale",
+        "correctedProcess_anytime"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S6",
+      "title": "Composition and logarithmic loss",
+      "checked": "Hamming completion composes with the sum of the two budgets, capped at the dimension. Exact worst-replacement product values and the logarithmic loss inequality are proved. The maximum subset sum is identified with the largest order statistics.",
+      "formulation_notes": "The general nested infimum is stated in a complete lattice, suitable for extended nonnegative evidence. Real-valued monotone completion has an attained finite minimum. The logarithmic statements use strictly positive baseline factors.",
+      "key_declarations": [
+        "completionInf_composition",
+        "trimCompletion_composition",
+        "robustProduct_worst_replacement",
+        "replacement_log_loss",
+        "largestSum_order_statistics"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S7",
+      "title": "Finite grid comparison",
+      "checked": "The log-factor derivative and its uniform bound yield the Lipschitz estimate. A covering grid, the replacement loss and the prior penalty are combined into the full comparison with the clean supremum.",
+      "formulation_notes": "The grid covers the stated compact interior interval and each component has the stated positive lower prior weight. Inputs may be unbounded but finite.",
+      "key_declarations": [
+        "log_factor_hasDerivAt",
+        "log_factor_lipschitz",
+        "finite_grid_comparison"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S8",
+      "title": "Computable universal growth",
+      "checked": "The explicit dyadic fractions are in the unit interval and dense. The power-of-two activation count, exact finite mixture and its anytime validity are proved. Strong-law and sparse-trimming arguments establish the uniform oracle lower rate under the logarithmic moment condition.",
+      "formulation_notes": "The lower rate is expressed as eventual domination of every strict lower bound of the oracle supremum. This is the liminf statement. One clean-data event works for every allowed observed vector at every sufficiently large time. Component indices start at zero in Lean.",
+      "key_declarations": [
+        "dyadicFraction_dense",
+        "computable_universal_anytime",
+        "sparse_trimming_ae",
+        "computable_universal_growth"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S9",
+      "title": "Matching upper rate",
+      "checked": "Differentiation under the expectation gives the interior optimum condition. The reciprocal tilt is a probability law with mean-one evidence. A finite-product density identity, Markov's inequality, Borel-Cantelli and the strong law yield the matching upper rate.",
+      "formulation_notes": "The optimizer is interior and maximizes over the interval including zero. The upper theorem requires only independent and identically distributed null validity. A proved bridge derives that condition from universal conditional-null validity. The no-attack path supplies the upper bound, and zero evidence values are handled explicitly.",
+      "key_declarations": [
+        "interior_tilt_probability_mean_one",
+        "pi_withDensity",
+        "matching_upper_rate",
+        "conditional_null_implies_iid"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S10",
+      "title": "Envelope necessity",
+      "checked": "The degenerate clean-null construction forces the statistic to be at most one on every finite nonnegative history. Finite replacements are proved to have a vanishing replacement fraction, giving the second impossibility statement.",
+      "formulation_notes": "The statistic is a deterministic function of finite history and validity is required across all clean conditional-mean nulls and all attacks in the stated class.",
+      "key_declarations": [
+        "finite_envelope_necessity",
+        "finite_replacements_are_sparse",
+        "sparse_envelope_necessity"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S11",
+      "title": "Rank evidence",
+      "checked": "Conservative rank probabilities and the weighted evidence mixture are proved for general exchangeable real score laws, including ties.",
+      "formulation_notes": "Exchangeability is an explicit distributional assumption. The formal proof does not establish it for the breast-cancer dataset or a future clinical population.",
+      "key_declarations": [
+        "exchangeable_rank_bound",
+        "exchangeable_rank_evidence"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S12",
+      "title": "Two layer composition",
+      "checked": "Predictable within-time affine fusion preserves the conditional mean bound. Applying the corrected scalar process to the second transmission stage then gives bounded-stopping and infinite-horizon validity.",
+      "formulation_notes": "Both attack constraints and the conditional calibration assumptions are required. Measurability and integrability are explicit in the theorem.",
+      "key_declarations": [
+        "conditional_robust_fusion",
+        "two_layer_anytime"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S13",
+      "title": "Pointwise capacity",
+      "checked": "The full minimax value is proved using the complete class, exact worst-case performance, rearrangement, layer optimization and reduction to positive coordinates. A continuous admissible rule attains the optimum. The zero vector is covered separately.",
+      "formulation_notes": "The optimum is represented by IsGreatest, which states both membership and the bound for every competing rule. The Borel rule class and existence of a sorted positive-coordinate enumeration are proved explicitly. Attainment is for each fixed clean vector; selecting weights from the tested observation is not covered.",
+      "key_declarations": [
+        "robustAffine_worst_value",
+        "pointwise_capacity_borel",
+        "capacity_admissible_attainment",
+        "sorted_positive_extraction",
+        "zero_vector_capacity"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S14",
+      "title": "Robust rank calibration",
+      "checked": "An adaptive or randomized attacked score dominated by the clean test upper score has the claimed conservative rank-calibration probability bound.",
+      "formulation_notes": "The clean upper-score law is exchangeable and the rejection event is measurable. The result is marginal calibration, rather than sequential conditional calibration.",
+      "key_declarations": [
+        "robust_rank_probability_general",
+        "calibration_with_adaptive_score"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    },
+    {
+      "paper_id": "S15",
+      "title": "Necessary report count",
+      "checked": "The bounded-report capacity bound is derived from reciprocal prefix sums and the full capacity expression. The general integer ceiling follows. Equal positive signals attain the bound, and their capacity reaches the threshold exactly when the ceiling condition holds.",
+      "formulation_notes": "The evidence cap exceeds the threshold, which exceeds one. The positive support fits within the ambient dimension. The earlier exact integer examples remain in the project.",
+      "key_declarations": [
+        "bounded_positive_capacity",
+        "bounded_report_count",
+        "equal_signal_capacity",
+        "equal_signal_capacity_threshold_iff"
+      ],
+      "status": "Completed formulation",
+      "remaining": ""
+    }
+  ],
+  "exclusions": [
+    "The empirical simulations, biomedical dataset processing, figures and numerical optimization implementations are not certified by this Lean project.",
+    "Algorithmic time and memory complexity claims are not formalized as execution-cost theorems.",
+    "Unnumbered illustrative numerical examples are not all individually formalized; the source inventory identifies the examples that are.",
+    "Novelty, priority, publication suitability and clinical utility are outside proof verification.",
+    "Lean checks the formal statements. The correspondence with the manuscript is an inspected mathematical translation, not an automatically verified prose translation."
+  ]
+}

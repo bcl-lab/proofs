@@ -1,0 +1,2643 @@
+{
+  "status": "passed",
+  "verification_date": "2026-09-09",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "formal_theorem_count": 252,
+  "fresh_project_build": true,
+  "reviewed_benign_linter_warning_count": 307,
+  "reviewed_benign_linter_warnings": [
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Symmetry.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.hamming_permutation':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':",
+    "warning: ././././FailureDomains.lean:16:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainAttacks_nonempty':",
+    "warning: ././././FailureDomains.lean:20:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainAttacks_downward':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././Envelope.lean:30:4: try 'simp at hj' instead of 'simpa using hj'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':",
+    "warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':",
+    "warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':",
+    "warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':",
+    "warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':",
+    "warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':",
+    "warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':",
+    "warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':",
+    "warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':",
+    "warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':",
+    "warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':",
+    "warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`",
+    "warning: ././././CapacityBoundary.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sorted_positive_extraction':",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././Symmetry.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.hamming_permutation':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':",
+    "warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':",
+    "warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':",
+    "warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':",
+    "warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':",
+    "warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':",
+    "warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':",
+    "warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':",
+    "warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':",
+    "warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':",
+    "warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`",
+    "warning: ././././CapacityBoundary.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sorted_positive_extraction':",
+    "warning: ././././BoundedCapacity.lean:25:13: unused variable `hB`",
+    "warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':",
+    "warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':",
+    "warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':",
+    "warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'",
+    "warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':",
+    "warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':",
+    "warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':",
+    "warning: ././././Sequential.lean:70:28: unused variable `hXn`",
+    "warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':",
+    "warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':",
+    "warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+    "warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':",
+    "warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'"
+  ],
+  "admitted_proofs": 0,
+  "custom_axioms": 0,
+  "native_evaluation_axioms": 0,
+  "allowed_foundational_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "false_claim_control": "rejected as expected",
+  "theorems": [
+    {
+      "name": "EvidenceFusion.projected_subset_support",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.projected_is_allowed",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.maximal_projected_extension",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.keptSum_antitone_attacks",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.keptSum_projected",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exposing_configuration",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.admissible_of_empty_maximal_intersection",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.erased_unavoidable_weight",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exact_admissibility",
+      "module": "Admissibility",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.ville_finite",
+      "module": "Anytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.ville_crossing",
+      "module": "Anytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.ville_supremum",
+      "module": "Anytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.dominated_bounded_stopping",
+      "module": "Anytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.retained_fraction_monotone",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.prefix_reciprocal_lower",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.bounded_positive_capacity",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.equal_signal_capacity",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positive_capacity_zero_of_budget",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.bounded_report_count",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.equal_signal_capacity_threshold_iff",
+      "module": "BoundedCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sorted_positive_extraction",
+      "module": "CapacityBoundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.zero_vector_capacity",
+      "module": "CapacityBoundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.capacity_admissible_attainment",
+      "module": "CapacityBoundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.pointwise_capacity_borel",
+      "module": "CapacityBoundary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.mem_cardinalityAttacks",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.cardinalityAttacks_nonempty",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.cardinalityAttacks_downward",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.compatible_cardinality",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.projected_cardinality",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.cardinality_empty_intersection_iff",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.cardinality_admissibility",
+      "module": "Cardinality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.violationRegion_convex",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.violationRegion_open",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.valid_hull_disjoint",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.linear_moment_expansion",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.complete_affine_converse",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.complete_class_finite",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.probability_valid_implies_finite",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.complete_class_probability",
+      "module": "CompleteClass",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.completionInf_composition",
+      "module": "Completion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.conditional_affine_validity",
+      "module": "ConditionalFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.conditional_robust_fusion",
+      "module": "ConditionalFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.conditional_mul_integrable",
+      "module": "ConditionalMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.correctedProcess_nonneg",
+      "module": "CorrectedProcess",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.correctedProcess_measurable",
+      "module": "CorrectedProcess",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.correctedProcess_domination",
+      "module": "CorrectedProcess",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.correctedProcess_anytime",
+      "module": "CorrectedProcess",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.maskPrefix_hamming",
+      "module": "DelayedGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayed_product_lower",
+      "module": "DelayedGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayed_fraction_growth_ae",
+      "module": "DelayedGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedPrior_pos",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.fixedPriorMixture_formula",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.fixedPriorMixture_supermartingale",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.fixedPriorMixture_extension",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedMixture_supermartingale",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedMixture_nonneg",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedMixture_zero",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedMixture_domination",
+      "module": "DelayedMixture",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.activeCount_zero",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.activeCount_characterization",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.activeCount_monotone",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.activeCount_eventually",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log2_dyadic_block",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.dyadicFraction_block",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.dyadicFraction_mem",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.dyadicFraction_dense",
+      "module": "DyadicSchedule",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_replacement_count_bound",
+      "module": "Envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_replacements_are_sparse",
+      "module": "Envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.zero_path_test",
+      "module": "Envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_envelope_necessity",
+      "module": "Envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sparse_envelope_necessity",
+      "module": "Envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.keptSum_nonneg",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.keptSum_le_clean",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustAffine_nonneg",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustAffine_le_clean",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.normalized_weight_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_probability_validity",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.slope_comparison",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.normalized_coordinates_equal",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.rank_count_le",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.attacked_rank_ge",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.five_percent_resolution",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.reciprocal_swap",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.layer_capacity_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.report_count_necessary",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.equal_signal_threshold_iff",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exact_report_examples",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.report_count_integer_criterion",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sharp_integer_report_counts",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sharp_layer_program",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.rearranged_cost_le",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.layer_cost_identity",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.layer_tail_identity",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.normalization_example_arithmetic",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.game_weak_duality",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_tilt_identities",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.hamming_le_dimension",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.hamming_triangle",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.hamming_midpoint",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.hamming_ball_composition",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.completion_payoff_set",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.replacement_product_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustProduct_domination",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sparse_trim_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayed_prior_mass",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_derivative_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.no_envelope_bound",
+      "module": "EvidenceFusion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.measurable_upperRank",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.measurable_rankEvent",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.integrable_rankEvent",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.measure_rank_probability_equal",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exchangeable_rank_bound",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exchangeable_rank_evidence",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.attackedRank_ge_true",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robust_rank_calibration",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robust_rank_probability_general",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.calibration_with_adaptive_score",
+      "module": "ExchangeableRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.domainAttacks_nonempty",
+      "module": "FailureDomains",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.domainAttacks_downward",
+      "module": "FailureDomains",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.domain_removable_weight",
+      "module": "FailureDomains",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positive_domain_admissibility",
+      "module": "FailureDomains",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.failure_domain_optimum",
+      "module": "FailureDomains",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.fractional_cover_duality",
+      "module": "FamilyDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.domainMass_total",
+      "module": "FamilyDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.equal_domain_allocation",
+      "module": "FamilyDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.failure_domain_game",
+      "module": "FamilyDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_mono",
+      "module": "FiniteGrid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.uniform_log_contribution_bound",
+      "module": "FiniteGrid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_grid_comparison",
+      "module": "FiniteGrid",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.upperRank_permutation",
+      "module": "FiniteRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.rank_probability_equal",
+      "module": "FiniteRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_exchangeable_rank_bound",
+      "module": "FiniteRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_rank_evidence",
+      "module": "FiniteRank",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_game_duality",
+      "module": "GameDuality",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.retained_fractional_cover_identity",
+      "module": "GraphDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.graph_retention_identity",
+      "module": "GraphDesign",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.expected_log_hasDerivAt",
+      "module": "InteriorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.interior_log_optimum_derivative_zero",
+      "module": "InteriorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.general_tilt_identities",
+      "module": "InteriorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.interior_tilt_probability_mean_one",
+      "module": "InteriorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exponential_crossing_bound",
+      "module": "LikelihoodRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.likelihood_ratio_subexponential",
+      "module": "LikelihoodRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.likelihood_upper_rate",
+      "module": "LikelihoodRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_split",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustProduct_positive",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_erased_product",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.replacement_log_loss",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_hasDerivAt",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_lipschitz",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.cleanLog_lipschitz",
+      "module": "LogLoss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_abs_bound",
+      "module": "LogMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_factor_integrable",
+      "module": "LogMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.log_contribution_integrable",
+      "module": "LogMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.expected_log_lipschitz",
+      "module": "LogMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.fixed_fraction_growth_ae",
+      "module": "LogMoment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.tensor_tilt_ratio",
+      "module": "MatchingRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.iid_history_law",
+      "module": "MatchingRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.matching_upper_rate",
+      "module": "MatchingRate",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.affine_probability_valid",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.nonnegative_capacity_attained",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_nonneg",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_positive_support",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.capacity_upper",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.pointwise_capacity",
+      "module": "MinimaxCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.continuous_robustAffine",
+      "module": "ModelBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.finite_iff_probability_valid",
+      "module": "ModelBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.admissible_iff_probability",
+      "module": "ModelBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.exact_probability_admissibility",
+      "module": "ModelBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.compatible_iff_differences",
+      "module": "ModelBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.erase_hamming_le",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimCompletion_le",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimCompletion_attained",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimCompletion_isLeast",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.monotone_trimCompletion",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimCompletion_composition",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.monotone_affineProduct",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.product_completion",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustProduct_worst_replacement",
+      "module": "MonotoneCompletion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.infinite_product_coordinate_law",
+      "module": "NullBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.infinite_product_independent",
+      "module": "NullBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.conditional_null_implies_iid",
+      "module": "NullBridge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.headIndices_card",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_sorted",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_comp_le",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_permutation",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.descendingPermutation_antitone",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_order_statistics",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.keptSum_unit_eq",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_is_min",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_permutation",
+      "module": "OrderStatistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.layerDifferences_nonneg",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.layers_reconstruct",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_sorted_tail",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.tail_prefix_count",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.prefixReciprocal_pos",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sorted_contribution_capacity",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positive_capacity_upper",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positive_capacity_attained",
+      "module": "PositiveCapacity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.arbitrary_probability_validity",
+      "module": "Probability",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robust_fusion_validity",
+      "module": "Probability",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.productProcess_zero",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.productProcess_succ",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.productProcess_nonneg",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.productProcess_adapted",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.productProcess_supermartingale",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.predictable_betting_factor",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.clean_betting_supermartingale",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.supermartingale_bounded_stopping",
+      "module": "Sequential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.tailAbove_measurable",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.tailAbove_integrable",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.tail_integral_tendsto_zero",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_nonneg",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_tail_bound",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sparse_trimming_ae",
+      "module": "SparseTrimming",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sum_on_embedding",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.embedding_preimage_card_le",
+      "module": "SupportReduction",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.largestSum_restrict_support",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_restrict_support",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positiveCapacity_nonneg",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.sorted_capacity_homogeneous",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.positive_capacity_homogeneous",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.nonnegative_capacity_upper",
+      "module": "SupportReduction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.hamming_permutation",
+      "module": "Symmetry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.permutation_sum_constant",
+      "module": "Symmetry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.symmetric_complete_class",
+      "module": "Symmetry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.symmetric_rule_admissible",
+      "module": "Symmetry",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.trimmedSum_constant",
+      "module": "SymmetryExamples",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.uniform_permutation_mean",
+      "module": "SymmetryExamples",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.adaptive_normalization_counterexample",
+      "module": "SymmetryExamples",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.symmetric_neutrality",
+      "module": "SymmetryExamples",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.product_indicator_rectangle",
+      "module": "TensorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.pi_withDensity",
+      "module": "TensorTilt",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.two_layer_anytime",
+      "module": "TwoLayer",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayed_fraction_bounds",
+      "module": "UniversalAnytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.inactive_clean_component",
+      "module": "UniversalAnytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.delayedMixture_measurable",
+      "module": "UniversalAnytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.computable_universal_anytime",
+      "module": "UniversalAnytime",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.componentValue_pos",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.universalValue_half",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.universalValue_component",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.dyadic_growth_approximation",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.growthFunction_bddAbove",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.computable_universal_growth",
+      "module": "UniversalGrowth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.affineNN_monotone",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.affineNN_erase",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.affine_completion",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.worstValue_nonempty",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.worstValue_bddBelow",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.worstValue_mono",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustAffine_eq_trimmedSum",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.robustAffine_worst_value",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "EvidenceFusion.worstValue_constant_one",
+      "module": "WorstPerformance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "sha256": {
+    "Admissibility.lean": "ea83e19c6b0d64b2de837352e65005519f68331f644c14be8d454c8f3ad4b771",
+    "Anytime.lean": "135b264162f65e44b343cb391901bae6ba1d65ec4c34eb6cbd82f745ba638e30",
+    "BoundedCapacity.lean": "ea48dba5726fa18df0f9fef06dcdf8954f341e5964a36602505e37f057e02491",
+    "CapacityBoundary.lean": "460c1515aaaf95f7fa8d563963b580dd02b573f1ab84f5762839e6ba7acb5600",
+    "Cardinality.lean": "58a8f5cefc88402d58a0572c021d3605317ade674b01d444a97e1e654c8b3a3b",
+    "CompleteClass.lean": "6376a041a30ddb135424f226d27357c2c3ec0d2dc3e84d3f8549216c2a719457",
+    "Completion.lean": "209fc4691d7241387cd8fabb814d28e06f3f2efd37173d26341ab4269b2c5f66",
+    "ConditionalFusion.lean": "615c55520e06b6ec0e9049058b2530ddda4fa1eb8369b3dde008c560a676895a",
+    "ConditionalMoment.lean": "490de97aacfd59c254a39e8f4b044c25100cb50c10c327c4ced14c8b6278054a",
+    "CorrectedProcess.lean": "c7c21b80de56c2ec74172c7836b05d8e7604c733188a75fa78399ec68d0f6d72",
+    "DelayedGrowth.lean": "749423e670cb86fcedc6549c4f3ce93b6807dd1c38a69f109ee7d1299504951f",
+    "DelayedMixture.lean": "8cbd4231b0cf8d822392def36a190904ae2fd23ca01d1215bd581b10bd4ff599",
+    "DyadicSchedule.lean": "84b3202268d8673e97c409807b79dc24b27a84505d9a7f6215018260697105b9",
+    "Envelope.lean": "4e6250c32f8de12ba7399bf02734e463b0c1dca795a0acf05692944bf9fb1db1",
+    "EvidenceFusion.lean": "93c792e2f586faa13497b72092f514c200f56a61946b2af4d8c5fb27819e84ea",
+    "ExchangeableRank.lean": "5ed2c25c6348fca959c930c7fbcdf462fd5466766fc00a6bcd9ed2dc67d34a2d",
+    "FailureDomains.lean": "099032b6ac57007e7b82fefb63eab6a6d8d635f3672c27a2a5adfa268bad2cde",
+    "FamilyDesign.lean": "40e2ba732e177a4ded084c614deed14cf96eb796809dbd4f6987c04d176c02d5",
+    "FiniteGrid.lean": "f62510dec028527991d4d547e76f9c62923d40a441bd3ac96678d2ea2fc12fd8",
+    "FiniteRank.lean": "b9d9f5a30026ba29db93b3e4d9bc17ce8251dc14683d373cd4ac1d8194de5ac7",
+    "GameDuality.lean": "3dae72022b479f506081da77710e0e5cdb2591f1a49b19ab3562a89c44a710ce",
+    "GraphDesign.lean": "818a4b21311b3a31f272d542c9ec220d69d152237114896d2d449e9f0edbdb18",
+    "InteriorTilt.lean": "578603f6dd455601fbad6a4d4b85070fb33230380c468e17391502e624c818fb",
+    "LikelihoodRate.lean": "60d81f424eb76e1e4783c5f08e4905e1c6e78d206a7596cc752194ace3c2e53f",
+    "LogLoss.lean": "eb3dae33637fa6fb105a1cc1df6d25f3f9dd248702830db7de9d89ed52e3dcf2",
+    "LogMoment.lean": "8c4aa6b467e4380e9746399e0faa8398aa8615338e9d219bf9482f929d797263",
+    "MatchingRate.lean": "7b2afb2b0d277a6aec30759ce72923f84da01026bb56632e0162bc0c3759e8be",
+    "MinimaxCapacity.lean": "df59bdef6e289f5048c51f66e18ef4c25cd96dd288a7de2a5b27906fe86b25e9",
+    "ModelBridge.lean": "91c5a2ff695e6cf1ae01f7ad9465c1b17146b2198e0519a410c9b063a823bb2e",
+    "MonotoneCompletion.lean": "032cd329655082046f94db63d49e420d0a2ee2974a7e84a832022430a9fcc37d",
+    "NullBridge.lean": "03dac3aae9e66280c6e9b68d438a70dc5b78a9a1fe1681a89688cb0e814b8776",
+    "OrderStatistics.lean": "cd92058cdfd836d66afbcb7189029a7f562b9d46e1d6a460bbcf42af9fb15b11",
+    "PositiveCapacity.lean": "1527df6ce0d9fab163085b4ff74aa9b3f9a025bb695ebda46db986d2a268dae8",
+    "Probability.lean": "7592ca8485f51009e12d08688ff86978e215fd85f0eda0c6ec465add5b84a22d",
+    "Sequential.lean": "25dc41c29ba071fcea21d3c11bfb0e65952c6294515b684a59c2bdc51a41c783",
+    "SparseTrimming.lean": "3ce891e0463a58aedd0ca9ddb09674562d97c83e6eb99679b180ec20e50e8a5c",
+    "SupportReduction.lean": "8f057f18b1f6e900c6a12c95d71cb6b1e8456e4d9a234c96424ca10b500a808c",
+    "Symmetry.lean": "dd5f6d393c63cfd1faf273db1399382e43a44ef764babe1393b206f50a0617b1",
+    "SymmetryExamples.lean": "ea244e64cf3beb167468a9a9ec04ca7f6f8de4d90ecf661ccf25743079c62f0d",
+    "TensorTilt.lean": "e91104839d1bfcf093115771207cffde38c2a39e56f5300003e3a05dc1439c2a",
+    "TwoLayer.lean": "63319a0da6d6eebd35912acfe3537f390bcad13dcfac4740ece4ce9f6287562a",
+    "UniversalAnytime.lean": "a3ab0fdcc6f324efab50079bbf5eddafc9cb07b24474c8ac3a8f6a71b28f6eb2",
+    "UniversalGrowth.lean": "cee537f0c298c1a5d543f9cd9c8c0a7ba64302547cf60d3014e30aa1d02a11a2",
+    "WorstPerformance.lean": "0b217f8459b15e92069bd18889569b3bd13de1dd1bbe44ddad18fd635d12ed1e",
+    "Audit.lean": "d153e0e281ab095317f31bd148baeaf66758cce638905bc83e99a3f4ffb509b7",
+    "lakefile.toml": "2df1dcb8e5cfa19615b7ea4b087e2f1cdf7c5448e2206570500634ea083269be",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "04f932a718ba344d6ab1b03ed2c3198085986c85962519c9a4976df4461780cd"
+  },
+  "scope": "Formal formulations of S1 through S15 and supporting results. See coverage.json for exact assumptions, formulations and exclusions.",
+  "independent_kernel_checker_run": false
+}
