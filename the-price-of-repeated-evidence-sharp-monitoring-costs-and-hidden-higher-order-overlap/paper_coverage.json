@@ -1,0 +1,161 @@
+{
+  "paper_verification_complete": false,
+  "claims": [
+    {
+      "claim": "Admissible model and universal costs",
+      "status": "defined and basic properties verified",
+      "proofs": [
+        "model_cost_le_universal",
+        "universalCost_le_iff",
+        "MonitoringModel.maximum_source_measurable"
+      ]
+    },
+    {
+      "claim": "Ville inequality and single maximum calibration",
+      "status": "verified for the actual continuous processes",
+      "proofs": [
+        "MonitoringModel.ville_tail",
+        "MonitoringModel.maximum_finite_ae",
+        "MonitoringModel.maximum_power_moment",
+        "MonitoringModel.clipped_power_moment",
+        "MonitoringModel.ville_closed_tail"
+      ]
+    },
+    {
+      "claim": "General Finner inequality",
+      "status": "verified by coordinate induction and source-information factorization",
+      "proofs": [
+        "finner_product_fin",
+        "finner_product",
+        "study_measurable_factor",
+        "finner_sources"
+      ]
+    },
+    {
+      "claim": "Proposition 1 necessity",
+      "status": "verified",
+      "proofs": [
+        "universalCost_infinite_of_source_load",
+        "all_source_loads_lt_one_of_finite_cost"
+      ]
+    },
+    {
+      "claim": "Proposition 1 sufficiency",
+      "status": "verified for the actual universal functional",
+      "proofs": [
+        "universalCost_finite_iff",
+        "universalCost_le_load_bound"
+      ]
+    },
+    {
+      "claim": "Finner optimization attainment and uniqueness",
+      "status": "verified under the manuscript assumptions",
+      "proofs": [
+        "RepeatedEvidence.finner_subcritical_unique_optimizer",
+        "optimizedFinnerCost_unique_attainment",
+        "universalCost_le_optimizedFinnerCost"
+      ]
+    },
+    {
+      "claim": "Theorem 2 weighted gamma attainment",
+      "status": "verified for the actual universal and optimized Finner costs",
+      "proofs": [
+        "law_eq_of_mgf_near_zero",
+        "independent_gamma_sum_law",
+        "gammaStudySum_law",
+        "balancedGammaModel_cost",
+        "weighted_gamma_attainment"
+      ]
+    },
+    {
+      "claim": "Regular-design corollary",
+      "status": "verified for actual universal and optimized costs with uniform certificate",
+      "proofs": [
+        "regular_design_exact_cost"
+      ]
+    },
+    {
+      "claim": "Theorem 3 overlap hierarchy",
+      "status": "verified for all m at least 3 and the actual universal costs",
+      "proofs": [
+        "paritySource_intersections",
+        "paritySource_union_card",
+        "paritySourceB_exact_cost",
+        "paritySourceA_infinite",
+        "overlap_hierarchy"
+      ]
+    },
+    {
+      "claim": "Optimal reconstruction order",
+      "status": "verified for nonnegative exact-pattern multiplicities, including canonical source relabeling",
+      "proofs": [
+        "proper_source_overlaps_reconstruct",
+        "proper_source_overlaps_relabel"
+      ]
+    },
+    {
+      "claim": "Corollary 3.1 system A",
+      "status": "verified for the all-m source hierarchy and the explicit four-study penalties",
+      "proofs": [
+        "universalCappedCost_common_source",
+        "four_study_A_exact_capped_cost",
+        "overlap_hierarchy_capped"
+      ]
+    },
+    {
+      "claim": "Corollary 3.1 system B and cost ratio",
+      "status": "verified for the all-m source hierarchy and the explicit four-study penalties",
+      "proofs": [
+        "universalCappedCost_le_read_bound",
+        "four_study_B_capped_cost_bound",
+        "four_study_universal_penalty_million",
+        "four_study_universal_penalty_trillion",
+        "overlap_hierarchy_capped"
+      ]
+    },
+    {
+      "claim": "Theorem 4 pooled exact cost",
+      "status": "verified, including quantile and survival formulas, attainment, finiteness and equal-leaf Erlang integral",
+      "proofs": [
+        "lowerQuantile_map",
+        "cdf_map_uniform",
+        "comonotone_product_upper",
+        "independent_quantile_tail_domination",
+        "pooled_exact_cost",
+        "pooled_quantile_formula",
+        "pooled_survival_formula",
+        "pooled_quantile_finite_iff",
+        "pooled_universal_attained",
+        "pooled_erlang_integral"
+      ]
+    },
+    {
+      "claim": "Corollary 5 strict optimized gap",
+      "status": "verified by strict Holder and an alternative log-MGF equality obstruction",
+      "proofs": [
+        "pooledFinner_scalar_minimum",
+        "holder_strict",
+        "exponential_not_affine_gamma",
+        "pooled_cost_strict_at_weight",
+        "pooled_strict_optimized_gap"
+      ]
+    },
+    {
+      "claim": "Reporting and false discovery control",
+      "status": "verified under explicit assumptions",
+      "proofs": [
+        "RepeatedEvidence.reported_product_bound",
+        "eBH_false_discovery_rate"
+      ],
+      "remaining": "The reported false discovery proportion measurability is an explicit hypothesis. Empirical null assumptions are not certified."
+    },
+    {
+      "claim": "Empirical results and historical novelty",
+      "status": "not certified",
+      "proofs": [],
+      "remaining": "This proof update does not rerun the empirical analyses or establish priority."
+    }
+  ],
+  "principal_mathematical_claims_verified": true,
+  "remaining_principal_claims": []
+}

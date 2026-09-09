@@ -1,0 +1,12 @@
+AffineGammaObstruction.lean:22:19: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+AffineGammaObstruction.lean:22:19: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+AffineGammaObstruction.lean:16:84: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:16:103: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:35:68: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:52:95: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`

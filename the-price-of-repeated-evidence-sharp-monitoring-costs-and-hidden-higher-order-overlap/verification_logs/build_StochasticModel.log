@@ -1,0 +1,2 @@
+StochasticModel.lean:76:6: warning: try 'simp at this' instead of 'simpa using this'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`

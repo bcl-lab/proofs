@@ -1,0 +1,4 @@
+ContinuousVille.lean:23:34: warning: unused variable `i`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ContinuousVille.lean:23:36: warning: unused variable `j`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

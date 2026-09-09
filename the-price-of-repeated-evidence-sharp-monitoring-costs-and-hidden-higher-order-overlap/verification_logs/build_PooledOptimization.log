@@ -1,0 +1,10 @@
+PooledOptimization.lean:20:55: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+PooledOptimization.lean:21:54: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+PooledOptimization.lean:20:55: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+PooledOptimization.lean:21:54: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+PooledOptimization.lean:56:16: warning: unused variable `ha₀`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

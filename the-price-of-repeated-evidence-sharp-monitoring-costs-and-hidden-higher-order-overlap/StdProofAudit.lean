@@ -1,0 +1,45 @@
+import ParityCore
+import OverlapReconstruction
+import ParityIncidence
+
+#print axioms RepeatedEvidenceCore.parityWeight_closed
+#print axioms RepeatedEvidenceCore.overlap_count_formula
+#print axioms RepeatedEvidenceCore.overlap_parities_equal
+#print axioms RepeatedEvidenceCore.parity_union_size
+#print axioms RepeatedEvidenceCore.four_study_counts
+#print axioms RepeatedEvidenceCore.four_study_full_counts
+#print axioms RepeatedEvidenceCore.four_study_maximum_reads
+#print axioms RepeatedEvidenceCore.four_study_nine_active_sources
+#print axioms OverlapReconstruction.invert_zeta
+#print axioms OverlapReconstruction.invert_zero
+#print axioms OverlapReconstruction.invert_sub
+#print axioms OverlapReconstruction.single_missing_intersection
+#print axioms OverlapReconstruction.zeta_injective
+#print axioms OverlapReconstruction.proper_intersections_reconstruct
+#print axioms ParityIncidence.degree_le
+#print axioms ParityIncidence.toggle_not
+#print axioms ParityIncidence.zeta_add
+#print axioms ParityIncidence.intersection_is_parityWeight
+#print axioms ParityIncidence.all_intersection_counts
+#print axioms ParityIncidence.parity_systems_match
+#print axioms ParityIncidence.multiplicity_nonnegative
+#print axioms ParityIncidence.no_unused_sources
+#print axioms ParityIncidence.full_multiplicity
+#print axioms ParityIncidence.degree_full
+#print axioms ParityIncidence.degree_eq_full
+#print axioms ParityIncidence.opposite_parity_max_read
+#print axioms ParityIncidence.zeta_full
+#print axioms ParityIncidence.degree_empty
+#print axioms ParityIncidence.union_count
+#print axioms ParityIncidence.full_intersections
+#print axioms ParityIncidence.opposite_max_attained
+#print axioms ParityIncidence.zeta_allIncluded
+#print axioms ParityIncidence.zeta_oneMissing
+#print axioms ParityIncidence.allIncluded_eq_one
+#print axioms ParityIncidence.oneMissing_binary
+#print axioms ParityIncidence.oneMissing_multiplicity
+#print axioms ParityIncidence.zeta_scale
+#print axioms ParityIncidence.balancing_source_count
+#print axioms ParityIncidence.oneMissing_degree
+#print axioms ParityIncidence.actual_balancing_source_count
+#print axioms ParityIncidence.singleton_balancing_count

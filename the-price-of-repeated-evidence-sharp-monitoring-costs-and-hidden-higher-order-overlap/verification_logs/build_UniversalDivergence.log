@@ -1,0 +1,2 @@
+UniversalDivergence.lean:91:6: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`

@@ -1,0 +1,173 @@
+{
+  "status": "PASS for the three listed modules only",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "modules": [
+    "ParityCore",
+    "OverlapReconstruction",
+    "ParityIncidence"
+  ],
+  "declarations": 41,
+  "new_declarations": 27,
+  "fresh_build": true,
+  "axiom_audit_exit_code": 0,
+  "negative_control_exit_code": 1,
+  "axioms": {
+    "RepeatedEvidenceCore.parityWeight_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.overlap_count_formula": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.overlap_parities_equal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.parity_union_size": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_counts": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_full_counts": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_maximum_reads": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_nine_active_sources": [
+      "propext"
+    ],
+    "OverlapReconstruction.invert_zeta": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.invert_zero": [
+      "propext"
+    ],
+    "OverlapReconstruction.invert_sub": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.single_missing_intersection": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.zeta_injective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.proper_intersections_reconstruct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.toggle_not": [
+      "propext"
+    ],
+    "ParityIncidence.zeta_add": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.intersection_is_parityWeight": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.all_intersection_counts": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.parity_systems_match": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.multiplicity_nonnegative": [
+      "propext"
+    ],
+    "ParityIncidence.no_unused_sources": [
+      "propext"
+    ],
+    "ParityIncidence.full_multiplicity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_full": [
+      "propext"
+    ],
+    "ParityIncidence.degree_eq_full": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.opposite_parity_max_read": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_empty": [
+      "propext"
+    ],
+    "ParityIncidence.union_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.full_intersections": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.opposite_max_attained": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_allIncluded": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_oneMissing": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.allIncluded_eq_one": [
+      "propext"
+    ],
+    "ParityIncidence.oneMissing_multiplicity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_scale": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.balancing_source_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.oneMissing_degree": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.actual_balancing_source_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.singleton_balancing_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_full": [],
+    "ParityIncidence.oneMissing_binary": []
+  },
+  "source_sha256": {
+    "ParityCore.lean": "9425a128d224eef596441dd69074a2ab5b54625787c1d7dd6299b282fb843210",
+    "OverlapReconstruction.lean": "1e1aad4dac5c6348edb6bf63bd8cbf52ab8dacd54f224325d9a390fd9c8ca0af",
+    "ParityIncidence.lean": "bce9196967cb8a1f65779ed57e5f0beedd4440005dab8b77322ce6133fff1fb4"
+  },
+  "full_paper_verified": false,
+  "mathlib_probability_drafts_verified": false
+}

@@ -1,0 +1,12 @@
+name = "repeated_evidence_verification"
+version = "1.0.0"
+defaultTargets = ["ProofAudit"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "ProofAudit"
+roots = ["ParityCore", "OverlapReconstruction", "ParityIncidence", "RepeatedEvidence", "RepeatedEvidenceNumerics", "RepeatedEvidenceCalculus", "RepeatedEvidenceReporting", "ProbabilityReportingCore", "ProbabilityReporting", "SurvivalMartingale", "ExponentialSurvival", "StochasticModel", "UniversalDivergence", "TailCalibration", "GammaMoments", "DiscreteVille", "ContinuousVille", "CommonSourceCost", "CappedMoments", "CappedCost", "FourStudyStochastic", "FinnerProduct", "FinnerSources", "FinnerMonitoring", "CappedReadBound", "FinnerOptimization", "OptimizedFinnerBound", "LocalMGF", "GammaSums", "IndependentCoordinates", "GammaConstruction", "WeightedGammaAttainment", "FourStudyExact", "ParitySources", "ParityCalibration", "OverlapHierarchy", "SourceReconstruction", "PooledStructure", "PooledOptimization", "QuantileCore", "QuantileTransform", "ProductLayerCake", "Rearrangement", "IndependentQuantiles", "ExponentialQuantile", "LogMaximum", "AtomlessSums", "SurvivalModel", "PooledDistribution", "QuantileComparison", "PooledUpper", "PooledAttainment", "PooledExact", "AffineGammaObstruction", "ExponentNonproportionality", "StrictHolder", "EqualLeafGamma", "PooledStrictGap", "ErlangCalculus", "ErlangCDF", "ErlangPooled", "RegularDesigns", "ClosedVille", "ProofAudit"]

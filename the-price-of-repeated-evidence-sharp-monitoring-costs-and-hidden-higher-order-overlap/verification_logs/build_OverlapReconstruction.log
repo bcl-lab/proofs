@@ -1,0 +1,6 @@
+'OverlapReconstruction.invert_zeta' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.invert_zero' depends on axioms: [propext]
+'OverlapReconstruction.invert_sub' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.single_missing_intersection' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.zeta_injective' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.proper_intersections_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]

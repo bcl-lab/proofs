@@ -1,0 +1,441 @@
+'RepeatedEvidenceCore.parityWeight_closed' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_count_formula' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_parities_equal' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.parity_union_size' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.four_study_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_full_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_maximum_reads' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_nine_active_sources' depends on axioms: [propext]
+'OverlapReconstruction.invert_zeta' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.invert_zero' depends on axioms: [propext]
+'OverlapReconstruction.invert_sub' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.single_missing_intersection' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.zeta_injective' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.proper_intersections_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityIncidence.degree_le' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.toggle_not' depends on axioms: [propext]
+'ParityIncidence.zeta_add' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.intersection_is_parityWeight' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.all_intersection_counts' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.parity_systems_match' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.multiplicity_nonnegative' depends on axioms: [propext]
+'ParityIncidence.no_unused_sources' depends on axioms: [propext]
+'ParityIncidence.full_multiplicity' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.degree_full' depends on axioms: [propext]
+'ParityIncidence.degree_eq_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityIncidence.opposite_parity_max_read' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityIncidence.zeta_full' does not depend on any axioms
+'ParityIncidence.degree_empty' depends on axioms: [propext]
+'ParityIncidence.union_count' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.full_intersections' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.opposite_max_attained' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.zeta_allIncluded' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.zeta_oneMissing' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.allIncluded_eq_one' depends on axioms: [propext]
+'ParityIncidence.oneMissing_binary' does not depend on any axioms
+'ParityIncidence.oneMissing_multiplicity' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.zeta_scale' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.balancing_source_count' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.oneMissing_degree' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.actual_balancing_source_count' depends on axioms: [propext, Quot.sound]
+'ParityIncidence.singleton_balancing_count' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidence.scaled_fractional_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.balance_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.balanced_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finner_curvature_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.pooled_has_no_balancing_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.pooled_load_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.parityWeight_closed' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidence.overlap_count_formula' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidence.overlap_parities_equal' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidence.parity_union_size' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidence.four_study_matched_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.four_study_full_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.four_study_maximum_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.four_study_B_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.four_study_load_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.capMoment_A_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.capMoment_B_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.cap_normalization_penalty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.reported_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.cap_ratio_from_root_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.cap_ratio_million' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.cap_ratio_trillion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finner_first_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finner_second_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.hazard_polynomial_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finite_reporting_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finite_mixture_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finite_normalized_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.adaptive_maximum_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.self_consistent_fdp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.eligibleCounts_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.eBHCount_eligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.eBHCount_le_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.eBH_self_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.IsEValue.of_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.normalized_isEValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.fixed_mixture_isEValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.self_consistent_false_discovery_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.self_consistent_fdr_le_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.eBH_false_discovery_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.alive_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_adapted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_setIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_setIntegral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_martingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survival_mean_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_survival_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponentialSurvival_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_survival_martingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_running_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_positive_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_initial_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_survival_right_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_critical_moment_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_supercritical_moment_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_running_maximum_moment_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_tilt_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_subcritical_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_running_maximum_subcritical_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.model_cost_le_universal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.independent_single_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ofReal_ciSup_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_extended_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_extended_maximum_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.loadedSourceModel_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.loadedSourceModel_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.loadedSourceModel_cost_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_infinite_of_source_load' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.all_source_loads_lt_one_of_finite_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.power_moment_le_of_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pareto_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pareto_tail_below_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_tail_power_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.clipped_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gamma_tilt_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gamma_subcritical_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_finite_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_countable_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_discrete_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.sampled_supermartingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_finite_times' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.rational_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_continuous_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.ville_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_finite_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_power_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.right_continuous_maximum_eq_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_source_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.loadedSourceModel_cost_subcritical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.cost_le_of_total_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.universalCost_le_of_total_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_common_source_subcritical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.universalCost_common_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.capped_exponential_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.integral_exp_mul_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.capped_exponential_moment_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.capped_exponential_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ville_tail_capped_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.ofReal_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.clipped_power_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.capMoment_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.cappedCost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCappedCost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.loadedSourceModel_cappedCost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCappedCost_common_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_A_shared_source' depends on axioms: [propext]
+'RepeatedEvidenceProbability.four_study_A_universal_cost_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_A_exact_capped_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.holder_subprobability_weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.holder_with_constant_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lintegral_pi_fin_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.finner_product_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.finner_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.sourcePoint_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.study_measurable_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.finner_sources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.cost_le_finner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_le_finner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_le_load_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.cappedCost_le_finner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.universalCappedCost_le_finner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCappedCost_le_read_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_B_read_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.four_study_B_capped_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.four_study_B_universal_cost_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_capped_penalty_of_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_universal_penalty_million' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.four_study_universal_penalty_trillion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidence.finnerTerm_strictConvex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerTerm_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerTerm_sublevel_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerDomain_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerObjective_strictConvex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerDomain_coord_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerObjective_exists_unique_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finnerDomain_nonempty_of_subcritical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidence.finner_subcritical_unique_optimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_le_optimizedFinnerCost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.finnerBoundValue_eq_exp_objective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.optimizedFinnerCost_unique_attainment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.optimizedFinnerCost_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.law_eq_of_mgf_near_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaShape_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaShape_exponential_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaShape_exponential_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.gammaShape_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.independent_gamma_sum_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.probability_pi_coordinate_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.probability_pi_coordinates_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_law_survival_martingale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_law_positive_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaStudySum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaStudySum_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaStudySum_source_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaStudySum_weighted_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.balancedGammaModel_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.universalCost_weighted_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.optimizedFinnerCost_le_load_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.weighted_gamma_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.four_study_B_source_load' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.four_study_B_exact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cubeExtends_succ' depends on axioms: [propext]
+'RepeatedEvidenceProbability.cubeAt_full' depends on axioms: [propext]
+'RepeatedEvidenceProbability.cube_degree_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.zeta_eq_pattern_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySource_weight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.parityOverlap_eq_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySource_intersections' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cubeAt_empty' depends on axioms: [propext]
+'RepeatedEvidenceProbability.cubeExtends_empty' depends on axioms: [propext]
+'RepeatedEvidenceProbability.cubeExtends_singleton' depends on axioms: [propext]
+'RepeatedEvidenceProbability.singletonCube_degree' depends on axioms: [propext]
+'RepeatedEvidenceProbability.paritySource_union_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySource_read_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySource_B_read_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySourceA_full_uses' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceProbability.paritySourceB_active_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.parityCertificate_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.parityCertificate_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySource_load' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySourceB_exact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.paritySourceA_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.overlap_hierarchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.overlap_hierarchy_capped' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.patternSource_weight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.patternOverlap_eq_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.patternOverlap_empty_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.proper_source_overlaps_reconstruct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.proper_source_overlaps_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_source_load' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_cost_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_cost_infinite_of_loaded_leaf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.pooled_leaf_information' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_all_information' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_maxima_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.pooled_no_balancing_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.finnerFirst_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.finnerTerm_strictAnti' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledWeights_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_saturation_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledFinnerValue_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledFinner_scalar_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.quantile_upper_set_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.quantile_upper_set_bddBelow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_monotoneOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.uniformRank_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.uniformRank_Iic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cdf_continuous_of_noAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cdf_lowerQuantile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cdf_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.lowerQuantile_cdf_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.threshold_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.product_layercake' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.monotone_level_sets_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.uniformRank_joint_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.comonotone_product_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.uniformCube_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.coordinate_quantile_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.quantile_joint_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.independent_quantile_tail_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.expOne_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_lowerQuantile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_uniform_transform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.cdf_order_of_tail_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.logMaximum_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.logMaximum_source_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_ge_one_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_real_pos_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.maximum_power_eq_exp_log' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.cost_eq_log_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.logMaximum_tail_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.logMaximum_cdf_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.noAtoms_map_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.independent_sum_noAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.independent_finite_sum_noAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survivalModel_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.survivalModel_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedSum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedSum_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedExponentialLaw_noAtoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedExponential_cdf_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.quantile_monotone_tail_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_log_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_statistic_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.pooled_cost_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.pooled_universal_cost_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledTimes_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledTimes_source_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledTimes_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooledAttainingModel_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_exact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_quantile_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_survival_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_quantile_finite_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_universal_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gamma_log_mgf_not_affine_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.exponential_not_affine_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_gamma_nonproportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.weighted_geometric_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.normalized_holder_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.holder_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.leafSum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.leafSum_gamma_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedSum_equal_leaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.exponential_law_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.leafSum_exponential_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_equal_leaf_cost_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_cost_strict_at_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_strict_optimized_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlangPolynomial_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlangPolynomial_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlangPolynomial_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlangPolynomial_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlang_cdf_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaPDF_erlang' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gammaPDF_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.gamma_cdf_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlangDensity_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.erlang_cdf_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.weightedExponential_cdf_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_equal_leaf_gamma_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RepeatedEvidenceProbability.erlang_pooled_integrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.pooled_erlang_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.regular_design_exact_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RepeatedEvidenceProbability.MonitoringModel.ville_closed_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

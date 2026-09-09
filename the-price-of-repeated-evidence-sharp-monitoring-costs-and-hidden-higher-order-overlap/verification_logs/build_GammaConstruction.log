@@ -1,0 +1,2 @@
+GammaConstruction.lean:19:19: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,0 +1,8 @@
+'RepeatedEvidenceCore.parityWeight_closed' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_count_formula' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_parities_equal' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.parity_union_size' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.four_study_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_full_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_maximum_reads' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_nine_active_sources' depends on axioms: [propext]

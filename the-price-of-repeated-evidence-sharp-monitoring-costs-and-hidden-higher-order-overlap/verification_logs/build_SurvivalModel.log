@@ -1,0 +1,4 @@
+SurvivalModel.lean:22:15: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SurvivalModel.lean:27:9: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

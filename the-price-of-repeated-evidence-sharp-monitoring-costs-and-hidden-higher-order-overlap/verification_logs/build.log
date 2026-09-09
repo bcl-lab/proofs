@@ -1,0 +1,205 @@
+ParityCore: exit 0
+'RepeatedEvidenceCore.parityWeight_closed' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_count_formula' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.overlap_parities_equal' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.parity_union_size' depends on axioms: [propext, Quot.sound]
+'RepeatedEvidenceCore.four_study_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_full_counts' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_maximum_reads' depends on axioms: [propext]
+'RepeatedEvidenceCore.four_study_nine_active_sources' depends on axioms: [propext]
+
+OverlapReconstruction: exit 0
+'OverlapReconstruction.invert_zeta' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.invert_zero' depends on axioms: [propext]
+'OverlapReconstruction.invert_sub' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.single_missing_intersection' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.zeta_injective' depends on axioms: [propext, Quot.sound]
+'OverlapReconstruction.proper_intersections_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ParityIncidence: exit 0
+
+RepeatedEvidence: exit 0
+
+RepeatedEvidenceNumerics: exit 0
+
+RepeatedEvidenceCalculus: exit 0
+
+RepeatedEvidenceReporting: exit 0
+
+ProbabilityReportingCore: exit 0
+ProbabilityReportingCore.lean:39:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+ProbabilityReporting: exit 0
+
+SurvivalMartingale: exit 0
+SurvivalMartingale.lean:50:0: warning: automatically included section variable(s) unused in theorem 'RepeatedEvidenceProbability.survival_integrable':
+  [Preorder ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Preorder ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+SurvivalMartingale.lean:54:0: warning: automatically included section variable(s) unused in theorem 'RepeatedEvidenceProbability.survival_setIntegral':
+  [Preorder ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Preorder ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+SurvivalMartingale.lean:98:0: warning: automatically included section variable(s) unused in theorem 'RepeatedEvidenceProbability.survival_nonnegative':
+  [Preorder ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Preorder ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+SurvivalMartingale.lean:102:0: warning: automatically included section variable(s) unused in theorem 'RepeatedEvidenceProbability.survival_mean_one':
+  [Preorder ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Preorder ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+ExponentialSurvival: exit 0
+ExponentialSurvival.lean:188:6: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+ExponentialSurvival.lean:188:6: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+
+StochasticModel: exit 0
+StochasticModel.lean:76:6: warning: try 'simp at this' instead of 'simpa using this'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+UniversalDivergence: exit 0
+UniversalDivergence.lean:91:6: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+TailCalibration: exit 0
+
+GammaMoments: exit 0
+GammaMoments.lean:31:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+DiscreteVille: exit 0
+
+ContinuousVille: exit 0
+ContinuousVille.lean:23:34: warning: unused variable `i`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ContinuousVille.lean:23:36: warning: unused variable `j`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+CommonSourceCost: exit 0
+
+CappedMoments: exit 0
+CappedMoments.lean:84:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+CappedCost: exit 0
+
+FourStudyStochastic: exit 0
+
+FinnerProduct: exit 0
+
+FinnerSources: exit 0
+
+FinnerMonitoring: exit 0
+
+CappedReadBound: exit 0
+
+FinnerOptimization: exit 0
+
+OptimizedFinnerBound: exit 0
+
+LocalMGF: exit 0
+
+GammaSums: exit 0
+
+IndependentCoordinates: exit 0
+
+GammaConstruction: exit 0
+GammaConstruction.lean:19:19: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+WeightedGammaAttainment: exit 0
+
+FourStudyExact: exit 0
+
+ParitySources: exit 0
+
+ParityCalibration: exit 0
+
+OverlapHierarchy: exit 0
+
+SourceReconstruction: exit 0
+
+PooledStructure: exit 0
+
+PooledOptimization: exit 0
+PooledOptimization.lean:20:55: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+PooledOptimization.lean:21:54: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+PooledOptimization.lean:20:55: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+PooledOptimization.lean:21:54: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+PooledOptimization.lean:56:16: warning: unused variable `ha₀`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+QuantileCore: exit 0
+
+QuantileTransform: exit 0
+
+ProductLayerCake: exit 0
+
+Rearrangement: exit 0
+
+IndependentQuantiles: exit 0
+
+ExponentialQuantile: exit 0
+
+LogMaximum: exit 0
+
+AtomlessSums: exit 0
+
+SurvivalModel: exit 0
+SurvivalModel.lean:22:15: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+SurvivalModel.lean:27:9: warning: unused variable `ω`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+PooledDistribution: exit 0
+
+QuantileComparison: exit 0
+
+PooledUpper: exit 0
+
+PooledAttainment: exit 0
+
+PooledExact: exit 0
+
+AffineGammaObstruction: exit 0
+AffineGammaObstruction.lean:22:19: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+AffineGammaObstruction.lean:22:19: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+AffineGammaObstruction.lean:16:84: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:16:103: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:35:68: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+AffineGammaObstruction.lean:52:95: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+ExponentNonproportionality: exit 0
+
+StrictHolder: exit 0
+
+EqualLeafGamma: exit 0
+
+PooledStrictGap: exit 0
+
+ErlangCalculus: exit 0
+
+ErlangCDF: exit 0
+
+ErlangPooled: exit 0
+
+RegularDesigns: exit 0
+
+ClosedVille: exit 0

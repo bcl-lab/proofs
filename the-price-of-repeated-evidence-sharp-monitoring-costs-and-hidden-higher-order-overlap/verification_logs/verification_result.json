@@ -1,0 +1,1689 @@
+{
+  "status": "PASS: all inventoried principal mathematical claims",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "theorem_declarations": 335,
+  "declaration_count_is_not_a_paper_coverage_percentage": true,
+  "paper_verification_complete": false,
+  "universal_functionals_defined": true,
+  "principal_mathematical_claims_verified": true,
+  "remaining_principal_claims": [],
+  "build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "negative_control_exit_code": 1,
+  "axioms": {
+    "RepeatedEvidenceCore.parityWeight_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.overlap_count_formula": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.overlap_parities_equal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.parity_union_size": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_counts": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_full_counts": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_maximum_reads": [
+      "propext"
+    ],
+    "RepeatedEvidenceCore.four_study_nine_active_sources": [
+      "propext"
+    ],
+    "OverlapReconstruction.invert_zeta": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.invert_zero": [
+      "propext"
+    ],
+    "OverlapReconstruction.invert_sub": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.single_missing_intersection": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.zeta_injective": [
+      "Quot.sound",
+      "propext"
+    ],
+    "OverlapReconstruction.proper_intersections_reconstruct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.toggle_not": [
+      "propext"
+    ],
+    "ParityIncidence.zeta_add": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.intersection_is_parityWeight": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.all_intersection_counts": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.parity_systems_match": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.multiplicity_nonnegative": [
+      "propext"
+    ],
+    "ParityIncidence.no_unused_sources": [
+      "propext"
+    ],
+    "ParityIncidence.full_multiplicity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_full": [
+      "propext"
+    ],
+    "ParityIncidence.degree_eq_full": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.opposite_parity_max_read": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.degree_empty": [
+      "propext"
+    ],
+    "ParityIncidence.union_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.full_intersections": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.opposite_max_attained": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_allIncluded": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_oneMissing": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.allIncluded_eq_one": [
+      "propext"
+    ],
+    "ParityIncidence.oneMissing_multiplicity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_scale": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.balancing_source_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.oneMissing_degree": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.actual_balancing_source_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.singleton_balancing_count": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.scaled_fractional_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.balance_total": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.balanced_exponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finner_curvature_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.pooled_has_no_balancing_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.pooled_load_boundary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.parityWeight_closed": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.overlap_count_formula": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.overlap_parities_equal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.parity_union_size": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.four_study_matched_counts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.four_study_full_counts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.four_study_maximum_reads": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.four_study_B_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.four_study_load_separation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.capMoment_A_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.capMoment_B_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.cap_normalization_penalty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.reported_product_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.cap_ratio_from_root_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.cap_ratio_million": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.cap_ratio_trillion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finner_first_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finner_second_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.hazard_polynomial_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finite_reporting_valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finite_mixture_valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finite_normalized_valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.adaptive_maximum_counterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.self_consistent_fdp_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.eligibleCounts_nonempty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.eBHCount_eligible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.eBHCount_le_selected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.eBH_self_consistent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.IsEValue.of_dominated": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.normalized_isEValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.fixed_mixture_isEValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.self_consistent_false_discovery_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.self_consistent_fdr_le_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.eBH_false_discovery_rate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.alive_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_adapted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_setIntegral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_setIntegral_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_martingale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survival_mean_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_survival_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponentialSurvival_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_survival_martingale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_initial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_running_supremum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_positive_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_initial_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_survival_right_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_critical_moment_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_supercritical_moment_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_running_maximum_moment_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_tilt_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_subcritical_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_running_maximum_subcritical_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.model_cost_le_universal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.independent_single_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ofReal_ciSup_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_extended_maximum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_extended_maximum_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.loadedSourceModel_maximum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.loadedSourceModel_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.loadedSourceModel_cost_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_infinite_of_source_load": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.all_source_loads_lt_one_of_finite_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.power_moment_le_of_tail_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pareto_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pareto_tail_below_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_tail_power_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.clipped_tail_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gamma_tilt_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gamma_subcritical_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_finite_horizon": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_countable_horizon": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_discrete_maximum_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.sampled_supermartingale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_finite_times": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.rational_crossing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_continuous_crossing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.ville_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_finite_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_power_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.right_continuous_maximum_eq_rational": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_source_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.loadedSourceModel_cost_subcritical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.cost_le_of_total_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_le_of_total_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_common_source_subcritical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_common_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.capped_exponential_density": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.integral_exp_mul_Icc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.capped_exponential_moment_log": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.capped_exponential_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ville_tail_capped_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.ofReal_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.clipped_power_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.capMoment_ge_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.cappedCost_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCappedCost_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.loadedSourceModel_cappedCost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCappedCost_common_source": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_A_shared_source": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_A_universal_cost_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_A_exact_capped_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.holder_subprobability_weights": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.holder_with_constant_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lintegral_pi_fin_succ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finner_product_fin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finner_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.sourcePoint_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.study_measurable_factor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finner_sources": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.cost_le_finner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_le_finner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_le_load_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.cappedCost_le_finner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCappedCost_le_finner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_finite_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCappedCost_le_read_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_B_read_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_B_capped_cost_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_B_universal_cost_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_capped_penalty_of_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_universal_penalty_million": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_universal_penalty_trillion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerTerm_strictConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerTerm_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerTerm_sublevel_margin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerDomain_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerObjective_strictConvex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerDomain_coord_le_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerObjective_exists_unique_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finnerDomain_nonempty_of_subcritical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidence.finner_subcritical_unique_optimizer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_le_optimizedFinnerCost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finnerBoundValue_eq_exp_objective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.optimizedFinnerCost_unique_attainment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.optimizedFinnerCost_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.law_eq_of_mgf_near_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaShape_probability": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaShape_exponential_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaShape_exponential_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaShape_mgf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.independent_gamma_sum_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.probability_pi_coordinate_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.probability_pi_coordinates_independent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_law_survival_martingale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_law_positive_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaStudySum_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaStudySum_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaStudySum_source_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaStudySum_weighted_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.balancedGammaModel_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.universalCost_weighted_gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.optimizedFinnerCost_le_load_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weighted_gamma_attainment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_B_source_load": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.four_study_B_exact_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cubeExtends_succ": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cubeAt_full": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cube_degree_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.zeta_eq_pattern_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_weight_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.parityOverlap_eq_zeta": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_intersections": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cubeAt_empty": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cubeExtends_empty": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cubeExtends_singleton": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.singletonCube_degree": [
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_union_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_read_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_B_read_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySourceA_full_uses": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySourceB_active_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.parityCertificate_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.parityCertificate_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySource_load": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySourceB_exact_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.paritySourceA_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.overlap_hierarchy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.overlap_hierarchy_capped": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.patternSource_weight_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.patternOverlap_eq_zeta": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.patternOverlap_empty_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.proper_source_overlaps_reconstruct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.proper_source_overlaps_relabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_source_load": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_cost_finite_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_cost_infinite_of_loaded_leaf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_leaf_information": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_all_information": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_maxima_independent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_no_balancing_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finnerFirst_negative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.finnerTerm_strictAnti": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledWeights_feasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_saturation_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledFinnerValue_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledFinner_scalar_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.quantile_upper_set_nonempty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.quantile_upper_set_bddBelow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_le_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_monotoneOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.uniformRank_open": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.uniformRank_Iic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_map": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cdf_continuous_of_noAtoms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cdf_lowerQuantile": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cdf_map_uniform": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.lowerQuantile_cdf_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.threshold_integral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.product_layercake": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.monotone_level_sets_nested": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.uniformRank_joint_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.comonotone_product_upper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.uniformCube_open": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.coordinate_quantile_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.quantile_joint_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.independent_quantile_tail_domination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.expOne_cdf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_lowerQuantile": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_uniform_transform": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.cdf_order_of_tail_order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.logMaximum_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.logMaximum_source_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_ge_one_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_real_pos_ae": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.maximum_power_eq_exp_log": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.cost_eq_log_integral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.logMaximum_tail_order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.logMaximum_cdf_order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.noAtoms_map_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.independent_sum_noAtoms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.independent_finite_sum_noAtoms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survivalModel_maximum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.survivalModel_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedSum_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedSum_monotone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedExponentialLaw_noAtoms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedExponential_cdf_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.quantile_monotone_tail_domination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_log_independent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.pooled_leaf_statistic_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.pooled_cost_upper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_universal_cost_upper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledTimes_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledTimes_source_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledTimes_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooledAttainingModel_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_exact_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_quantile_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_survival_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_quantile_finite_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_universal_attained": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gamma_log_mgf_not_affine_exponential": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_not_affine_gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_gamma_nonproportional": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weighted_geometric_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.normalized_holder_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.holder_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.leafSum_measurable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.leafSum_gamma_law": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedSum_equal_leaves": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.exponential_law_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.leafSum_exponential_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_equal_leaf_cost_integral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_cost_strict_at_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_strict_optimized_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlangPolynomial_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlangPolynomial_succ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlangPolynomial_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlangPolynomial_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlang_cdf_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaPDF_erlang": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gammaPDF_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.gamma_cdf_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlangDensity_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlang_cdf_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.weightedExponential_cdf_scaling": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_equal_leaf_gamma_integral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.erlang_pooled_integrand": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.pooled_erlang_integral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.regular_design_exact_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepeatedEvidenceProbability.MonitoringModel.ville_closed_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ParityIncidence.zeta_full": [],
+    "ParityIncidence.oneMissing_binary": []
+  },
+  "source_sha256": {
+    "AffineGammaObstruction.lean": "cba6af0a88c8a96664ddaecf6437c97deafc4a928476b0f9f6f02bd9613e6c7e",
+    "AtomlessSums.lean": "cf11cc7214948922d4386237b3b8d1798f4c5a3c34cfa4b80cd865104ff88f38",
+    "CappedCost.lean": "2eb40eb1eb63b2317b31215e67d1b1aa419ab1229eb49331cc32c197e7de6ebd",
+    "CappedMoments.lean": "e56004369e3eea092b70a99a29d0752fe78d508cd0939183e36276a5439416d6",
+    "CappedReadBound.lean": "e34b6e3c72d3ac626c236bc3918ca86a2d0787c6a0b75a8b4333ca598e5a6f0b",
+    "ClosedVille.lean": "55485305d44c3a3849fd8a4faa2362c09ee746d61f714f17b9adbc7045d613a8",
+    "CommonSourceCost.lean": "25f944ee49f0c7821056d4dbc8dd4a755812475c40c9305f27f451d3cd0b9421",
+    "ContinuousVille.lean": "f65fe362a7b7aa5473181db4f1510e4ed28122250630a9d802a884df88ab46e2",
+    "DiscreteVille.lean": "a7260d1c501ca68d2bb705905f9265650e72c79aed4fe9b301bab27f9c44e311",
+    "EqualLeafGamma.lean": "8e7869a84486cd6e1d4247502a9457307940d16e51288a504564a2cf1b7c922b",
+    "ErlangCDF.lean": "b62531e66d619bb761a9ed62026fe96df474b56b3f8260341ec6edb77228a459",
+    "ErlangCalculus.lean": "630bcaec0b6c10773304d1ba129472bfe172239cc5009f234eb091bca4d7502e",
+    "ErlangPooled.lean": "d4b8a5aa34809bcbd314111c230da080ff8640da44f0f1888234ae37e3ae9e86",
+    "ExponentNonproportionality.lean": "d5f67345759e35f24ee257f09a2f5a86584c9c625a97b9497b00488c629a90f1",
+    "ExponentialQuantile.lean": "84ee57f7fe0c56e23cc3a4b7b0408a4ec765fe7fdc2ec077e812b74dd9b2e50a",
+    "ExponentialSurvival.lean": "caea4d1924a7b40d205b8f80869b3088c098d7dd8494427bec5685bf7533ceda",
+    "FinnerMonitoring.lean": "efd1d093092189da0753448be5102c1624d9508abb46b78c23805e18568e346d",
+    "FinnerOptimization.lean": "a3d45631338683befb046fd55f2b88f13a8f09f390136f8b31289131bc145a46",
+    "FinnerProduct.lean": "797885287cae2f76707a07ef11ba86860a38a9442b1ba61cc667c7845e341280",
+    "FinnerSources.lean": "37a16bb5e675654b69b45ad7c5279ddc9efc36a4dac39c3e116a99ac13cabdb5",
+    "FourStudyExact.lean": "758d7d4e728944700aa969fc88a1e44f1e827d72688143d54d62ba9f87254216",
+    "FourStudyStochastic.lean": "f4a796c643f46978ce13f5f461794291f3969caf5c63c58e7f511ddefb75d8df",
+    "GammaConstruction.lean": "be224f6ed36ae71e7c0afadf42baaa5f5e85736828d1618a476002afb89e3d8b",
+    "GammaMoments.lean": "35fb17c5c2af0a3c473dccd4e65f5173962cc91b887b75b03b31e6b6b8f6521c",
+    "GammaSums.lean": "745d2f4f7df8a7b9f170a18d6082f56a21561de34f6c43849cb6ff80a190394a",
+    "IndependentCoordinates.lean": "db5c2b02e1c2be16c166f62cf9d925e70bd5ca29d9a071235867ef3bbcc01b98",
+    "IndependentQuantiles.lean": "130456a85f88b7bc24e2f9bdd0c378c2e56802165b73854b37fa5899dee63252",
+    "LocalMGF.lean": "6602081d03bd68a4dc9ffef201a096cff854505185febe4888776e73f7ef402f",
+    "LogMaximum.lean": "a928c94914b1ed6a9e655c43b0f5c54c3012427e6a2ea7c7522728c4f0981606",
+    "OptimizedFinnerBound.lean": "0b20f5d2b9dba16a669034bb8b294a8775e2ac57a02176750fb94c411ea921e4",
+    "OverlapHierarchy.lean": "2ad89cf510d329104eeec8f689164b24abd56e3f1fa7c0c02b2f15e3efc2e3b1",
+    "OverlapReconstruction.lean": "1e1aad4dac5c6348edb6bf63bd8cbf52ab8dacd54f224325d9a390fd9c8ca0af",
+    "ParityCalibration.lean": "c69512e987c614a38084f9faf5de52f1dd2f6129e64a134878cc947762b3954a",
+    "ParityCore.lean": "9425a128d224eef596441dd69074a2ab5b54625787c1d7dd6299b282fb843210",
+    "ParityIncidence.lean": "bce9196967cb8a1f65779ed57e5f0beedd4440005dab8b77322ce6133fff1fb4",
+    "ParitySources.lean": "1ff9177cc81c7897dc547eca1433a4fde2f7423289f1bb6b712d0cb9e1ccc2bc",
+    "PooledAttainment.lean": "46a2948a2c996045180c4aab694be2425ebb7035f6670e22c84bb2f9e9bc419d",
+    "PooledDistribution.lean": "530c937970dd45f2fc12eed14a8b4e7c8ccc19ce3e8d852e087ba30e992e5b3a",
+    "PooledExact.lean": "cba250c8b4ab33e1a0fecbedc1e311f06fc0e0505afefac6042cade664dc9bb7",
+    "PooledOptimization.lean": "fa1ac074afd89c329371ee903353b2c8700fe8fbc0604d423277c93f6711f380",
+    "PooledStrictGap.lean": "d8245ee5697058bd05e4e2d3205ec0871c5ec11cdec879235d6c3f6c56d46d15",
+    "PooledStructure.lean": "190177d7083c1f1518ea785f179a0c8c9e7ce1f023af5b50f752e52196a2d9d2",
+    "PooledUpper.lean": "22e137a738b4bed382cf83f2c43dec7ebd38225086338d1b1db3e60b82434469",
+    "ProbabilityReporting.lean": "98ac2589c3020122a8870e5ef25832c80ce8c943ab9f066a48b57398c6580e27",
+    "ProbabilityReportingCore.lean": "c886d5f8968d4cbb9556f0e54d9fec635fb8dff2ca813fc9b860967310c7e2e9",
+    "ProductLayerCake.lean": "41d2c0c7ea6d8d5ddb7dcf392807eaaa56e9e1779ac8bc2de812943a8404d7cb",
+    "ProofAudit.lean": "d71552eb42c8f4d00ef2aefe075642071dd6f63be2d287afe270d425bc30a171",
+    "QuantileComparison.lean": "c3d3a9edc84c915c0c2cf9106d03912302ed8dc237c44ab8f9d20bb6ca37e48c",
+    "QuantileCore.lean": "28ac0e3290922cc455c57d54007f5921cea0d3425032b0b34828b786982b57c0",
+    "QuantileTransform.lean": "dc074724e1a90cf0cc8db5bc33f69c3e998a6e593acbedbfa9c1df45203ed0ef",
+    "Rearrangement.lean": "a0017f62be98d90f7a84bbd67503b3f3936f66fa470e2fbfc5ca613ce2243a8f",
+    "RegularDesigns.lean": "0e24c1963d9d22f9c6063b90a8178ff66e1e0a075ccbb0073a25a746a96b3aef",
+    "RepeatedEvidence.lean": "9cdc890f965e935e83cae98baa72b3f466d0f12f4978480c9bc85b9cf9a5f0aa",
+    "RepeatedEvidenceCalculus.lean": "80318acaab15871cb73d693d37d45ddef24843a38fdad5ca71c69cd384db4fec",
+    "RepeatedEvidenceNumerics.lean": "44bda5aaae4edf8b3cbe44a87356a9a344113b545d0bb63cf46eae7f0cb16b72",
+    "RepeatedEvidenceReporting.lean": "0452a23741d269c26b7fe771c1fde8f997db22c45fe05ad66a47902d289d098f",
+    "SourceReconstruction.lean": "af173d12fe89f3f4ab06c617c0b88dc35979193aac7bc296695187104433b4df",
+    "StdProofAudit.lean": "75a2bfba2285556b5031b2de494e974864311fdb666fc6ef9a01dbfc32df1fc8",
+    "StochasticModel.lean": "7879b37f2bd6191fffbef34320149c8b8bdc18a78bbce6f60a613cdee6942504",
+    "StrictHolder.lean": "e6645fd3a02d02eaad585567c603d6d678e79a85fea314c62ea81291f5300c97",
+    "SurvivalMartingale.lean": "ae83c032e1d38f0a73478809d5dc7fd7e8f8414f76aa45333cef99b7cabfcee4",
+    "SurvivalModel.lean": "119580d2442bc31aedee848a1933fd34feb6b22e6c41ef9764d46318a7f54477",
+    "TailCalibration.lean": "dd2f90fc14659ef85ece2a2ef55167abf25751ff934e2d7f0edd5578dacea129",
+    "UniversalDivergence.lean": "2107b45d9dd4c3fe1bbde6f43584435aca55a1c7ee982ca1abfd58b5563151fc",
+    "WeightedGammaAttainment.lean": "ce069beb0c51fa95bff97d41e75f90726918624bc3b9e4bb8e3d186c38a15458"
+  },
+  "limitations": [
+    "Empirical analyses and biological assumptions are not certified",
+    "Formal statements retain their explicitly stated assumptions",
+    "No historical novelty or publication-impact certification"
+  ]
+}
