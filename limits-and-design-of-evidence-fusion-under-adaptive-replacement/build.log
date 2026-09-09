@@ -1,0 +1,1546 @@
+✔ [930/931] Built EvidenceFusion
+Build completed successfully.
+✔ [931/932] Built Completion
+Build completed successfully.
+✔ [931/932] Built FiniteRank
+Build completed successfully.
+✔ [2166/2167] Built Probability
+Build completed successfully.
+✔ [2172/2173] Built CompleteClass
+Build completed successfully.
+✔ [2262/2263] Built ConditionalMoment
+Build completed successfully.
+✔ [2168/2169] Built ExchangeableRank
+Build completed successfully.
+✔ [2173/2174] Built Admissibility
+Build completed successfully.
+✔ [2173/2174] Built GameDuality
+Build completed successfully.
+⚠ [2174/2175] Built ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2174/2176] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2176] Built Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2175/2178] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2178] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2178] Built FamilyDesign
+warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':
+  [DecidableEq ι]
+  [Nonempty ι]
+  [Nonempty κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] [Nonempty κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2174/2178] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2178] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2178] Built MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2265/2278] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2278] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2278] Built Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully.
+⚠ [2174/2177] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2177] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2177] Built Symmetry
+warning: ././././Symmetry.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.hamming_permutation':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2265/2279] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2279] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2279] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [2278/2279] Built Anytime
+Build completed successfully.
+⚠ [2265/2279] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2279] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2279] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2278/2279] Built ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2175/2179] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2179] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2179] Replayed FamilyDesign
+warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':
+  [DecidableEq ι]
+  [Nonempty ι]
+  [Nonempty κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] [Nonempty κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2178/2179] Built FailureDomains
+warning: ././././FailureDomains.lean:16:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainAttacks_nonempty':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././FailureDomains.lean:20:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainAttacks_downward':
+  [Nonempty ι]
+  [Nonempty κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] [Nonempty κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2174/2177] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2177] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2177] Replayed FamilyDesign
+warning: ././././FamilyDesign.lean:72:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.domainMass_total':
+  [DecidableEq ι]
+  [Nonempty ι]
+  [Nonempty κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] [Nonempty κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2197/2198] Built GraphDesign
+Build completed successfully.
+⚠ [2174/2251] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2251] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2251] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2251] Built LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2264/2271] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2265/2271] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2281] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2279/2281] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2280/2281] Built CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2174/2252] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2252] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2252] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2252] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2251/2252] Built FiniteGrid
+Build completed successfully.
+⚠ [2173/2184] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2184] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2184] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2265] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2381/2382] Built SparseTrimming
+Build completed successfully.
+⚠ [2265/2282] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2282] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2282] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2279/2282] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2280/2282] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2281/2282] Built Envelope
+warning: ././././Envelope.lean:30:4: try 'simp at hj' instead of 'simpa using hj'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+⚠ [2173/2380] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2380] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2380] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2380] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2382/2383] Built LogMoment
+Build completed successfully.
+⚠ [2173/2266] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2266] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2266] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2266] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2383/2384] Built OrderStatistics
+Build completed successfully.
+⚠ [2265/2282] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2282] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2282] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2279/2282] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2280/2282] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2281/2282] Built TwoLayer
+Build completed successfully.
+⚠ [2265/2283] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2266/2283] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2277/2283] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2279/2283] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2280/2283] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2282/2283] Built DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2173/2294] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2294] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2294] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2294] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2385/2386] Built InteriorTilt
+Build completed successfully.
+⚠ [2173/2250] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2250] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2250] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2250] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2384/2385] Built PositiveCapacity
+Build completed successfully.
+⚠ [2173/2180] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2180] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2180] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2360] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2403/2412] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2405/2412] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2406/2412] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2408/2412] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2411/2412] Built DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully.
+⚠ [2174/2289] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2289] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2289] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2289] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2386/2387] Built LikelihoodRate
+Build completed successfully.
+⚠ [2173/2207] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2207] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2207] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2386] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2385/2386] Built SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2173/2326] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2326] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2326] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2326] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2388/2389] Built TensorTilt
+warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':
+  [MeasurableSpace α]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace α] [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2173/2323] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2323] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2323] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2323] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2403/2413] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2405/2413] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2406/2413] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2408/2413] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2411/2413] Replayed DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2412/2413] Built DyadicSchedule
+Build completed successfully.
+⚠ [2173/2199] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2199] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2199] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2364] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2385/2387] Replayed SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2386/2387] Built WorstPerformance
+warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2173/2184] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2184] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2184] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2388] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2385/2388] Replayed SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2386/2388] Replayed WorstPerformance
+warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2387/2388] Built MinimaxCapacity
+warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully.
+⚠ [2173/2289] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2289] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2289] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2289] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2403/2414] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2405/2414] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2406/2414] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2408/2414] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2411/2414] Replayed DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2413/2414] Built UniversalGrowth
+Build completed successfully.
+⚠ [2173/2240] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2240] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2240] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2389] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2385/2389] Replayed SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2386/2389] Replayed WorstPerformance
+warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2387/2389] Replayed MinimaxCapacity
+warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2388/2389] Built CapacityBoundary
+warning: ././././CapacityBoundary.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sorted_positive_extraction':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully.
+⚠ [2173/2204] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2204] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2204] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2383] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2388/2422] Replayed TensorTilt
+warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':
+  [MeasurableSpace α]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace α] [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2410/2422] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2412/2422] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2413/2422] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2415/2422] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2418/2422] Replayed DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2421/2422] Built MatchingRate
+Build completed successfully.
+⚠ [2173/2297] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2297] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2175/2297] Replayed Symmetry
+warning: ././././Symmetry.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.hamming_permutation':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2177/2297] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2250/2297] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2386/2390] Replayed SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2387/2390] Replayed WorstPerformance
+warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2388/2390] Replayed MinimaxCapacity
+warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [2389/2390] Built SymmetryExamples
+Build completed successfully.
+⚠ [2173/2326] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2326] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2326] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2326] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2403/2415] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2405/2415] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2406/2415] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2408/2415] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2411/2415] Replayed DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2414/2415] Built UniversalAnytime
+Build completed successfully.
+⚠ [2173/2205] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2205] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2205] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2353] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2385/2390] Replayed SupportReduction
+warning: ././././SupportReduction.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sum_on_embedding':
+  [DecidableEq ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././SupportReduction.lean:22:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.embedding_preimage_card_le':
+  [Fintype ι]
+  [DecidableEq κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [DecidableEq κ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2386/2390] Replayed WorstPerformance
+warning: ././././WorstPerformance.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.affineNN_monotone':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:50:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:54:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_bddBelow':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././WorstPerformance.lean:92:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.worstValue_constant_one':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2387/2390] Replayed MinimaxCapacity
+warning: ././././MinimaxCapacity.lean:21:17: unused variable `hx`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2388/2390] Replayed CapacityBoundary
+warning: ././././CapacityBoundary.lean:12:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.sorted_positive_extraction':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2389/2390] Built BoundedCapacity
+warning: ././././BoundedCapacity.lean:25:13: unused variable `hB`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully.
+⚠ [2173/2250] Replayed ModelBridge
+warning: ././././ModelBridge.lean:68:4: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././ModelBridge.lean:59:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.compatible_iff_differences':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2174/2250] Replayed Cardinality
+warning: ././././Cardinality.lean:15:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.mem_cardinalityAttacks':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Cardinality.lean:18:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cardinalityAttacks_nonempty':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2176/2250] Replayed MonotoneCompletion
+warning: ././././MonotoneCompletion.lean:25:2: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././MonotoneCompletion.lean:84:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.monotone_affineProduct':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2249/2250] Replayed LogLoss
+warning: ././././LogLoss.lean:131:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.cleanLog_lipschitz':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2387/2393] Replayed TensorTilt
+warning: ././././TensorTilt.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.product_indicator_rectangle':
+  [MeasurableSpace α]
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace α] [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2410/2461] Replayed Sequential
+warning: ././././Sequential.lean:70:28: unused variable `hXn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2412/2461] Replayed ConditionalFusion
+warning: ././././ConditionalFusion.lean:13:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.conditional_affine_validity':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2413/2461] Replayed CorrectedProcess
+warning: ././././CorrectedProcess.lean:49:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.correctedProcess_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2415/2461] Replayed DelayedMixture
+warning: ././././DelayedMixture.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././DelayedMixture.lean:101:0: automatically included section variable(s) unused in theorem 'EvidenceFusion.delayedMixture_domination':
+  [IsProbabilityMeasure μ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsProbabilityMeasure μ] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2418/2461] Replayed DelayedGrowth
+warning: ././././DelayedGrowth.lean:24:6: try 'simp at hi' instead of 'simpa using hi'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2460/2461] Built NullBridge
+Build completed successfully.

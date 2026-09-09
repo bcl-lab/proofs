@@ -1,0 +1,1173 @@
+EvidenceFusion.projected_subset_support {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (w : ι → ℝ)
+  {B : Finset ι} (hB : B ∈ EvidenceFusion.projectedAttacks A w) : B ⊆ EvidenceFusion.positiveSupport w
+'EvidenceFusion.projected_subset_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.projected_is_allowed {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (w : ι → ℝ)
+  (hdown : EvidenceFusion.DownwardClosed A) {B : Finset ι} (hB : B ∈ EvidenceFusion.projectedAttacks A w) : B ∈ A
+'EvidenceFusion.projected_is_allowed' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.maximal_projected_extension {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (w : ι → ℝ)
+  {C : Finset ι} (hC : C ∈ EvidenceFusion.projectedAttacks A w) : ∃ B, EvidenceFusion.MaximalProjected A w B ∧ C ⊆ B
+'EvidenceFusion.maximal_projected_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.keptSum_antitone_attacks {ι : Type} [Fintype ι] [DecidableEq ι] (w y : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hy : ∀ (i : ι), 0 ≤ y i) {B C : Finset ι} (hBC : B ⊆ C) : EvidenceFusion.keptSum w y C ≤ EvidenceFusion.keptSum w y B
+'EvidenceFusion.keptSum_antitone_attacks' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.keptSum_projected {ι : Type} [Fintype ι] [DecidableEq ι] (w y : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i)
+  (C : Finset ι) : EvidenceFusion.keptSum w y (C ∩ EvidenceFusion.positiveSupport w) = EvidenceFusion.keptSum w y C
+'EvidenceFusion.keptSum_projected' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exposing_configuration {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (hdown : EvidenceFusion.DownwardClosed A) (a : ℝ) (w : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i) (i : ι) (hi : 0 < w i)
+  (B : Finset ι) (hB : EvidenceFusion.MaximalProjected A w B) (hiB : i ∉ B) (t : ℝ) (ht : 0 ≤ t) :
+  ∃ y,
+    (∀ (j : ι), 0 ≤ y j) ∧
+      EvidenceFusion.robustAffine a w y A hA = a + w i * t ∧ ∀ (v : ι → ℝ), EvidenceFusion.keptSum v y B = v i * t
+'EvidenceFusion.exposing_configuration' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.admissible_of_empty_maximal_intersection {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (hdown : EvidenceFusion.DownwardClosed A) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hn : a + ∑ i, w i = 1) (hex : EvidenceFusion.EmptyMaximalIntersection A w) :
+  EvidenceFusion.AdmissibleRule A fun y => EvidenceFusion.robustAffine a w y A hA
+'EvidenceFusion.admissible_of_empty_maximal_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.erased_unavoidable_weight {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (hdown : EvidenceFusion.DownwardClosed A) (w : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i) (i : ι)
+  (hi : ∀ (B : Finset ι), EvidenceFusion.MaximalProjected A w B → i ∈ B) (y : ι → ℝ) (hy : ∀ (j : ι), 0 ≤ y j) :
+  A.inf' hA (EvidenceFusion.keptSum (Function.update w i 0) y) = A.inf' hA (EvidenceFusion.keptSum w y)
+'EvidenceFusion.erased_unavoidable_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exact_admissibility {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (hdown : EvidenceFusion.DownwardClosed A) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hn : a + ∑ i, w i = 1) :
+  (EvidenceFusion.AdmissibleRule A fun y => EvidenceFusion.robustAffine a w y A hA) ↔
+    EvidenceFusion.EmptyMaximalIntersection A w
+'EvidenceFusion.exact_admissibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.ville_finite.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} {M : ℕ → Ω → ℝ}
+  (hM : MeasureTheory.Supermartingale M ℱ μ) (hzero : M 0 = 1) (hn : ∀ (n : ℕ) (ω : Ω), 0 ≤ M n ω) (a : ℝ) (ha : 0 < a)
+  (N : ℕ) : μ {ω | ∃ n ≤ N, a ≤ M n ω} ≤ ENNReal.ofReal (1 / a)
+'EvidenceFusion.ville_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.ville_crossing.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} {M : ℕ → Ω → ℝ}
+  (hM : MeasureTheory.Supermartingale M ℱ μ) (hzero : M 0 = 1) (hn : ∀ (n : ℕ) (ω : Ω), 0 ≤ M n ω) (a : ℝ)
+  (ha : 0 < a) : μ {ω | ∃ n, a ≤ M n ω} ≤ ENNReal.ofReal (1 / a)
+'EvidenceFusion.ville_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.ville_supremum.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} {M : ℕ → Ω → ℝ}
+  (hM : MeasureTheory.Supermartingale M ℱ μ) (hzero : M 0 = 1) (hn : ∀ (n : ℕ) (ω : Ω), 0 ≤ M n ω) (a : ℝ)
+  (ha : 0 < a) : μ {ω | ENNReal.ofReal a ≤ ⨆ n, ENNReal.ofReal (M n ω)} ≤ ENNReal.ofReal (1 / a)
+'EvidenceFusion.ville_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.dominated_bounded_stopping.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} {M R : ℕ → Ω → ℝ}
+  (hM : MeasureTheory.Supermartingale M ℱ μ) (hzero : M 0 = 1)
+  (hRm : ∀ (n : ℕ), MeasureTheory.AEStronglyMeasurable (R n) μ) (hRn : ∀ (n : ℕ), ∀ᵐ (ω : Ω) ∂μ, 0 ≤ R n ω)
+  (hdom : ∀ (n : ℕ), R n ≤ᵐ[μ] M n) (τ : Ω → ℕ) (hτ : MeasureTheory.IsStoppingTime ℱ τ) (N : ℕ)
+  (hN : ∀ (ω : Ω), τ ω ≤ N) :
+  MeasureTheory.Integrable (MeasureTheory.stoppedValue R τ) μ ∧ ∫ (ω : Ω), MeasureTheory.stoppedValue R τ ω ∂μ ≤ 1
+'EvidenceFusion.dominated_bounded_stopping' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.retained_fraction_monotone (r t p : ℕ) (ht : 0 < t) (htp : t ≤ p) : ↑(t - r) / ↑t ≤ ↑(p - r) / ↑p
+'EvidenceFusion.retained_fraction_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.prefix_reciprocal_lower {p : ℕ} (x : Fin p → ℝ) (hx : ∀ (i : Fin p), 0 < x i) (B : ℝ) (hB : 0 < B)
+  (hbound : ∀ (i : Fin p), x i ≤ B) (j : Fin p) : (↑↑j + 1) / B ≤ EvidenceFusion.prefixReciprocal x j
+'EvidenceFusion.prefix_reciprocal_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.bounded_positive_capacity {p : ℕ} [NeZero p] (x : Fin p → ℝ) (hx : ∀ (i : Fin p), 0 < x i) (B : ℝ)
+  (hB : 0 < B) (hbound : ∀ (i : Fin p), x i ≤ B) (r : ℕ) : EvidenceFusion.positiveCapacity x r ≤ B * ↑(p - r) / ↑p
+'EvidenceFusion.bounded_positive_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.equal_signal_capacity {p : ℕ} [NeZero p] (B : ℝ) (hB : 0 < B) (r : ℕ) :
+  EvidenceFusion.positiveCapacity (fun x => B) r = B * ↑(p - r) / ↑p
+'EvidenceFusion.equal_signal_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positive_capacity_zero_of_budget {p : ℕ} [NeZero p] (x : Fin p → ℝ) (hx : ∀ (i : Fin p), 0 < x i) (r : ℕ)
+  (hr : p ≤ r) : EvidenceFusion.positiveCapacity x r = 0
+'EvidenceFusion.positive_capacity_zero_of_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.bounded_report_count {p n : ℕ} [NeZero p] (x : Fin p → ℝ) (hx : ∀ (i : Fin p), 0 < x i) (hpn : p ≤ n)
+  (k : ℕ) (B T : ℝ) (hT : 1 < T) (hBT : T < B) (hbound : ∀ (i : Fin p), x i ≤ B)
+  (hreaches : T ≤ max 1 (EvidenceFusion.positiveCapacity x (min n (2 * k)))) : ⌈2 * ↑k * B / (B - T)⌉₊ ≤ p
+'EvidenceFusion.bounded_report_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.equal_signal_capacity_threshold_iff {p n : ℕ} [NeZero p] (hpn : p ≤ n) (k : ℕ) (B T : ℝ) (hT : 1 < T)
+  (hBT : T < B) : T ≤ max 1 (EvidenceFusion.positiveCapacity (fun x => B) (min n (2 * k))) ↔ ⌈2 * ↑k * B / (B - T)⌉₊ ≤ p
+'EvidenceFusion.equal_signal_capacity_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sorted_positive_extraction {ι : Type} [Fintype ι] [DecidableEq ι] (x : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i)
+  (hne : ∃ i, 0 < x i) :
+  ∃ p, 0 < p ∧ ∃ e, (∀ (j : Fin p), 0 < x (e j)) ∧ (Antitone fun j => x (e j)) ∧ ∀ (i : ι), (¬∃ j, e j = i) → x i = 0
+'EvidenceFusion.sorted_positive_extraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.zero_vector_capacity {ι : Type} [Fintype ι] [DecidableEq ι] (x : ι → NNReal) (hx : ∀ (i : ι), ↑(x i) = 0)
+  (k l : ℕ) : IsGreatest (EvidenceFusion.capacityValues k l x) 1
+'EvidenceFusion.zero_vector_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.capacity_admissible_attainment {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι)
+  (x : ι → NNReal) (hpos : ∀ (j : Fin p), 0 < ↑(x (e j))) (hzero : ∀ (i : ι), (¬∃ j, e j = i) → ↑(x i) = 0) (k l : ℕ)
+  (hk : k ≤ Fintype.card ι) :
+  ∃ F,
+    Continuous F ∧
+      (∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) ∧
+        EvidenceFusion.ProbabilityAdmissible (EvidenceFusion.cardinalityAttacks k) F ∧
+          EvidenceFusion.worstValue F x l =
+            max 1 (EvidenceFusion.positiveCapacity (fun j => ↑(x (e j))) (min (Fintype.card ι) (k + l)))
+'EvidenceFusion.capacity_admissible_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.pointwise_capacity_borel {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι)
+  (x : ι → NNReal) (hpos : ∀ (j : Fin p), 0 < ↑(x (e j))) (hsort : Antitone fun j => ↑(x (e j)))
+  (hzero : ∀ (i : ι), (¬∃ j, e j = i) → ↑(x i) = 0) (k l : ℕ) (hk : k ≤ Fintype.card ι) :
+  IsGreatest
+    {v |
+      ∃ F,
+        Measurable F ∧
+          (∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) ∧
+            EvidenceFusion.ProbabilityRobustValid (EvidenceFusion.cardinalityAttacks k) F ∧
+              v = EvidenceFusion.worstValue F x l}
+    (max 1 (EvidenceFusion.positiveCapacity (fun j => ↑(x (e j))) (min (Fintype.card ι) (k + l))))
+'EvidenceFusion.pointwise_capacity_borel' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.mem_cardinalityAttacks {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (C : Finset ι) :
+  C ∈ EvidenceFusion.cardinalityAttacks k ↔ C.card ≤ k
+'EvidenceFusion.mem_cardinalityAttacks' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.cardinalityAttacks_nonempty {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) :
+  (EvidenceFusion.cardinalityAttacks k).Nonempty
+'EvidenceFusion.cardinalityAttacks_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.cardinalityAttacks_downward {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) :
+  EvidenceFusion.DownwardClosed (EvidenceFusion.cardinalityAttacks k)
+'EvidenceFusion.cardinalityAttacks_downward' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.compatible_cardinality {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (x y : ι → ℝ) :
+  EvidenceFusion.Compatible (EvidenceFusion.cardinalityAttacks k) x y ↔
+    (∀ (i : ι), 0 ≤ x i) ∧ (∀ (i : ι), 0 ≤ y i) ∧ EvidenceFusion.hamming x y ≤ k
+'EvidenceFusion.compatible_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.projected_cardinality {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (w : ι → ℝ) (B : Finset ι) :
+  B ∈ EvidenceFusion.projectedAttacks (EvidenceFusion.cardinalityAttacks k) w ↔
+    B ⊆ EvidenceFusion.positiveSupport w ∧ B.card ≤ k
+'EvidenceFusion.projected_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.cardinality_empty_intersection_iff {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (w : ι → ℝ) :
+  EvidenceFusion.EmptyMaximalIntersection (EvidenceFusion.cardinalityAttacks k) w ↔
+    EvidenceFusion.positiveSupport w = ∅ ∨ k < (EvidenceFusion.positiveSupport w).card
+'EvidenceFusion.cardinality_empty_intersection_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.cardinality_admissibility {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hn : a + ∑ i, w i = 1) :
+  (EvidenceFusion.ProbabilityAdmissible (EvidenceFusion.cardinalityAttacks k) fun y =>
+      EvidenceFusion.robustAffine a w y (EvidenceFusion.cardinalityAttacks k) ⋯) ↔
+    EvidenceFusion.positiveSupport w = ∅ ∨ k < (EvidenceFusion.positiveSupport w).card
+'EvidenceFusion.cardinality_admissibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.violationRegion_convex {ι : Type} [Fintype ι] [DecidableEq ι] : Convex ℝ EvidenceFusion.violationRegion
+'EvidenceFusion.violationRegion_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.violationRegion_open {ι : Type} [Fintype ι] [DecidableEq ι] : IsOpen EvidenceFusion.violationRegion
+'EvidenceFusion.violationRegion_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.valid_hull_disjoint {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (F : (ι → ℝ) → ℝ)
+  (hvalid : EvidenceFusion.FiniteRobustValid A F) :
+  Disjoint EvidenceFusion.violationRegion ((convexHull ℝ) (EvidenceFusion.momentSet A F))
+'EvidenceFusion.valid_hull_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.linear_moment_expansion {ι : Type} [Fintype ι] [DecidableEq ι] (L : (Option ι → ℝ) →L[ℝ] ℝ) (x : ι → ℝ)
+  (r : ℝ) : L (EvidenceFusion.momentPoint x r) = r * L (Pi.single none 1) + ∑ i, x i * L (Pi.single (some i) 1)
+'EvidenceFusion.linear_moment_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.complete_affine_converse {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (F : (ι → ℝ) → ℝ) (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y)
+  (hvalid : EvidenceFusion.FiniteRobustValid A F) :
+  ∃ a w,
+    0 ≤ a ∧
+      (∀ (i : ι), 0 ≤ w i) ∧
+        a + ∑ i, w i = 1 ∧ ∀ (x y : ι → ℝ), EvidenceFusion.Compatible A x y → F y ≤ a + ∑ i, w i * x i
+'EvidenceFusion.complete_affine_converse' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.complete_class_finite {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (F : (ι → ℝ) → ℝ) (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) :
+  EvidenceFusion.FiniteRobustValid A F ↔
+    ∃ a w,
+      0 ≤ a ∧
+        (∀ (i : ι), 0 ≤ w i) ∧
+          a + ∑ i, w i = 1 ∧ ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → F y ≤ EvidenceFusion.robustAffine a w y A hA
+'EvidenceFusion.complete_class_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.probability_valid_implies_finite {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (F : (ι → ℝ) → ℝ) (hv : EvidenceFusion.ProbabilityRobustValid A F) : EvidenceFusion.FiniteRobustValid A F
+'EvidenceFusion.probability_valid_implies_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.complete_class_probability {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (F : (ι → ℝ) → ℝ) (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) :
+  EvidenceFusion.ProbabilityRobustValid A F ↔
+    ∃ a w,
+      0 ≤ a ∧
+        (∀ (i : ι), 0 ≤ w i) ∧
+          a + ∑ i, w i = 1 ∧ ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → F y ≤ EvidenceFusion.robustAffine a w y A hA
+'EvidenceFusion.complete_class_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.completionInf_composition.{u_1, u_2, u_3} {ι : Type u_1} {α : Type u_2} {β : Type u_3} [Fintype ι]
+  [DecidableEq ι] [DecidableEq α] [CompleteLattice β] (f : (ι → α) → β) (x : ι → α) (k l : ℕ) :
+  EvidenceFusion.completionInf l (EvidenceFusion.completionInf k f) x =
+    EvidenceFusion.completionInf (min (Fintype.card ι) (k + l)) f x
+'EvidenceFusion.completionInf_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.conditional_affine_validity.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} {m0 : MeasurableSpace Ω}
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] [Fintype ι] [DecidableEq ι]
+  {m : MeasurableSpace Ω} (hm : m ≤ m0) (F a : Ω → ℝ) (w X : ι → Ω → ℝ) (ham : MeasureTheory.StronglyMeasurable a)
+  (hwm : ∀ (i : ι), MeasureTheory.StronglyMeasurable (w i)) (han : ∀ (ω : Ω), 0 ≤ a ω)
+  (hwn : ∀ (i : ι) (ω : Ω), 0 ≤ w i ω) (hnorm : ∀ (ω : Ω), a ω + ∑ i, w i ω = 1)
+  (hXi : ∀ (i : ι), MeasureTheory.Integrable (X i) μ) (hc : ∀ (i : ι), μ[X i|m] ≤ᵐ[μ] 1)
+  (hFm : MeasureTheory.AEStronglyMeasurable F μ) (hFn : ∀ᵐ (ω : Ω) ∂μ, 0 ≤ F ω)
+  (hdom : ∀ᵐ (ω : Ω) ∂μ, F ω ≤ a ω + ∑ i, w i ω * X i ω) : MeasureTheory.Integrable F μ ∧ μ[F|m] ≤ᵐ[μ] 1
+'EvidenceFusion.conditional_affine_validity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.conditional_robust_fusion.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} {m0 : MeasurableSpace Ω}
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] [Fintype ι] [DecidableEq ι]
+  {m : MeasurableSpace Ω} (hm : m ≤ m0) (S a : Ω → ℝ) (w X Y : ι → Ω → ℝ) (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (C : Ω → Finset ι) (ham : MeasureTheory.StronglyMeasurable a)
+  (hwm : ∀ (i : ι), MeasureTheory.StronglyMeasurable (w i)) (han : ∀ (ω : Ω), 0 ≤ a ω)
+  (hwn : ∀ (i : ι) (ω : Ω), 0 ≤ w i ω) (hnorm : ∀ (ω : Ω), a ω + ∑ i, w i ω = 1)
+  (hXi : ∀ (i : ι), MeasureTheory.Integrable (X i) μ) (hXn : ∀ᵐ (ω : Ω) ∂μ, ∀ (i : ι), 0 ≤ X i ω)
+  (hc : ∀ (i : ι), μ[X i|m] ≤ᵐ[μ] 1) (hSm : MeasureTheory.AEStronglyMeasurable S μ) (hSn : ∀ᵐ (ω : Ω) ∂μ, 0 ≤ S ω)
+  (hC : ∀ᵐ (ω : Ω) ∂μ, C ω ∈ A) (hclean : ∀ᵐ (ω : Ω) ∂μ, ∀ i ∉ C ω, Y i ω = X i ω)
+  (hdom : ∀ᵐ (ω : Ω) ∂μ, S ω ≤ EvidenceFusion.robustAffine (a ω) (fun i => w i ω) (fun i => Y i ω) A hA) :
+  MeasureTheory.Integrable S μ ∧ μ[S|m] ≤ᵐ[μ] 1
+'EvidenceFusion.conditional_robust_fusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.conditional_mul_integrable.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {m : MeasurableSpace Ω} (hm : m ≤ m0) (f g : Ω → ℝ)
+  (hfm : MeasureTheory.StronglyMeasurable f) (hfi : MeasureTheory.Integrable f μ) (hgi : MeasureTheory.Integrable g μ)
+  (hfn : ∀ (ω : Ω), 0 ≤ f ω) (hgn : ∀ (ω : Ω), 0 ≤ g ω) (hcond : μ[g|m] ≤ᵐ[μ] 1) :
+  MeasureTheory.Integrable (f * g) μ ∧ ∫ (ω : Ω), f ω * g ω ∂μ ≤ ∫ (ω : Ω), f ω ∂μ
+'EvidenceFusion.conditional_mul_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.correctedProcess_nonneg {Ω : Type} (lam Y : ℕ → Ω → ℝ) (k : ℕ → ℕ) (hln : ∀ (i : ℕ) (ω : Ω), 0 ≤ lam i ω)
+  (hl1 : ∀ (i : ℕ) (ω : Ω), lam i ω ≤ 1) (hYn : ∀ (i : ℕ) (ω : Ω), 0 ≤ Y i ω) (n : ℕ) (ω : Ω) :
+  0 ≤ EvidenceFusion.correctedProcess lam Y k n ω
+'EvidenceFusion.correctedProcess_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.correctedProcess_measurable {Ω : Type} {m0 : MeasurableSpace Ω} (lam Y : ℕ → Ω → ℝ) (k : ℕ → ℕ)
+  (hlm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (lam i)) (hYm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (Y i))
+  (n : ℕ) : MeasureTheory.StronglyMeasurable (EvidenceFusion.correctedProcess lam Y k n)
+'EvidenceFusion.correctedProcess_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.correctedProcess_domination {Ω : Type} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (lam X Y : ℕ → Ω → ℝ) (k : ℕ → ℕ) (hln : ∀ (i : ℕ) (ω : Ω), 0 ≤ lam i ω)
+  (hl1 : ∀ (i : ℕ) (ω : Ω), lam i ω ≤ 1) (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω)
+  (hattack : ∀ (n : ℕ), ∀ᵐ (ω : Ω) ∂μ, (EvidenceFusion.hamming (fun i => X (↑i) ω) fun i => Y (↑i) ω) ≤ k n) (n : ℕ) :
+  EvidenceFusion.correctedProcess lam Y k n ≤ᵐ[μ]
+    EvidenceFusion.productProcess (fun i ω => 1 - lam i ω + lam i ω * X i ω) n
+'EvidenceFusion.correctedProcess_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.correctedProcess_anytime {Ω : Type} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} (lam X Y : ℕ → Ω → ℝ) (k : ℕ → ℕ)
+  (hlm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (lam i)) (hXm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (X i))
+  (hYm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (Y i)) (hln : ∀ (i : ℕ) (ω : Ω), 0 ≤ lam i ω)
+  (hl1 : ∀ (i : ℕ) (ω : Ω), lam i ω ≤ 1) (hXi : ∀ (i : ℕ), MeasureTheory.Integrable (X i) μ)
+  (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω) (hYn : ∀ (i : ℕ) (ω : Ω), 0 ≤ Y i ω) (hc : ∀ (i : ℕ), μ[X i|↑ℱ i] ≤ᵐ[μ] 1)
+  (hattack : ∀ (n : ℕ), ∀ᵐ (ω : Ω) ∂μ, (EvidenceFusion.hamming (fun i => X (↑i) ω) fun i => Y (↑i) ω) ≤ k n) :
+  (∀ (τ : Ω → ℕ),
+      MeasureTheory.IsStoppingTime ℱ τ →
+        ∀ (N : ℕ),
+          (∀ (ω : Ω), τ ω ≤ N) →
+            MeasureTheory.Integrable (MeasureTheory.stoppedValue (EvidenceFusion.correctedProcess lam Y k) τ) μ ∧
+              ∫ (ω : Ω), MeasureTheory.stoppedValue (EvidenceFusion.correctedProcess lam Y k) τ ω ∂μ ≤ 1) ∧
+    ∀ (a : ℝ),
+      0 < a →
+        μ {ω | ENNReal.ofReal a ≤ ⨆ n, ENNReal.ofReal (EvidenceFusion.correctedProcess lam Y k n ω)} ≤
+          ENNReal.ofReal (1 / a)
+'EvidenceFusion.correctedProcess_anytime' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.maskPrefix_hamming {n : ℕ} (s : ℕ) (y : Fin n → ℝ) :
+  EvidenceFusion.hamming y (EvidenceFusion.maskPrefix s y) ≤ s
+'EvidenceFusion.maskPrefix_hamming' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayed_product_lower {n : ℕ} (s k : ℕ) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam ≤ 1) (y : Fin n → ℝ)
+  (hy : ∀ (i : Fin n), 0 ≤ y i) :
+  EvidenceFusion.robustProduct (fun x => 1 - lam) (fun x => lam) (EvidenceFusion.maskPrefix s y)
+      (EvidenceFusion.cardinalityAttacks (k + s)) ⋯ ≤
+    EvidenceFusion.robustProduct (fun i => 1 - EvidenceFusion.delayFraction s lam ↑i)
+      (fun i => EvidenceFusion.delayFraction s lam ↑i) y (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.delayed_product_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayed_fraction_growth_ae {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hXm : ∀ (i : ℕ), Measurable (X i))
+  (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω) (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X 0 ω)) μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (k : ℕ → ℕ)
+  (hk : Filter.Tendsto (fun n => ↑(k n) / ↑n) Filter.atTop (nhds 0)) (s : ℕ) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  ∀ᵐ (ω : Ω) ∂μ,
+    ∀ c < ∫ (ω : Ω), Real.log (1 - lam + lam * X 0 ω) ∂μ,
+      ∀ᶠ (n : ℕ) in Filter.atTop,
+        ∀ (y : Fin n → ℝ),
+          (∀ (i : Fin n), 0 ≤ y i) →
+            EvidenceFusion.hamming (fun i => X (↑i) ω) y ≤ k n →
+              c ≤
+                Real.log
+                    (EvidenceFusion.robustProduct (fun i => 1 - EvidenceFusion.delayFraction s lam ↑i)
+                      (fun i => EvidenceFusion.delayFraction s lam ↑i) y (EvidenceFusion.cardinalityAttacks (k n)) ⋯) /
+                  ↑n
+'EvidenceFusion.delayed_fraction_growth_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedPrior_pos (j : ℕ) : 0 < EvidenceFusion.delayedPrior j
+'EvidenceFusion.delayedPrior_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.fixedPriorMixture_formula {Ω : Type} (E : ℕ → ℕ → Ω → ℝ) (K n : ℕ) (ω : Ω) :
+  EvidenceFusion.fixedPriorMixture E K n ω =
+    1 / 2 + 1 / 2 * ∑ j ∈ Finset.range K, EvidenceFusion.delayedPrior j * E j n ω + 1 / (2 * (↑K + 1))
+'EvidenceFusion.fixedPriorMixture_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.fixedPriorMixture_supermartingale {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m} (E : ℕ → ℕ → Ω → ℝ)
+  (hE : ∀ (j : ℕ), MeasureTheory.Supermartingale (E j) ℱ μ) (K : ℕ) :
+  MeasureTheory.Supermartingale (EvidenceFusion.fixedPriorMixture E K) ℱ μ
+'EvidenceFusion.fixedPriorMixture_supermartingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.fixedPriorMixture_extension {Ω : Type} (E : ℕ → ℕ → Ω → ℝ) (J K n : ℕ) (hJK : J ≤ K)
+  (hinactive : ∀ (j : ℕ), J ≤ j → E j n = 1) :
+  EvidenceFusion.fixedPriorMixture E K n = EvidenceFusion.fixedPriorMixture E J n
+'EvidenceFusion.fixedPriorMixture_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedMixture_supermartingale {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m} (E : ℕ → ℕ → Ω → ℝ) (J : ℕ → ℕ)
+  (hE : ∀ (j : ℕ), MeasureTheory.Supermartingale (E j) ℱ μ) (hJ : Monotone J)
+  (hinactive : ∀ (n j : ℕ), J n ≤ j → E j n = 1) : MeasureTheory.Supermartingale (EvidenceFusion.delayedMixture E J) ℱ μ
+'EvidenceFusion.delayedMixture_supermartingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedMixture_nonneg {Ω : Type} (E : ℕ → ℕ → Ω → ℝ) (J : ℕ → ℕ) (hE : ∀ (j n : ℕ) (ω : Ω), 0 ≤ E j n ω)
+  (n : ℕ) (ω : Ω) : 0 ≤ EvidenceFusion.delayedMixture E J n ω
+'EvidenceFusion.delayedMixture_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedMixture_zero {Ω : Type} (E : ℕ → ℕ → Ω → ℝ) (J : ℕ → ℕ) (hJ : J 0 = 0) :
+  EvidenceFusion.delayedMixture E J 0 = 1
+'EvidenceFusion.delayedMixture_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedMixture_domination {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (E R : ℕ → ℕ → Ω → ℝ) (J : ℕ → ℕ) (hdom : ∀ (j n : ℕ), R j n ≤ᵐ[μ] E j n)
+  (n : ℕ) : EvidenceFusion.delayedMixture R J n ≤ᵐ[μ] EvidenceFusion.delayedMixture E J n
+'EvidenceFusion.delayedMixture_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.activeCount_zero : EvidenceFusion.activeCount 0 = 0
+'EvidenceFusion.activeCount_zero' depends on axioms: [propext]
+EvidenceFusion.activeCount_characterization (n j : ℕ) : j < EvidenceFusion.activeCount n ↔ 2 ^ j ≤ n
+'EvidenceFusion.activeCount_characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.activeCount_monotone : Monotone EvidenceFusion.activeCount
+'EvidenceFusion.activeCount_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.activeCount_eventually (j : ℕ) : ∀ᶠ (n : ℕ) in Filter.atTop, j < EvidenceFusion.activeCount n
+'EvidenceFusion.activeCount_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log2_dyadic_block (m q : ℕ) (hq : q < 2 ^ m) : (2 ^ m + q).log2 = m
+'EvidenceFusion.log2_dyadic_block' depends on axioms: [propext, Quot.sound]
+EvidenceFusion.dyadicFraction_block (m q : ℕ) (hq : q < 2 ^ m) :
+  EvidenceFusion.dyadicFraction (2 ^ m + q - 1) = (2 * ↑q + 1) / (2 * 2 ^ m)
+'EvidenceFusion.dyadicFraction_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.dyadicFraction_mem (j : ℕ) : EvidenceFusion.dyadicFraction j ∈ Set.Ioo 0 1
+'EvidenceFusion.dyadicFraction_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.dyadicFraction_dense (u eps : ℝ) (hu : u ∈ Set.Ioo 0 1) (he : 0 < eps) :
+  ∃ j, |EvidenceFusion.dyadicFraction j - u| < eps
+'EvidenceFusion.dyadicFraction_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_replacement_count_bound (x y : ℕ → ℝ) (N : ℕ) (hN : ∀ (i : ℕ), N ≤ i → x i = y i) (n : ℕ) :
+  (EvidenceFusion.hamming (fun i => x ↑i) fun i => y ↑i) ≤ N
+'EvidenceFusion.finite_replacement_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_replacements_are_sparse (x y : ℕ → ℝ) (h : EvidenceFusion.FiniteReplacements x y) :
+  EvidenceFusion.SparseReplacements x y
+'EvidenceFusion.finite_replacements_are_sparse' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.zero_path_test (P : (ℕ → ℝ) → (ℕ → ℝ) → Prop) (t : ℕ) (H : (Fin t → ℝ) → ℝ)
+  (hvalid : EvidenceFusion.UniversalHistoryValid P t H) (y : ℕ → ℝ) (hy : ∀ (i : ℕ), 0 ≤ y i) (hP : P 0 y) :
+  (H fun i => y ↑i) ≤ 1
+'EvidenceFusion.zero_path_test' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_envelope_necessity (t : ℕ) (H : (Fin t → ℝ) → ℝ)
+  (hvalid : EvidenceFusion.UniversalHistoryValid EvidenceFusion.FiniteReplacements t H) (history : Fin t → ℝ)
+  (hn : ∀ (i : Fin t), 0 ≤ history i) : H history ≤ 1
+'EvidenceFusion.finite_envelope_necessity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sparse_envelope_necessity (t : ℕ) (H : (Fin t → ℝ) → ℝ)
+  (hvalid : EvidenceFusion.UniversalHistoryValid EvidenceFusion.SparseReplacements t H) (history : Fin t → ℝ)
+  (hn : ∀ (i : Fin t), 0 ≤ history i) : H history ≤ 1
+'EvidenceFusion.sparse_envelope_necessity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.keptSum_nonneg.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (w x : ι → ℝ) (C : Finset ι)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hx : ∀ (i : ι), 0 ≤ x i) : 0 ≤ EvidenceFusion.keptSum w x C
+'EvidenceFusion.keptSum_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.keptSum_le_clean.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (w x y : ι → ℝ) (C : Finset ι)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hx : ∀ (i : ι), 0 ≤ x i) (hclean : ∀ i ∉ C, y i = x i) :
+  EvidenceFusion.keptSum w y C ≤ ∑ i, w i * x i
+'EvidenceFusion.keptSum_le_clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustAffine_nonneg.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (a : ℝ) (w y : ι → ℝ)
+  (A : Finset (Finset ι)) (hA : A.Nonempty) (ha : 0 ≤ a) (hw : ∀ (i : ι), 0 ≤ w i) (hy : ∀ (i : ι), 0 ≤ y i) :
+  0 ≤ EvidenceFusion.robustAffine a w y A hA
+'EvidenceFusion.robustAffine_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustAffine_le_clean.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (a : ℝ) (w x y : ι → ℝ)
+  (A : Finset (Finset ι)) (hA : A.Nonempty) (C : Finset ι) (hC : C ∈ A) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hx : ∀ (i : ι), 0 ≤ x i) (hclean : ∀ i ∉ C, y i = x i) : EvidenceFusion.robustAffine a w y A hA ≤ a + ∑ i, w i * x i
+'EvidenceFusion.robustAffine_le_clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.normalized_weight_bound.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (a : ℝ) (w m : ι → ℝ)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hm : ∀ (i : ι), m i ≤ 1) (hnorm : a + ∑ i, w i = 1) : a + ∑ i, w i * m i ≤ 1
+'EvidenceFusion.normalized_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_probability_validity.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι] {Ω : Type u_2}
+  [Fintype Ω] (p F : Ω → ℝ) (X : Ω → ι → ℝ) (a : ℝ) (w : ι → ℝ) (hp : ∀ (ω : Ω), 0 ≤ p ω) (hp1 : ∑ ω, p ω = 1)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hnorm : a + ∑ i, w i = 1) (hmean : ∀ (i : ι), ∑ ω, p ω * X ω i ≤ 1)
+  (hdom : ∀ (ω : Ω), F ω ≤ a + ∑ i, w i * X ω i) : ∑ ω, p ω * F ω ≤ 1
+'EvidenceFusion.finite_probability_validity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.slope_comparison {a b w v : ℝ} (h : ∀ (t : ℝ), 0 ≤ t → a + w * t ≤ b + v * t) : w ≤ v
+'EvidenceFusion.slope_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.normalized_coordinates_equal.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (w v : ι → ℝ)
+  (h : ∀ (i : ι), w i ≤ v i) (hs : ∑ i, v i = ∑ i, w i) : w = v
+'EvidenceFusion.normalized_coordinates_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.rank_count_le.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (s : ι → ℝ) (q : ℕ) :
+  {i | EvidenceFusion.upperRank s i ≤ q}.card ≤ q
+'EvidenceFusion.rank_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.attacked_rank_ge.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (test upper : ℝ)
+  (h : test ≤ upper) : 1 + {i | upper ≤ z i}.card ≤ 1 + {i | test ≤ z i}.card
+'EvidenceFusion.attacked_rank_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.five_percent_resolution (m r : ℕ) (hr : 1 ≤ r) (h : ↑r / (↑m + 1) ≤ 1 / 20) : 19 ≤ m
+'EvidenceFusion.five_percent_resolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.reciprocal_swap (xi xj vi vj : ℝ) (_hxi : 0 < xi) (hxj : 0 < xj) (hx : xj ≤ xi) (hv : vi ≤ vj) :
+  vj / xi + vi / xj ≤ vi / xi + vj / xj
+'EvidenceFusion.reciprocal_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.layer_capacity_bound.{u_1} {ι : Type u_1} [Fintype ι] (d A b : ι → ℝ) (c : ℝ) (hd : ∀ (j : ι), 0 ≤ d j)
+  (hc : 0 ≤ c) (hratio : ∀ (j : ι), b j ≤ c * A j) (hcost : ∑ j, d j * A j ≤ 1) : ∑ j, d j * b j ≤ c
+'EvidenceFusion.layer_capacity_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.report_count_necessary (p k B T : ℝ) (hp : 0 < p) (hBT : T < B) (hcapacity : T ≤ B * (1 - 2 * k / p)) :
+  2 * k * B / (B - T) ≤ p
+'EvidenceFusion.report_count_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.equal_signal_threshold_iff (p k B T : ℝ) (hp : 0 < p) (hBT : T < B) :
+  T ≤ B * (1 - 2 * k / p) ↔ 2 * k * B / (B - T) ≤ p
+'EvidenceFusion.equal_signal_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exact_report_examples :
+  50 * (1 - 2 * 1 / 3) < 20 ∧
+    20 ≤ 50 * (1 - 2 * 1 / 4) ∧
+      50 * (1 - 2 * 3 / 9) < 20 ∧
+        50 * (1 - 2 * 3 / 10) = 20 ∧
+          50 * (1 - 2 * 5 / 16) < 20 ∧ 20 ≤ 50 * (1 - 2 * 5 / 17) ∧ 50 * (1 - 2 * 2 / 10) = 30
+'EvidenceFusion.exact_report_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.report_count_integer_criterion (p k : ℕ) (hp : 0 < p) : 20 ≤ 50 * (1 - 2 * ↑k / ↑p) ↔ 10 * k ≤ 3 * p
+'EvidenceFusion.report_count_integer_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sharp_integer_report_counts (p : ℕ) (hp : 0 < p) :
+  (20 ≤ 50 * (1 - 2 * 1 / ↑p) ↔ 4 ≤ p) ∧ (20 ≤ 50 * (1 - 2 * 3 / ↑p) ↔ 10 ≤ p) ∧ (20 ≤ 50 * (1 - 2 * 5 / ↑p) ↔ 17 ≤ p)
+'EvidenceFusion.sharp_integer_report_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sharp_layer_program.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (A b : ι → ℝ)
+  (hA : ∀ (j : ι), 0 < A j) (hb : ∀ (j : ι), 0 ≤ b j) :
+  (∀ (d : ι → ℝ), (∀ (j : ι), 0 ≤ d j) → ∑ j, d j * A j ≤ 1 → ∑ j, d j * b j ≤ EvidenceFusion.layerOptimum A b) ∧
+    ∃ d, (∀ (j : ι), 0 ≤ d j) ∧ ∑ j, d j * A j = 1 ∧ ∑ j, d j * b j = EvidenceFusion.layerOptimum A b
+'EvidenceFusion.sharp_layer_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.rearranged_cost_le.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (v c : ι → ℝ)
+  (σ : Equiv.Perm ι) (h : Antivary v c) : ∑ i, v i * c i ≤ ∑ i, v (σ i) * c i
+'EvidenceFusion.rearranged_cost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.layer_cost_identity.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [LinearOrder ι] (d c : ι → ℝ) :
+  ∑ i, (∑ j, if i ≤ j then d j else 0) * c i = ∑ j, d j * ∑ i, if i ≤ j then c i else 0
+'EvidenceFusion.layer_cost_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.layer_tail_identity.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [LinearOrder ι] (d : ι → ℝ)
+  (R : Finset ι) : (∑ i ∈ R, ∑ j, if i ≤ j then d j else 0) = ∑ j, d j * ↑{i ∈ R | i ≤ j}.card
+'EvidenceFusion.layer_tail_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.normalization_example_arithmetic :
+  20 * (1 / 16) * (8 / 10) = 1 ∧ 8 * 20 / 10 = 16 ∧ 8 * 20 / 8 = 20 ∧ 1 / 20 < 1 / 16
+'EvidenceFusion.normalization_example_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.game_weak_duality.{u_1, u_2} {ι : Type u_1} {κ : Type u_2} [Fintype ι] [Fintype κ] (w : ι → ℝ)
+  (q : κ → ℝ) (A : κ → ι → ℝ) (s r : ℝ) (hw : ∀ (i : ι), 0 ≤ w i) (hq : ∀ (j : κ), 0 ≤ q j) (hw1 : ∑ i, w i = 1)
+  (hq1 : ∑ j, q j = 1) (hlower : ∀ (i : ι), s ≤ ∑ j, q j * A j i) (hupper : ∀ (j : κ), ∑ i, w i * A j i ≤ r) : s ≤ r
+'EvidenceFusion.game_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_tilt_identities.{u_1} {Ω : Type u_1} [Fintype Ω] (p x : Ω → ℝ) (lam : ℝ)
+  (hL : ∀ (ω : Ω), 1 - lam + lam * x ω ≠ 0) (hp : ∑ ω, p ω = 1)
+  (hd : ∑ ω, p ω * ((x ω - 1) / (1 - lam + lam * x ω)) = 0) :
+  ∑ ω, p ω / (1 - lam + lam * x ω) = 1 ∧ ∑ ω, p ω * x ω / (1 - lam + lam * x ω) = 1
+'EvidenceFusion.finite_tilt_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.hamming_le_dimension.{u_1, u_2} {ι : Type u_1} {α : Type u_2} [Fintype ι] [DecidableEq ι] [DecidableEq α]
+  (x y : ι → α) : EvidenceFusion.hamming x y ≤ Fintype.card ι
+'EvidenceFusion.hamming_le_dimension' depends on axioms: [propext, Quot.sound]
+EvidenceFusion.hamming_triangle.{u_1, u_2} {ι : Type u_1} {α : Type u_2} [Fintype ι] [DecidableEq ι] [DecidableEq α]
+  (x y z : ι → α) : EvidenceFusion.hamming x z ≤ EvidenceFusion.hamming x y + EvidenceFusion.hamming y z
+'EvidenceFusion.hamming_triangle' depends on axioms: [propext, Quot.sound]
+EvidenceFusion.hamming_midpoint.{u_1, u_2} {ι : Type u_1} {α : Type u_2} [Fintype ι] [DecidableEq ι] [DecidableEq α]
+  (x z : ι → α) (k l : ℕ) (h : EvidenceFusion.hamming x z ≤ k + l) :
+  ∃ y, EvidenceFusion.hamming x y ≤ k ∧ EvidenceFusion.hamming y z ≤ l
+'EvidenceFusion.hamming_midpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.hamming_ball_composition.{u_1, u_2} {ι : Type u_1} {α : Type u_2} [Fintype ι] [DecidableEq ι]
+  [DecidableEq α] (x z : ι → α) (k l : ℕ) :
+  (∃ y, EvidenceFusion.hamming x y ≤ k ∧ EvidenceFusion.hamming y z ≤ l) ↔
+    EvidenceFusion.hamming x z ≤ min (Fintype.card ι) (k + l)
+'EvidenceFusion.hamming_ball_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.completion_payoff_set.{u_1, u_2} {ι : Type u_1} {α : Type u_2} [Fintype ι] [DecidableEq ι]
+  [DecidableEq α] (f : (ι → α) → ℝ) (x : ι → α) (k l : ℕ) :
+  {v | ∃ y z, EvidenceFusion.hamming x y ≤ k ∧ EvidenceFusion.hamming y z ≤ l ∧ f z = v} =
+    {v | ∃ z, EvidenceFusion.hamming x z ≤ min (Fintype.card ι) (k + l) ∧ f z = v}
+'EvidenceFusion.completion_payoff_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.replacement_product_bound.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (b lam x y : ι → ℝ)
+  (C : Finset ι) (hb : ∀ (i : ι), 0 ≤ b i) (hl : ∀ (i : ι), 0 ≤ lam i) (hx : ∀ (i : ι), 0 ≤ x i)
+  (hclean : ∀ i ∉ C, y i = x i) : (∏ i, if i ∈ C then b i else b i + lam i * y i) ≤ ∏ i, (b i + lam i * x i)
+'EvidenceFusion.replacement_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustProduct_domination.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (b lam x y : ι → ℝ)
+  (A : Finset (Finset ι)) (hA : A.Nonempty) (C : Finset ι) (hC : C ∈ A) (hb : ∀ (i : ι), 0 ≤ b i)
+  (hl : ∀ (i : ι), 0 ≤ lam i) (hx : ∀ (i : ι), 0 ≤ x i) (hclean : ∀ i ∉ C, y i = x i) :
+  EvidenceFusion.robustProduct b lam y A hA ≤ ∏ i, (b i + lam i * x i)
+'EvidenceFusion.robustProduct_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sparse_trim_bound.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (D : Finset ι) (A : ℝ)
+  (hz : ∀ (i : ι), 0 ≤ z i) (hA : 0 ≤ A) : ∑ i ∈ D, z i ≤ A * ↑D.card + ∑ i, if A < z i then z i else 0
+'EvidenceFusion.sparse_trim_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayed_prior_mass (J : ℕ) : ∑ j ∈ Finset.range J, 1 / ((↑j + 1) * (↑j + 2)) = 1 - 1 / (↑J + 1)
+'EvidenceFusion.delayed_prior_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_derivative_bound (x lam eps : ℝ) (hx : 0 ≤ x) (heps : 0 < eps) (hlow : eps ≤ lam)
+  (hhigh : lam ≤ 1 - eps) : |(x - 1) / (1 - lam + lam * x)| ≤ 1 / eps
+'EvidenceFusion.log_factor_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.no_envelope_bound (t : ℕ) (stat : (Fin t → ℝ) → ℝ)
+  (hvalid : ∀ (y : ℕ → ℝ), (∀ (i : ℕ), 0 ≤ y i) → (∃ N, ∀ (i : ℕ), N ≤ i → y i = 0) → (stat fun i => y ↑i) ≤ 1)
+  (history : Fin t → ℝ) (hh : ∀ (i : Fin t), 0 ≤ history i) : stat history ≤ 1
+'EvidenceFusion.no_envelope_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.measurable_upperRank.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (i : ι) :
+  Measurable fun x => EvidenceFusion.upperRank x i
+'EvidenceFusion.measurable_upperRank' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.measurable_rankEvent.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (q : ℕ) (i : ι) :
+  Measurable (EvidenceFusion.rankEvent q i)
+'EvidenceFusion.measurable_rankEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.integrable_rankEvent.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (μ : MeasureTheory.Measure (ι → ℝ)) [MeasureTheory.IsProbabilityMeasure μ] (q : ℕ) (i : ι) :
+  MeasureTheory.Integrable (EvidenceFusion.rankEvent q i) μ
+'EvidenceFusion.integrable_rankEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.measure_rank_probability_equal.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (μ : MeasureTheory.Measure (ι → ℝ)) (hex : EvidenceFusion.ExchangeableScoreLaw μ) (q : ℕ) (i j : ι) :
+  EvidenceFusion.measureRankProbability μ q i = EvidenceFusion.measureRankProbability μ q j
+'EvidenceFusion.measure_rank_probability_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exchangeable_rank_bound.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (μ : MeasureTheory.Measure (ι → ℝ)) [MeasureTheory.IsProbabilityMeasure μ]
+  (hex : EvidenceFusion.ExchangeableScoreLaw μ) (q : ℕ) (i : ι) :
+  EvidenceFusion.measureRankProbability μ q i ≤ ↑q / ↑(Fintype.card ι)
+'EvidenceFusion.exchangeable_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exchangeable_rank_evidence.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  {L : Type u_2} [Fintype L] (μ : MeasureTheory.Measure (ι → ℝ)) [MeasureTheory.IsProbabilityMeasure μ]
+  (hex : EvidenceFusion.ExchangeableScoreLaw μ) (v : L → ℝ) (q : L → ℕ) (i : ι) (hv : ∀ (l : L), 0 ≤ v l)
+  (hv1 : ∑ l, v l = 1) (hq : ∀ (l : L), 0 < q l) :
+  ∫ (x : ι → ℝ), ∑ l, v l * (↑(Fintype.card ι) / ↑(q l)) * EvidenceFusion.rankEvent (q l) i x ∂μ ≤ 1
+'EvidenceFusion.exchangeable_rank_evidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.attackedRank_ge_true.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (T : (ι → ℝ) → ℝ)
+  (i : ι) (x : ι → ℝ) (hT : T x ≤ x i) : EvidenceFusion.upperRank x i ≤ EvidenceFusion.attackedRank T i x
+'EvidenceFusion.attackedRank_ge_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robust_rank_calibration.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (μ : MeasureTheory.Measure (ι → ℝ)) [MeasureTheory.IsProbabilityMeasure μ]
+  (hex : EvidenceFusion.ExchangeableScoreLaw μ) (T : (ι → ℝ) → ℝ) (i : ι) (alpha : ℝ) (halpha : 0 ≤ alpha)
+  (hT : ∀ᵐ (x : ι → ℝ) ∂μ, T x ≤ x i)
+  (hmeas :
+    MeasureTheory.AEStronglyMeasurable
+      (fun x => if ↑(EvidenceFusion.attackedRank T i x) / ↑(Fintype.card ι) ≤ alpha then 1 else 0) μ) :
+  ∫ (x : ι → ℝ), if ↑(EvidenceFusion.attackedRank T i x) / ↑(Fintype.card ι) ≤ alpha then 1 else 0 ∂μ ≤ alpha
+'EvidenceFusion.robust_rank_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robust_rank_probability_general.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  {Ω : Type u_2} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]
+  (X : Ω → ι → ℝ) (hX : Measurable X) (hex : EvidenceFusion.ExchangeableScoreLaw (MeasureTheory.Measure.map X μ))
+  (r : Ω → ℕ) (i : ι) (alpha : ℝ) (ha : 0 ≤ alpha) (hr : ∀ᵐ (ω : Ω) ∂μ, EvidenceFusion.upperRank (X ω) i ≤ r ω)
+  (hm : MeasureTheory.AEStronglyMeasurable (fun ω => if ↑(r ω) / ↑(Fintype.card ι) ≤ alpha then 1 else 0) μ) :
+  ∫ (ω : Ω), if ↑(r ω) / ↑(Fintype.card ι) ≤ alpha then 1 else 0 ∂μ ≤ alpha
+'EvidenceFusion.robust_rank_probability_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.calibration_with_adaptive_score.{u_1, u_2} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  {Ω : Type u_2} [MeasurableSpace Ω] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ]
+  (X : Ω → ι → ℝ) (hX : Measurable X) (hex : EvidenceFusion.ExchangeableScoreLaw (MeasureTheory.Measure.map X μ))
+  (T : Ω → ℝ) (i : ι) (alpha : ℝ) (ha : 0 ≤ alpha) (hT : ∀ᵐ (ω : Ω) ∂μ, T ω ≤ X ω i)
+  (hm :
+    MeasureTheory.AEStronglyMeasurable
+      (fun ω => if ↑(1 + {j ∈ Finset.univ.erase i | T ω ≤ X ω j}.card) / ↑(Fintype.card ι) ≤ alpha then 1 else 0) μ) :
+  ∫ (ω : Ω), if ↑(1 + {j ∈ Finset.univ.erase i | T ω ≤ X ω j}.card) / ↑(Fintype.card ι) ≤ alpha then 1 else 0 ∂μ ≤ alpha
+'EvidenceFusion.calibration_with_adaptive_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.domainAttacks_nonempty {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) : (EvidenceFusion.domainAttacks g).Nonempty
+'EvidenceFusion.domainAttacks_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.domainAttacks_downward {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) : EvidenceFusion.DownwardClosed (EvidenceFusion.domainAttacks g)
+'EvidenceFusion.domainAttacks_downward' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.domain_removable_weight {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) (w : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i) :
+  ((EvidenceFusion.domainAttacks g).sup' ⋯ fun C => ∑ i ∈ C, w i) =
+    EvidenceFusion.gameUpper (fun j i => if g i = j then 1 else 0) w
+'EvidenceFusion.domain_removable_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positive_domain_admissibility {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  [Nonempty ι] [Nonempty κ] [Nontrivial κ] (g : ι → κ) (hg : Function.Surjective g) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a)
+  (hw : ∀ (i : ι), 0 < w i) (hn : a + ∑ i, w i = 1) :
+  EvidenceFusion.ProbabilityAdmissible (EvidenceFusion.domainAttacks g) fun y =>
+    EvidenceFusion.robustAffine a w y (EvidenceFusion.domainAttacks g) ⋯
+'EvidenceFusion.positive_domain_admissibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.failure_domain_optimum {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) (hg : Function.Surjective g) :
+  IsLeast
+    {v | ∃ w, (∀ (i : ι), 0 ≤ w i) ∧ ∑ i, w i = 1 ∧ v = (EvidenceFusion.domainAttacks g).sup' ⋯ fun C => ∑ i ∈ C, w i}
+    (1 / ↑(Fintype.card κ))
+'EvidenceFusion.failure_domain_optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.fractional_cover_duality {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  [Nonempty ι] [Nonempty κ] (B : κ → ι → ℝ) (hB : ∀ (j : κ) (i : ι), 0 ≤ B j i) (hcover : ∀ (i : ι), ∃ j, 0 < B j i) :
+  ∃ r w,
+    0 < r ∧
+      (∀ (i : ι), 0 ≤ w i) ∧
+        ∑ i, w i = 1 ∧
+          EvidenceFusion.gameUpper B w = r ∧
+            (∀ (v : ι → ℝ), (∀ (i : ι), 0 ≤ v i) → ∑ i, v i = 1 → r ≤ EvidenceFusion.gameUpper B v) ∧
+              IsLeast (EvidenceFusion.fractionalCoverValues B) (1 / r)
+'EvidenceFusion.fractional_cover_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.domainMass_total {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) (w : ι → ℝ) : ∑ j, EvidenceFusion.domainMass g w j = ∑ i, w i
+'EvidenceFusion.domainMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.equal_domain_allocation {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) (hg : Function.Surjective g) :
+  ∃ w, (∀ (i : ι), 0 < w i) ∧ ∑ i, w i = 1 ∧ ∀ (j : κ), EvidenceFusion.domainMass g w j = 1 / ↑(Fintype.card κ)
+'EvidenceFusion.equal_domain_allocation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.failure_domain_game {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (g : ι → κ) (hg : Function.Surjective g) :
+  IsLeast
+    {v |
+      ∃ w, (∀ (i : ι), 0 ≤ w i) ∧ ∑ i, w i = 1 ∧ v = EvidenceFusion.gameUpper (fun j i => if g i = j then 1 else 0) w}
+    (1 / ↑(Fintype.card κ))
+'EvidenceFusion.failure_domain_game' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_mono {ι : Type} [Fintype ι] [DecidableEq ι] (z v : ι → ℝ) (r : ℕ) (h : ∀ (i : ι), z i ≤ v i) :
+  EvidenceFusion.largestSum z r ≤ EvidenceFusion.largestSum v r
+'EvidenceFusion.largestSum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.uniform_log_contribution_bound (x eps lam : ℝ) (hx : 0 ≤ x) (he : 0 < eps)
+  (hl : lam ∈ Set.Icc eps (1 - eps)) : Real.log (1 + lam * x / (1 - lam)) ≤ Real.log (1 + (1 - eps) / eps * x)
+'EvidenceFusion.uniform_log_contribution_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_grid_comparison {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (eps eta q : ℝ) (he : 0 < eps)
+  (hehalf : eps < 1 / 2) (hq : 0 < q) (grid : Finset ℝ) (pi : ℝ → ℝ) (hgrid : ∀ l ∈ grid, l ∈ Set.Icc eps (1 - eps))
+  (hpi : ∀ l ∈ grid, q ≤ pi l) (hcover : ∀ u ∈ Set.Icc eps (1 - eps), ∃ l ∈ grid, |l - u| ≤ eta) (x y : ι → ℝ)
+  (hx : ∀ (i : ι), 0 ≤ x i) (hy : ∀ (i : ι), 0 ≤ y i) (hattack : EvidenceFusion.hamming x y ≤ k) :
+  sSup (EvidenceFusion.cleanLog x '' Set.Icc eps (1 - eps)) - ↑(Fintype.card ι) * eta / eps -
+        EvidenceFusion.largestSum (fun i => Real.log (1 + (1 - eps) / eps * x i)) (2 * k) +
+      Real.log q ≤
+    Real.log
+      (∑ l ∈ grid,
+        pi l * EvidenceFusion.robustProduct (fun x => 1 - l) (fun x => l) y (EvidenceFusion.cardinalityAttacks k) ⋯)
+'EvidenceFusion.finite_grid_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.upperRank_permutation.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (s : ι → ℝ)
+  (σ : Equiv.Perm ι) (i : ι) : EvidenceFusion.upperRank (fun j => s (σ j)) i = EvidenceFusion.upperRank s (σ i)
+'EvidenceFusion.upperRank_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.rank_probability_equal.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  [Fintype Ω] [DecidableEq Ω] (p : Ω → ℝ) (X : Ω → ι → ℝ) (hex : EvidenceFusion.FiniteExchangeable p X) (q : ℕ)
+  (i j : ι) : EvidenceFusion.rankProbability p X q i = EvidenceFusion.rankProbability p X q j
+'EvidenceFusion.rank_probability_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_exchangeable_rank_bound.{u_1, u_2} {ι : Type u_1} {Ω : Type u_2} [Fintype ι] [DecidableEq ι]
+  [Nonempty ι] [Fintype Ω] [DecidableEq Ω] (p : Ω → ℝ) (X : Ω → ι → ℝ) (hp : ∀ (ω : Ω), 0 ≤ p ω) (hp1 : ∑ ω, p ω = 1)
+  (hex : EvidenceFusion.FiniteExchangeable p X) (q : ℕ) (i : ι) :
+  EvidenceFusion.rankProbability p X q i ≤ ↑q / ↑(Fintype.card ι)
+'EvidenceFusion.finite_exchangeable_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_rank_evidence.{u_1, u_2, u_3} {ι : Type u_1} {Ω : Type u_2} [Fintype ι] [DecidableEq ι]
+  [Nonempty ι] [Fintype Ω] [DecidableEq Ω] {L : Type u_3} [Fintype L] (p : Ω → ℝ) (X : Ω → ι → ℝ) (v : L → ℝ)
+  (q : L → ℕ) (i : ι) (hp : ∀ (ω : Ω), 0 ≤ p ω) (hp1 : ∑ ω, p ω = 1) (hex : EvidenceFusion.FiniteExchangeable p X)
+  (hv : ∀ (l : L), 0 ≤ v l) (hv1 : ∑ l, v l = 1) (hq : ∀ (l : L), 0 < q l) :
+  (∑ ω, p ω * ∑ l, v l * (↑(Fintype.card ι) / ↑(q l)) * if EvidenceFusion.upperRank (X ω) i ≤ q l then 1 else 0) ≤ 1
+'EvidenceFusion.finite_rank_evidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_game_duality {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] [Nonempty ι]
+  [Nonempty κ] (B : κ → ι → ℝ) :
+  ∃ r w q,
+    (∀ (i : ι), 0 ≤ w i) ∧
+      ∑ i, w i = 1 ∧
+        (∀ (j : κ), 0 ≤ q j) ∧ ∑ j, q j = 1 ∧ (∀ (j : κ), ∑ i, w i * B j i ≤ r) ∧ ∀ (i : ι), r ≤ ∑ j, q j * B j i
+'EvidenceFusion.finite_game_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.retained_fractional_cover_identity {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  [Nonempty ι] [Nonempty κ] (B : κ → ι → ℝ) (hB : ∀ (j : κ) (i : ι), 0 ≤ B j i) (hcover : ∀ (i : ι), ∃ j, 0 < B j i) :
+  EvidenceFusion.retainedCoefficient B = 1 - 1 / sInf (EvidenceFusion.fractionalCoverValues B)
+'EvidenceFusion.retained_fractional_cover_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.graph_retention_identity {ι : Type} [Fintype ι] [DecidableEq ι] [Nonempty ι] (G : SimpleGraph ι) :
+  EvidenceFusion.retainedCoefficient (EvidenceFusion.graphIncidence G) = 1 - 1 / EvidenceFusion.fractionalChromatic G
+'EvidenceFusion.graph_retention_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.expected_log_hasDerivAt {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (lam : ℝ) (hl : 0 < lam) (hl1 : lam < 1) :
+  MeasureTheory.Integrable (fun ω => (X ω - 1) / (1 - lam + lam * X ω)) μ ∧
+    HasDerivAt (fun t => ∫ (ω : Ω), Real.log (1 - t + t * X ω) ∂μ) (∫ (ω : Ω), (X ω - 1) / (1 - lam + lam * X ω) ∂μ) lam
+'EvidenceFusion.expected_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.interior_log_optimum_derivative_zero {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (lam : ℝ) (hl : 0 < lam) (hl1 : lam < 1)
+  (hmax : IsMaxOn (fun t => ∫ (ω : Ω), Real.log (1 - t + t * X ω) ∂μ) (Set.Ioo 0 1) lam) :
+  MeasureTheory.Integrable (fun ω => (X ω - 1) / (1 - lam + lam * X ω)) μ ∧
+    ∫ (ω : Ω), (X ω - 1) / (1 - lam + lam * X ω) ∂μ = 0
+'EvidenceFusion.interior_log_optimum_derivative_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.general_tilt_identities {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXn : ∀ (ω : Ω), 0 ≤ X ω) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam < 1)
+  (hi : MeasureTheory.Integrable (fun ω => (X ω - 1) / (1 - lam + lam * X ω)) μ)
+  (hz : ∫ (ω : Ω), (X ω - 1) / (1 - lam + lam * X ω) ∂μ = 0) :
+  MeasureTheory.Integrable (fun ω => 1 / (1 - lam + lam * X ω)) μ ∧
+    MeasureTheory.Integrable (fun ω => X ω / (1 - lam + lam * X ω)) μ ∧
+      ∫ (ω : Ω), 1 / (1 - lam + lam * X ω) ∂μ = 1 ∧ ∫ (ω : Ω), X ω / (1 - lam + lam * X ω) ∂μ = 1
+'EvidenceFusion.general_tilt_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.interior_tilt_probability_mean_one {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (lam : ℝ) (hl : 0 < lam) (hl1 : lam < 1)
+  (hmax : IsMaxOn (fun t => ∫ (ω : Ω), Real.log (1 - t + t * X ω) ∂μ) (Set.Ioo 0 1) lam) :
+  MeasureTheory.IsProbabilityMeasure (EvidenceFusion.reciprocalTilt μ X lam) ∧
+    MeasureTheory.Integrable X (EvidenceFusion.reciprocalTilt μ X lam) ∧
+      ∫ (ω : Ω), X ω ∂EvidenceFusion.reciprocalTilt μ X lam = 1
+'EvidenceFusion.interior_tilt_probability_mean_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exponential_crossing_bound {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (A M : Ω → ℝ) (hA : ∀ (ω : Ω), 0 ≤ A ω) (hM : ∀ (ω : Ω), 0 < M ω)
+  (hi : MeasureTheory.Integrable (fun ω => A ω / M ω) μ) (hmean : ∫ (ω : Ω), A ω / M ω ∂μ ≤ 1) (t : ℝ) :
+  μ {ω | Real.exp t ≤ A ω / M ω} ≤ ENNReal.ofReal (Real.exp (-t))
+'EvidenceFusion.exponential_crossing_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.likelihood_ratio_subexponential {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (A M : ℕ → Ω → ℝ) (hA : ∀ (n : ℕ) (ω : Ω), 0 ≤ A n ω)
+  (hM : ∀ (n : ℕ) (ω : Ω), 0 < M n ω) (hi : ∀ (n : ℕ), MeasureTheory.Integrable (fun ω => A n ω / M n ω) μ)
+  (hmean : ∀ (n : ℕ), ∫ (ω : Ω), A n ω / M n ω ∂μ ≤ 1) (delta : ℝ) (hd : 0 < delta) :
+  ∀ᵐ (ω : Ω) ∂μ, ∀ᶠ (n : ℕ) in Filter.atTop, A n ω / M n ω < Real.exp (delta * ↑n)
+'EvidenceFusion.likelihood_ratio_subexponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.likelihood_upper_rate {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (A M : ℕ → Ω → ℝ) (hA : ∀ (n : ℕ) (ω : Ω), 0 ≤ A n ω)
+  (hM : ∀ (n : ℕ) (ω : Ω), 0 < M n ω) (hi : ∀ (n : ℕ), MeasureTheory.Integrable (fun ω => A n ω / M n ω) μ)
+  (hmean : ∀ (n : ℕ), ∫ (ω : Ω), A n ω / M n ω ∂μ ≤ 1) (g : ℝ) (hg : 0 ≤ g)
+  (hlog : ∀ᵐ (ω : Ω) ∂μ, Filter.Tendsto (fun n => Real.log (M n ω) / ↑n) Filter.atTop (nhds g)) :
+  ∀ᵐ (ω : Ω) ∂μ, ∀ (c : ℝ), g < c → ∀ᶠ (n : ℕ) in Filter.atTop, Real.log (A n ω) / ↑n < c
+'EvidenceFusion.likelihood_upper_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_split (b lam x : ℝ) (hb : 0 < b) (hl : 0 ≤ lam) (hx : 0 ≤ x) :
+  Real.log (b + lam * x) = Real.log b + Real.log (1 + lam * x / b)
+'EvidenceFusion.log_factor_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustProduct_positive {ι : Type} [Fintype ι] [DecidableEq ι] (b lam y : ι → ℝ) (A : Finset (Finset ι))
+  (hA : A.Nonempty) (hb : ∀ (i : ι), 0 < b i) (hl : ∀ (i : ι), 0 ≤ lam i) (hy : ∀ (i : ι), 0 ≤ y i) :
+  0 < EvidenceFusion.robustProduct b lam y A hA
+'EvidenceFusion.robustProduct_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_erased_product {ι : Type} [Fintype ι] [DecidableEq ι] (b lam : ℝ) (hb : 0 < b) (hl : 0 ≤ lam)
+  (x : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i) (C : Finset ι) :
+  Real.log (∏ i, if i ∈ C then b else b + lam * x i) =
+    ∑ i, Real.log (b + lam * x i) - ∑ i ∈ C, Real.log (1 + lam * x i / b)
+'EvidenceFusion.log_erased_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.replacement_log_loss {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (lam : ℝ) (hl : 0 ≤ lam)
+  (hl1 : lam < 1) (x y : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i) (hy : ∀ (i : ι), 0 ≤ y i)
+  (hattack : EvidenceFusion.hamming x y ≤ k) :
+  EvidenceFusion.cleanLog x lam - EvidenceFusion.largestSum (fun i => Real.log (1 + lam * x i / (1 - lam))) (2 * k) ≤
+    Real.log (EvidenceFusion.robustProduct (fun x => 1 - lam) (fun x => lam) y (EvidenceFusion.cardinalityAttacks k) ⋯)
+'EvidenceFusion.replacement_log_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_hasDerivAt (x lam : ℝ) (hx : 0 ≤ x) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  HasDerivAt (fun t => Real.log (1 - t + t * x)) ((x - 1) / (1 - lam + lam * x)) lam
+'EvidenceFusion.log_factor_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_lipschitz (x eps u v : ℝ) (hx : 0 ≤ x) (heps : 0 < eps) (hu : u ∈ Set.Icc eps (1 - eps))
+  (hv : v ∈ Set.Icc eps (1 - eps)) : |Real.log (1 - v + v * x) - Real.log (1 - u + u * x)| ≤ 1 / eps * |v - u|
+'EvidenceFusion.log_factor_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.cleanLog_lipschitz {ι : Type} [Fintype ι] [DecidableEq ι] (x : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i)
+  (eps u v : ℝ) (heps : 0 < eps) (hu : u ∈ Set.Icc eps (1 - eps)) (hv : v ∈ Set.Icc eps (1 - eps)) :
+  |EvidenceFusion.cleanLog x v - EvidenceFusion.cleanLog x u| ≤ ↑(Fintype.card ι) / eps * |v - u|
+'EvidenceFusion.cleanLog_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_abs_bound (x lam : ℝ) (hx : 0 ≤ x) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  |Real.log (1 - lam + lam * x)| ≤ |Real.log (1 - lam)| + Real.log (1 + x)
+'EvidenceFusion.log_factor_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_factor_integrable {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  MeasureTheory.Integrable (fun ω => Real.log (1 - lam + lam * X ω)) μ
+'EvidenceFusion.log_factor_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.log_contribution_integrable {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  MeasureTheory.Integrable (fun ω => Real.log (1 + lam * X ω / (1 - lam))) μ
+'EvidenceFusion.log_contribution_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.expected_log_lipschitz {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (eps u v : ℝ) (he : 0 < eps)
+  (hu : u ∈ Set.Icc eps (1 - eps)) (hv : v ∈ Set.Icc eps (1 - eps)) :
+  |∫ (ω : Ω), Real.log (1 - v + v * X ω) ∂μ - ∫ (ω : Ω), Real.log (1 - u + u * X ω) ∂μ| ≤ 1 / eps * |v - u|
+'EvidenceFusion.expected_log_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.fixed_fraction_growth_ae {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hXm : ∀ (i : ℕ), Measurable (X i))
+  (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω) (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X 0 ω)) μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (k : ℕ → ℕ)
+  (hk : Filter.Tendsto (fun n => ↑(k n) / ↑n) Filter.atTop (nhds 0)) (lam : ℝ) (hl : 0 ≤ lam) (hl1 : lam < 1) :
+  ∀ᵐ (ω : Ω) ∂μ,
+    ∀ c < ∫ (ω : Ω), Real.log (1 - lam + lam * X 0 ω) ∂μ,
+      ∀ᶠ (n : ℕ) in Filter.atTop,
+        ∀ (y : Fin n → ℝ),
+          (∀ (i : Fin n), 0 ≤ y i) →
+            EvidenceFusion.hamming (fun i => X (↑i) ω) y ≤ k n →
+              c ≤
+                Real.log
+                    (EvidenceFusion.robustProduct (fun x => 1 - lam) (fun x => lam) y
+                      (EvidenceFusion.cardinalityAttacks (k n)) ⋯) /
+                  ↑n
+'EvidenceFusion.fixed_fraction_growth_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.tensor_tilt_ratio (ρ : MeasureTheory.Measure NNReal) [MeasureTheory.IsProbabilityMeasure ρ]
+  (hint : MeasureTheory.Integrable (fun x => Real.log (1 + ↑x)) ρ) (lam : ℝ) (hl : 0 < lam) (hl1 : lam < 1)
+  (hmax : IsMaxOn (EvidenceFusion.growthFunction (fun x => ↑x) ρ) (Set.Ioo 0 1) lam)
+  (A : (n : ℕ) → (Fin n → NNReal) → ℝ) (hvalid : EvidenceFusion.IIDNullValid A) (n : ℕ) :
+  MeasureTheory.Integrable (fun x => A n x / EvidenceFusion.historyLikelihood lam x)
+      (MeasureTheory.Measure.pi fun x => ρ) ∧
+    (∫ (x : Fin n → NNReal), A n x / EvidenceFusion.historyLikelihood lam x ∂MeasureTheory.Measure.pi fun x => ρ) ≤ 1
+'EvidenceFusion.tensor_tilt_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.iid_history_law {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → NNReal) (hXm : ∀ (i : ℕ), Measurable (X i))
+  (hindep : ProbabilityTheory.iIndepFun X μ) (ρ : MeasureTheory.Measure NNReal)
+  (hmap : ∀ (i : ℕ), MeasureTheory.Measure.map (X i) μ = ρ) (n : ℕ) :
+  MeasureTheory.Measure.map (fun ω i => X (↑i) ω) μ = MeasureTheory.Measure.pi fun x => ρ
+'EvidenceFusion.iid_history_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.matching_upper_rate {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → NNReal) (hXm : ∀ (i : ℕ), Measurable (X i))
+  (hindep : ProbabilityTheory.iIndepFun X μ) (ρ : MeasureTheory.Measure NNReal) [MeasureTheory.IsProbabilityMeasure ρ]
+  (hmap : ∀ (i : ℕ), MeasureTheory.Measure.map (X i) μ = ρ)
+  (hint : MeasureTheory.Integrable (fun x => Real.log (1 + ↑x)) ρ) (lam : ℝ) (hl : 0 < lam) (hl1 : lam < 1)
+  (hmax : IsMaxOn (EvidenceFusion.growthFunction (fun x => ↑x) ρ) (Set.Ico 0 1) lam)
+  (A : (n : ℕ) → (Fin n → NNReal) → ℝ) (hAm : ∀ (n : ℕ), Measurable (A n))
+  (hAn : ∀ (n : ℕ) (x : Fin n → NNReal), 0 ≤ A n x) (hvalid : EvidenceFusion.IIDNullValid A) :
+  ∀ᵐ (ω : Ω) ∂μ,
+    ∀ (c : ℝ),
+      EvidenceFusion.growthFunction (fun x => ↑x) ρ lam < c →
+        ∀ᶠ (n : ℕ) in Filter.atTop, Real.log (A n fun i => X (↑i) ω) / ↑n < c
+'EvidenceFusion.matching_upper_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.affine_probability_valid {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a)
+  (hw : ∀ (i : ι), 0 ≤ w i) (hn : a + ∑ i, w i = 1) :
+  EvidenceFusion.ProbabilityRobustValid (EvidenceFusion.cardinalityAttacks k) fun y =>
+    EvidenceFusion.robustAffine a w y (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.affine_probability_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.nonnegative_capacity_attained {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι)
+  (x : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i) (hpos : ∀ (j : Fin p), 0 < x (e j))
+  (hzero : ∀ (i : ι), (¬∃ j, e j = i) → x i = 0) (r : ℕ) :
+  ∃ w,
+    (∀ (i : ι), 0 ≤ w i) ∧
+      ∑ i, w i = 1 ∧
+        EvidenceFusion.trimmedSum (fun i => w i * x i) r = EvidenceFusion.positiveCapacity (fun j => x (e j)) r
+'EvidenceFusion.nonnegative_capacity_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_nonneg {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (hz : ∀ (i : ι), 0 ≤ z i) (r : ℕ) :
+  0 ≤ EvidenceFusion.trimmedSum z r
+'EvidenceFusion.trimmedSum_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_positive_support {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (hz : ∀ (i : ι), 0 ≤ z i)
+  (r : ℕ) (ht : 0 < EvidenceFusion.trimmedSum z r) : r < (EvidenceFusion.positiveSupport z).card
+'EvidenceFusion.trimmedSum_positive_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.capacity_upper {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι) (x : ι → NNReal)
+  (hpos : ∀ (j : Fin p), 0 < ↑(x (e j))) (hsort : Antitone fun j => ↑(x (e j)))
+  (hzero : ∀ (i : ι), (¬∃ j, e j = i) → ↑(x i) = 0) (k l : ℕ) (F : (ι → ℝ) → ℝ)
+  (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y)
+  (hF : EvidenceFusion.ProbabilityRobustValid (EvidenceFusion.cardinalityAttacks k) F) :
+  EvidenceFusion.worstValue F x l ≤
+    max 1 (EvidenceFusion.positiveCapacity (fun j => ↑(x (e j))) (min (Fintype.card ι) (k + l)))
+'EvidenceFusion.capacity_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.pointwise_capacity {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι)
+  (x : ι → NNReal) (hpos : ∀ (j : Fin p), 0 < ↑(x (e j))) (hsort : Antitone fun j => ↑(x (e j)))
+  (hzero : ∀ (i : ι), (¬∃ j, e j = i) → ↑(x i) = 0) (k l : ℕ) :
+  IsGreatest (EvidenceFusion.capacityValues k l x)
+    (max 1 (EvidenceFusion.positiveCapacity (fun j => ↑(x (e j))) (min (Fintype.card ι) (k + l))))
+'EvidenceFusion.pointwise_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.continuous_robustAffine {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι)) (hA : A.Nonempty)
+  (a : ℝ) (w : ι → ℝ) : Continuous fun y => EvidenceFusion.robustAffine a w y A hA
+'EvidenceFusion.continuous_robustAffine' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.finite_iff_probability_valid {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (F : (ι → ℝ) → ℝ) (hn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) :
+  EvidenceFusion.FiniteRobustValid A F ↔ EvidenceFusion.ProbabilityRobustValid A F
+'EvidenceFusion.finite_iff_probability_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.admissible_iff_probability {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (H : (ι → ℝ) → ℝ) (hn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ H y) :
+  EvidenceFusion.AdmissibleRule A H ↔ EvidenceFusion.ProbabilityAdmissible A H
+'EvidenceFusion.admissible_iff_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.exact_probability_admissibility {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hA : A.Nonempty) (hdown : EvidenceFusion.DownwardClosed A) (a : ℝ) (w : ι → ℝ) (ha : 0 ≤ a) (hw : ∀ (i : ι), 0 ≤ w i)
+  (hn : a + ∑ i, w i = 1) :
+  (EvidenceFusion.ProbabilityAdmissible A fun y => EvidenceFusion.robustAffine a w y A hA) ↔
+    EvidenceFusion.EmptyMaximalIntersection A w
+'EvidenceFusion.exact_probability_admissibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.compatible_iff_differences {ι : Type} [Fintype ι] [DecidableEq ι] (A : Finset (Finset ι))
+  (hdown : EvidenceFusion.DownwardClosed A) (x y : ι → ℝ) :
+  EvidenceFusion.Compatible A x y ↔ (∀ (i : ι), 0 ≤ x i) ∧ (∀ (i : ι), 0 ≤ y i) ∧ EvidenceFusion.differences x y ∈ A
+'EvidenceFusion.compatible_iff_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.erase_hamming_le {ι : Type} [Fintype ι] [DecidableEq ι] (C : Finset ι) (x : ι → NNReal) :
+  EvidenceFusion.hamming x (EvidenceFusion.eraseCoordinates C x) ≤ C.card
+'EvidenceFusion.erase_hamming_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimCompletion_le {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (f : (ι → NNReal) → ℝ) (hf : Monotone f)
+  (x y : ι → NNReal) (hxy : EvidenceFusion.hamming x y ≤ k) : EvidenceFusion.trimCompletion k f x ≤ f y
+'EvidenceFusion.trimCompletion_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimCompletion_attained {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (f : (ι → NNReal) → ℝ)
+  (x : ι → NNReal) : ∃ y, EvidenceFusion.hamming x y ≤ k ∧ EvidenceFusion.trimCompletion k f x = f y
+'EvidenceFusion.trimCompletion_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimCompletion_isLeast {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (f : (ι → NNReal) → ℝ)
+  (hf : Monotone f) (x : ι → NNReal) :
+  IsLeast {v | ∃ y, EvidenceFusion.hamming x y ≤ k ∧ v = f y} (EvidenceFusion.trimCompletion k f x)
+'EvidenceFusion.trimCompletion_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.monotone_trimCompletion {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (f : (ι → NNReal) → ℝ)
+  (hf : Monotone f) : Monotone (EvidenceFusion.trimCompletion k f)
+'EvidenceFusion.monotone_trimCompletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimCompletion_composition {ι : Type} [Fintype ι] [DecidableEq ι] (k l : ℕ) (f : (ι → NNReal) → ℝ)
+  (hf : Monotone f) (x : ι → NNReal) :
+  EvidenceFusion.trimCompletion l (EvidenceFusion.trimCompletion k f) x =
+    EvidenceFusion.trimCompletion (min (Fintype.card ι) (k + l)) f x
+'EvidenceFusion.trimCompletion_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.monotone_affineProduct {ι : Type} [Fintype ι] [DecidableEq ι] (b lam : ι → ℝ) (hb : ∀ (i : ι), 0 ≤ b i)
+  (hl : ∀ (i : ι), 0 ≤ lam i) : Monotone fun x => ∏ i, (b i + lam i * ↑(x i))
+'EvidenceFusion.monotone_affineProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.product_completion {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (b lam : ι → ℝ) (x : ι → NNReal) :
+  EvidenceFusion.trimCompletion k (fun z => ∏ i, (b i + lam i * ↑(z i))) x =
+    EvidenceFusion.robustProduct b lam (fun i => ↑(x i)) (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.product_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustProduct_worst_replacement {ι : Type} [Fintype ι] [DecidableEq ι] (k l : ℕ) (b lam : ι → ℝ)
+  (hb : ∀ (i : ι), 0 ≤ b i) (hl : ∀ (i : ι), 0 ≤ lam i) (x : ι → NNReal) :
+  IsLeast
+    {v |
+      ∃ y,
+        EvidenceFusion.hamming x y ≤ l ∧
+          v = EvidenceFusion.robustProduct b lam (fun i => ↑(y i)) (EvidenceFusion.cardinalityAttacks k) ⋯}
+    (EvidenceFusion.robustProduct b lam (fun i => ↑(x i))
+      (EvidenceFusion.cardinalityAttacks (min (Fintype.card ι) (k + l))) ⋯)
+'EvidenceFusion.robustProduct_worst_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.infinite_product_coordinate_law (ρ : MeasureTheory.Measure NNReal) [MeasureTheory.IsProbabilityMeasure ρ]
+  (i : ℕ) : MeasureTheory.Measure.map (fun x => x i) (MeasureTheory.Measure.infinitePi fun x => ρ) = ρ
+'EvidenceFusion.infinite_product_coordinate_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.infinite_product_independent (ρ : MeasureTheory.Measure NNReal) [MeasureTheory.IsProbabilityMeasure ρ] :
+  ProbabilityTheory.iIndepFun (fun i x => x i) (MeasureTheory.Measure.infinitePi fun x => ρ)
+'EvidenceFusion.infinite_product_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.conditional_null_implies_iid (A : (n : ℕ) → (Fin n → NNReal) → ℝ) (hAm : ∀ (n : ℕ), Measurable (A n))
+  (hvalid : EvidenceFusion.ConditionalNullValid A) : EvidenceFusion.IIDNullValid A
+'EvidenceFusion.conditional_null_implies_iid' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.headIndices_card (n r : ℕ) : (EvidenceFusion.headIndices n r).card = min n r
+'EvidenceFusion.headIndices_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_sorted {n : ℕ} (z : Fin n → ℝ) (hz : ∀ (i : Fin n), 0 ≤ z i) (hsort : Antitone z) (r : ℕ) :
+  EvidenceFusion.largestSum z r = ∑ i ∈ EvidenceFusion.headIndices n r, z i
+'EvidenceFusion.largestSum_sorted' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_comp_le {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (σ : Equiv.Perm ι) (r : ℕ) :
+  EvidenceFusion.largestSum (fun i => z (σ i)) r ≤ EvidenceFusion.largestSum z r
+'EvidenceFusion.largestSum_comp_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_permutation {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (σ : Equiv.Perm ι) (r : ℕ) :
+  EvidenceFusion.largestSum (fun i => z (σ i)) r = EvidenceFusion.largestSum z r
+'EvidenceFusion.largestSum_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.descendingPermutation_antitone {n : ℕ} (z : Fin n → ℝ) :
+  Antitone fun i => z ((EvidenceFusion.descendingPermutation z) i)
+'EvidenceFusion.descendingPermutation_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_order_statistics {n : ℕ} (z : Fin n → ℝ) (hz : ∀ (i : Fin n), 0 ≤ z i) (r : ℕ) :
+  EvidenceFusion.largestSum z r = ∑ i ∈ EvidenceFusion.headIndices n r, z ((EvidenceFusion.descendingPermutation z) i)
+'EvidenceFusion.largestSum_order_statistics' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.keptSum_unit_eq {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (C : Finset ι) :
+  EvidenceFusion.keptSum (fun x => 1) z C = ∑ i, z i - ∑ i ∈ C, z i
+'EvidenceFusion.keptSum_unit_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_is_min {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (r : ℕ) :
+  EvidenceFusion.trimmedSum z r = (EvidenceFusion.cardinalityAttacks r).inf' ⋯ (EvidenceFusion.keptSum (fun x => 1) z)
+'EvidenceFusion.trimmedSum_is_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_permutation {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (σ : Equiv.Perm ι) (r : ℕ) :
+  EvidenceFusion.trimmedSum (fun i => z (σ i)) r = EvidenceFusion.trimmedSum z r
+'EvidenceFusion.trimmedSum_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.layerDifferences_nonneg {n : ℕ} (v : Fin n → ℝ) (hv : ∀ (i : Fin n), 0 ≤ v i) (hs : Antitone v)
+  (j : Fin n) : 0 ≤ EvidenceFusion.layerDifferences v j
+'EvidenceFusion.layerDifferences_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.layers_reconstruct {n : ℕ} (v : Fin n → ℝ) (i : Fin n) :
+  (∑ j, if i ≤ j then EvidenceFusion.layerDifferences v j else 0) = v i
+'EvidenceFusion.layers_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_sorted_tail {n : ℕ} (v : Fin n → ℝ) (hv : ∀ (i : Fin n), 0 ≤ v i) (hs : Antitone v) (r : ℕ) :
+  EvidenceFusion.trimmedSum v r = ∑ i ∈ EvidenceFusion.tailIndices n r, v i
+'EvidenceFusion.trimmedSum_sorted_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.tail_prefix_count {n : ℕ} (r : ℕ) (j : Fin n) :
+  {i ∈ EvidenceFusion.tailIndices n r | i ≤ j}.card = ↑j + 1 - r
+'EvidenceFusion.tail_prefix_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.prefixReciprocal_pos {n : ℕ} (x : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i) (j : Fin n) :
+  0 < EvidenceFusion.prefixReciprocal x j
+'EvidenceFusion.prefixReciprocal_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sorted_contribution_capacity {n : ℕ} [NeZero n] (x v : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i)
+  (hv : ∀ (i : Fin n), 0 ≤ v i) (hs : Antitone v) (hbudget : ∑ i, v i / x i ≤ 1) (r : ℕ) :
+  EvidenceFusion.trimmedSum v r ≤ EvidenceFusion.positiveCapacity x r
+'EvidenceFusion.sorted_contribution_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positive_capacity_upper {n : ℕ} [NeZero n] (x v : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i)
+  (hsx : Antitone x) (hv : ∀ (i : Fin n), 0 ≤ v i) (hbudget : ∑ i, v i / x i ≤ 1) (r : ℕ) :
+  EvidenceFusion.trimmedSum v r ≤ EvidenceFusion.positiveCapacity x r
+'EvidenceFusion.positive_capacity_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positive_capacity_attained {n : ℕ} [NeZero n] (x : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i) (r : ℕ) :
+  ∃ v,
+    (∀ (i : Fin n), 0 ≤ v i) ∧ ∑ i, v i / x i = 1 ∧ EvidenceFusion.trimmedSum v r = EvidenceFusion.positiveCapacity x r
+'EvidenceFusion.positive_capacity_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.arbitrary_probability_validity.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [MeasurableSpace Ω] [Fintype ι]
+  [DecidableEq ι] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ] (F : Ω → ℝ) (X : Ω → ι → ℝ)
+  (a : ℝ) (w : ι → ℝ) (hX : ∀ (i : ι), MeasureTheory.Integrable (fun ω => X ω i) μ)
+  (hmean : ∀ (i : ι), ∫ (ω : Ω), X ω i ∂μ ≤ 1) (hw : ∀ (i : ι), 0 ≤ w i) (hnorm : a + ∑ i, w i = 1)
+  (hFm : MeasureTheory.AEStronglyMeasurable F μ) (hFn : ∀ᵐ (ω : Ω) ∂μ, 0 ≤ F ω)
+  (hdom : ∀ᵐ (ω : Ω) ∂μ, F ω ≤ a + ∑ i, w i * X ω i) : MeasureTheory.Integrable F μ ∧ ∫ (ω : Ω), F ω ∂μ ≤ 1
+'EvidenceFusion.arbitrary_probability_validity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robust_fusion_validity.{u_1, u_2} {Ω : Type u_1} {ι : Type u_2} [MeasurableSpace Ω] [Fintype ι]
+  [DecidableEq ι] (μ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ] (F : Ω → ℝ) (X Y : Ω → ι → ℝ)
+  (a : ℝ) (w : ι → ℝ) (A : Finset (Finset ι)) (hA : A.Nonempty) (C : Ω → Finset ι)
+  (hX : ∀ (i : ι), MeasureTheory.Integrable (fun ω => X ω i) μ) (hXn : ∀ᵐ (ω : Ω) ∂μ, ∀ (i : ι), 0 ≤ X ω i)
+  (hmean : ∀ (i : ι), ∫ (ω : Ω), X ω i ∂μ ≤ 1) (hw : ∀ (i : ι), 0 ≤ w i) (hnorm : a + ∑ i, w i = 1)
+  (hFm : MeasureTheory.AEStronglyMeasurable F μ) (hFn : ∀ᵐ (ω : Ω) ∂μ, 0 ≤ F ω) (hC : ∀ᵐ (ω : Ω) ∂μ, C ω ∈ A)
+  (hclean : ∀ᵐ (ω : Ω) ∂μ, ∀ i ∉ C ω, Y ω i = X ω i)
+  (hdom : ∀ᵐ (ω : Ω) ∂μ, F ω ≤ EvidenceFusion.robustAffine a w (Y ω) A hA) :
+  MeasureTheory.Integrable F μ ∧ ∫ (ω : Ω), F ω ∂μ ≤ 1
+'EvidenceFusion.robust_fusion_validity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.productProcess_zero.{u_1} {Ω : Type u_1} (L : ℕ → Ω → ℝ) : EvidenceFusion.productProcess L 0 = 1
+'EvidenceFusion.productProcess_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.productProcess_succ.{u_1} {Ω : Type u_1} (L : ℕ → Ω → ℝ) (n : ℕ) :
+  EvidenceFusion.productProcess L (n + 1) = EvidenceFusion.productProcess L n * L n
+'EvidenceFusion.productProcess_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.productProcess_nonneg.{u_1} {Ω : Type u_1} (L : ℕ → Ω → ℝ) (hn : ∀ (i : ℕ) (ω : Ω), 0 ≤ L i ω) (n : ℕ)
+  (ω : Ω) : 0 ≤ EvidenceFusion.productProcess L n ω
+'EvidenceFusion.productProcess_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.productProcess_adapted.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {ℱ : MeasureTheory.Filtration ℕ m0}
+  (L : ℕ → Ω → ℝ) (hm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (L i)) :
+  MeasureTheory.Adapted ℱ (EvidenceFusion.productProcess L)
+'EvidenceFusion.productProcess_adapted' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.productProcess_supermartingale.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω}
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0}
+  (L : ℕ → Ω → ℝ) (hm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (L i))
+  (hi : ∀ (i : ℕ), MeasureTheory.Integrable (L i) μ) (hn : ∀ (i : ℕ) (ω : Ω), 0 ≤ L i ω)
+  (hc : ∀ (i : ℕ), μ[L i|↑ℱ i] ≤ᵐ[μ] 1) : MeasureTheory.Supermartingale (EvidenceFusion.productProcess L) ℱ μ
+'EvidenceFusion.productProcess_supermartingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.predictable_betting_factor.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {m : MeasurableSpace Ω} (hm : m ≤ m0) (lam X : Ω → ℝ)
+  (hlm : MeasureTheory.StronglyMeasurable lam) (hln : ∀ (ω : Ω), 0 ≤ lam ω) (hl1 : ∀ (ω : Ω), lam ω ≤ 1)
+  (hXi : MeasureTheory.Integrable X μ) (hXn : ∀ (ω : Ω), 0 ≤ X ω) (hc : μ[X|m] ≤ᵐ[μ] 1) :
+  MeasureTheory.Integrable (fun ω => 1 - lam ω + lam ω * X ω) μ ∧ μ[fun ω => 1 - lam ω + lam ω * X ω|m] ≤ᵐ[μ] 1
+'EvidenceFusion.predictable_betting_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.clean_betting_supermartingale.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0} (lam X : ℕ → Ω → ℝ)
+  (hlm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (lam i)) (hXm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (X i))
+  (hln : ∀ (i : ℕ) (ω : Ω), 0 ≤ lam i ω) (hl1 : ∀ (i : ℕ) (ω : Ω), lam i ω ≤ 1)
+  (hXi : ∀ (i : ℕ), MeasureTheory.Integrable (X i) μ) (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω)
+  (hc : ∀ (i : ℕ), μ[X i|↑ℱ i] ≤ᵐ[μ] 1) :
+  MeasureTheory.Supermartingale (EvidenceFusion.productProcess fun i ω => 1 - lam i ω + lam i ω * X i ω) ℱ μ
+'EvidenceFusion.clean_betting_supermartingale' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.supermartingale_bounded_stopping.{u_1} {Ω : Type u_1} {m0 : MeasurableSpace Ω}
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m0}
+  {M : ℕ → Ω → ℝ} (hM : MeasureTheory.Supermartingale M ℱ μ) (hzero : M 0 = 1) (τ : Ω → ℕ)
+  (hτ : MeasureTheory.IsStoppingTime ℱ τ) (N : ℕ) (hN : ∀ (ω : Ω), τ ω ≤ N) :
+  MeasureTheory.Integrable (MeasureTheory.stoppedValue M τ) μ ∧ ∫ (ω : Ω), MeasureTheory.stoppedValue M τ ω ∂μ ≤ 1
+'EvidenceFusion.supermartingale_bounded_stopping' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.tailAbove_measurable (A : ℝ) : Measurable (EvidenceFusion.tailAbove A)
+'EvidenceFusion.tailAbove_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.tailAbove_integrable.{u_1} {Ω : Type u_1} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  (Z : Ω → ℝ) (hZi : MeasureTheory.Integrable Z μ) (hZm : Measurable Z) (A : ℝ) :
+  MeasureTheory.Integrable (fun ω => EvidenceFusion.tailAbove A (Z ω)) μ
+'EvidenceFusion.tailAbove_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.tail_integral_tendsto_zero.{u_1} {Ω : Type u_1} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  (Z : Ω → ℝ) (hZi : MeasureTheory.Integrable Z μ) (hZm : Measurable Z) :
+  Filter.Tendsto (fun n => ∫ (ω : Ω), EvidenceFusion.tailAbove (↑n) (Z ω) ∂μ) Filter.atTop (nhds 0)
+'EvidenceFusion.tail_integral_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_nonneg {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (r : ℕ) :
+  0 ≤ EvidenceFusion.largestSum z r
+'EvidenceFusion.largestSum_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.largestSum_tail_bound {ι : Type} [Fintype ι] [DecidableEq ι] (z : ι → ℝ) (hz : ∀ (i : ι), 0 ≤ z i)
+  (r : ℕ) (A : ℝ) (hA : 0 ≤ A) : EvidenceFusion.largestSum z r ≤ A * ↑r + ∑ i, EvidenceFusion.tailAbove A (z i)
+'EvidenceFusion.largestSum_tail_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sparse_trimming_ae {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (Z : ℕ → Ω → ℝ) (hZi : MeasureTheory.Integrable (Z 0) μ)
+  (hZm : ∀ (i : ℕ), Measurable (Z i)) (hZn : ∀ (i : ℕ) (ω : Ω), 0 ≤ Z i ω)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) Z))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (Z i) (Z 0) μ μ) (r : ℕ → ℕ)
+  (hr : Filter.Tendsto (fun n => ↑(r n) / ↑n) Filter.atTop (nhds 0)) :
+  ∀ᵐ (ω : Ω) ∂μ,
+    Filter.Tendsto (fun n => EvidenceFusion.largestSum (fun i => Z (↑i) ω) (r n) / ↑n) Filter.atTop (nhds 0)
+'EvidenceFusion.sparse_trimming_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sum_on_embedding {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ] (e : κ ↪ ι)
+  (z : ι → ℝ) (hz : ∀ (i : ι), (¬∃ j, e j = i) → z i = 0) : ∑ i, z i = ∑ j, z (e j)
+'EvidenceFusion.sum_on_embedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.embedding_preimage_card_le {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  (e : κ ↪ ι) (C : Finset ι) : {j | e j ∈ C}.card ≤ C.card
+'EvidenceFusion.embedding_preimage_card_le' depends on axioms: [propext, Quot.sound]
+EvidenceFusion.largestSum_restrict_support {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  (e : κ ↪ ι) (z : ι → ℝ) (hz : ∀ (i : ι), (¬∃ j, e j = i) → z i = 0) (r : ℕ) :
+  EvidenceFusion.largestSum z r = EvidenceFusion.largestSum (fun j => z (e j)) r
+'EvidenceFusion.largestSum_restrict_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_restrict_support {ι κ : Type} [Fintype ι] [Fintype κ] [DecidableEq ι] [DecidableEq κ]
+  (e : κ ↪ ι) (z : ι → ℝ) (hz : ∀ (i : ι), (¬∃ j, e j = i) → z i = 0) (r : ℕ) :
+  EvidenceFusion.trimmedSum z r = EvidenceFusion.trimmedSum (fun j => z (e j)) r
+'EvidenceFusion.trimmedSum_restrict_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positiveCapacity_nonneg {n : ℕ} [NeZero n] (x : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i) (r : ℕ) :
+  0 ≤ EvidenceFusion.positiveCapacity x r
+'EvidenceFusion.positiveCapacity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.sorted_capacity_homogeneous {n : ℕ} [NeZero n] (x v : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i)
+  (hv : ∀ (i : Fin n), 0 ≤ v i) (hs : Antitone v) (r : ℕ) :
+  EvidenceFusion.trimmedSum v r ≤ EvidenceFusion.positiveCapacity x r * ∑ i, v i / x i
+'EvidenceFusion.sorted_capacity_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.positive_capacity_homogeneous {n : ℕ} [NeZero n] (x v : Fin n → ℝ) (hx : ∀ (i : Fin n), 0 < x i)
+  (hsx : Antitone x) (hv : ∀ (i : Fin n), 0 ≤ v i) (r : ℕ) :
+  EvidenceFusion.trimmedSum v r ≤ EvidenceFusion.positiveCapacity x r * ∑ i, v i / x i
+'EvidenceFusion.positive_capacity_homogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.nonnegative_capacity_upper {ι : Type} [Fintype ι] [DecidableEq ι] {p : ℕ} [NeZero p] (e : Fin p ↪ ι)
+  (x w : ι → ℝ) (hx : ∀ (i : ι), 0 ≤ x i) (hw : ∀ (i : ι), 0 ≤ w i) (hpos : ∀ (j : Fin p), 0 < x (e j))
+  (hsort : Antitone fun j => x (e j)) (hzero : ∀ (i : ι), (¬∃ j, e j = i) → x i = 0) (r : ℕ) :
+  EvidenceFusion.trimmedSum (fun i => w i * x i) r ≤ EvidenceFusion.positiveCapacity (fun j => x (e j)) r * ∑ i, w i
+'EvidenceFusion.nonnegative_capacity_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.hamming_permutation {ι : Type} [Fintype ι] [DecidableEq ι] (x y : ι → ℝ) (σ : Equiv.Perm ι) :
+  (EvidenceFusion.hamming (fun i => x (σ i)) fun i => y (σ i)) = EvidenceFusion.hamming x y
+'EvidenceFusion.hamming_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.permutation_sum_constant {ι : Type} [Fintype ι] [DecidableEq ι] (w : ι → ℝ) (i j : ι) :
+  ∑ σ, w (σ i) = ∑ σ, w (σ j)
+'EvidenceFusion.permutation_sum_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.symmetric_complete_class {ι : Type} [Fintype ι] [DecidableEq ι] [Nonempty ι] (k : ℕ) (F : (ι → ℝ) → ℝ)
+  (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y)
+  (hv : EvidenceFusion.ProbabilityRobustValid (EvidenceFusion.cardinalityAttacks k) F)
+  (hsym : ∀ (σ : Equiv.Perm ι) (y : ι → ℝ), (F fun i => y (σ i)) = F y) :
+  ∃ a c,
+    0 ≤ a ∧
+      0 ≤ c ∧
+        a + ↑(Fintype.card ι) * c = 1 ∧
+          ∀ (y : ι → ℝ),
+            (∀ (i : ι), 0 ≤ y i) →
+              F y ≤ EvidenceFusion.robustAffine a (fun x => c) y (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.symmetric_complete_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.symmetric_rule_admissible {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (hk : k < Fintype.card ι)
+  (a c : ℝ) (ha : 0 ≤ a) (hc : 0 ≤ c) (hn : a + ↑(Fintype.card ι) * c = 1) :
+  EvidenceFusion.ProbabilityAdmissible (EvidenceFusion.cardinalityAttacks k) fun y =>
+    EvidenceFusion.robustAffine a (fun x => c) y (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.symmetric_rule_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.trimmedSum_constant (n k : ℕ) (u : ℝ) (hu : 0 ≤ u) :
+  EvidenceFusion.trimmedSum (fun x => u) k = ↑(n - min n k) * u
+'EvidenceFusion.trimmedSum_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.uniform_permutation_mean {n : ℕ} [NeZero n] (u : Fin n → ℝ) (hs : ∑ i, u i = ↑n) (i : Fin n) :
+  ∑ σ, 1 / ↑(Fintype.card (Equiv.Perm (Fin n))) * u (σ i) = 1
+'EvidenceFusion.uniform_permutation_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.adaptive_normalization_counterexample (n m : ℕ) (hm : 0 < m) (hmn : m < n) :
+  ¬EvidenceFusion.FiniteRobustValid (EvidenceFusion.cardinalityAttacks (n - m)) fun y =>
+      EvidenceFusion.trimmedSum y (n - m) / ↑m
+'EvidenceFusion.adaptive_normalization_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.symmetric_neutrality {n : ℕ} [NeZero n] (k : ℕ) (hk : 0 < k) (hkn : k < n) (F : (Fin n → ℝ) → ℝ)
+  (hFn : ∀ (y : Fin n → ℝ), (∀ (i : Fin n), 0 ≤ y i) → 0 ≤ F y)
+  (hv : EvidenceFusion.ProbabilityRobustValid (EvidenceFusion.cardinalityAttacks k) F)
+  (hsym : ∀ (σ : Equiv.Perm (Fin n)) (y : Fin n → ℝ), (F fun i => y (σ i)) = F y) (hneutral : (F fun x => 1) = 1)
+  (y : Fin n → ℝ) : (∀ (i : Fin n), 0 ≤ y i) → F y ≤ 1
+'EvidenceFusion.symmetric_neutrality' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.product_indicator_rectangle {α ι : Type} [MeasurableSpace α] [Fintype ι] [DecidableEq ι] (s : ι → Set α)
+  (d : α → ℝ) (x : ι → α) : (Set.univ.pi s).indicator (fun x => ∏ i, d (x i)) x = ∏ i, (s i).indicator d (x i)
+'EvidenceFusion.product_indicator_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.pi_withDensity {α ι : Type} [MeasurableSpace α] [Fintype ι] [DecidableEq ι] (μ : MeasureTheory.Measure α)
+  [MeasureTheory.IsProbabilityMeasure μ] (d : α → ℝ) (hd : ∀ (x : α), 0 ≤ d x) (hi : MeasureTheory.Integrable d μ)
+  [MeasureTheory.IsProbabilityMeasure (μ.withDensity fun x => ENNReal.ofReal (d x))] :
+  (MeasureTheory.Measure.pi fun x => μ.withDensity fun x => ENNReal.ofReal (d x)) =
+    (MeasureTheory.Measure.pi fun x => μ).withDensity fun x => ENNReal.ofReal (∏ i, d (x i))
+'EvidenceFusion.pi_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.two_layer_anytime {Ω ι : Type} {m0 : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] [Fintype ι] [DecidableEq ι] {ℱ : MeasureTheory.Filtration ℕ m0}
+  (S a : ℕ → Ω → ℝ) (w X Y : ℕ → ι → Ω → ℝ) (A : ℕ → Finset (Finset ι)) (hA : ∀ (t : ℕ), (A t).Nonempty)
+  (C : ℕ → Ω → Finset ι) (lam Z : ℕ → Ω → ℝ) (k : ℕ → ℕ) (ham : ∀ (t : ℕ), MeasureTheory.StronglyMeasurable (a t))
+  (hwm : ∀ (t : ℕ) (i : ι), MeasureTheory.StronglyMeasurable (w t i)) (han : ∀ (t : ℕ) (ω : Ω), 0 ≤ a t ω)
+  (hwn : ∀ (t : ℕ) (i : ι) (ω : Ω), 0 ≤ w t i ω) (hnorm : ∀ (t : ℕ) (ω : Ω), a t ω + ∑ i, w t i ω = 1)
+  (hXi : ∀ (t : ℕ) (i : ι), MeasureTheory.Integrable (X t i) μ) (hXn : ∀ (t : ℕ), ∀ᵐ (ω : Ω) ∂μ, ∀ (i : ι), 0 ≤ X t i ω)
+  (hc : ∀ (t : ℕ) (i : ι), μ[X t i|↑ℱ t] ≤ᵐ[μ] 1) (hSm : ∀ (t : ℕ), MeasureTheory.StronglyMeasurable (S t))
+  (hSn : ∀ (t : ℕ) (ω : Ω), 0 ≤ S t ω) (hC : ∀ (t : ℕ), ∀ᵐ (ω : Ω) ∂μ, C t ω ∈ A t)
+  (hclean : ∀ (t : ℕ), ∀ᵐ (ω : Ω) ∂μ, ∀ i ∉ C t ω, Y t i ω = X t i ω)
+  (hdom :
+    ∀ (t : ℕ), ∀ᵐ (ω : Ω) ∂μ, S t ω ≤ EvidenceFusion.robustAffine (a t ω) (fun i => w t i ω) (fun i => Y t i ω) (A t) ⋯)
+  (hlm : ∀ (t : ℕ), MeasureTheory.StronglyMeasurable (lam t)) (hZm : ∀ (t : ℕ), MeasureTheory.StronglyMeasurable (Z t))
+  (hln : ∀ (t : ℕ) (ω : Ω), 0 ≤ lam t ω) (hl1 : ∀ (t : ℕ) (ω : Ω), lam t ω ≤ 1) (hZn : ∀ (t : ℕ) (ω : Ω), 0 ≤ Z t ω)
+  (htransmission : ∀ (n : ℕ), ∀ᵐ (ω : Ω) ∂μ, (EvidenceFusion.hamming (fun i => S (↑i) ω) fun i => Z (↑i) ω) ≤ k n) :
+  (∀ (t : ℕ), MeasureTheory.Integrable (S t) μ ∧ μ[S t|↑ℱ t] ≤ᵐ[μ] 1) ∧
+    EvidenceFusion.AnytimeValid (EvidenceFusion.correctedProcess lam Z k) ℱ μ
+'EvidenceFusion.two_layer_anytime' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayed_fraction_bounds (j i : ℕ) :
+  0 ≤ EvidenceFusion.delayFraction (2 ^ j - 1) (EvidenceFusion.dyadicFraction j) i ∧
+    EvidenceFusion.delayFraction (2 ^ j - 1) (EvidenceFusion.dyadicFraction j) i ≤ 1
+'EvidenceFusion.delayed_fraction_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.inactive_clean_component {Ω : Type} (X : ℕ → Ω → ℝ) (n j : ℕ) (hj : EvidenceFusion.activeCount n ≤ j) :
+  EvidenceFusion.productProcess
+      (fun i ω =>
+        1 - EvidenceFusion.delayFraction (2 ^ j - 1) (EvidenceFusion.dyadicFraction j) i +
+          EvidenceFusion.delayFraction (2 ^ j - 1) (EvidenceFusion.dyadicFraction j) i * X i ω)
+      n =
+    1
+'EvidenceFusion.inactive_clean_component' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.delayedMixture_measurable {Ω : Type} {m : MeasurableSpace Ω} (E : ℕ → ℕ → Ω → ℝ) (J : ℕ → ℕ)
+  (hE : ∀ (j n : ℕ), MeasureTheory.StronglyMeasurable (E j n)) (n : ℕ) :
+  MeasureTheory.StronglyMeasurable (EvidenceFusion.delayedMixture E J n)
+'EvidenceFusion.delayedMixture_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.computable_universal_anytime {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {ℱ : MeasureTheory.Filtration ℕ m} (X Y : ℕ → Ω → ℝ) (k : ℕ → ℕ)
+  (hXm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (X i)) (hYm : ∀ (i : ℕ), MeasureTheory.StronglyMeasurable (Y i))
+  (hXi : ∀ (i : ℕ), MeasureTheory.Integrable (X i) μ) (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω)
+  (hYn : ∀ (i : ℕ) (ω : Ω), 0 ≤ Y i ω) (hc : ∀ (i : ℕ), μ[X i|↑ℱ i] ≤ᵐ[μ] 1)
+  (hattack : ∀ (n : ℕ), ∀ᵐ (ω : Ω) ∂μ, (EvidenceFusion.hamming (fun i => X (↑i) ω) fun i => Y (↑i) ω) ≤ k n) :
+  EvidenceFusion.AnytimeValid (EvidenceFusion.universalProcess Y k) ℱ μ
+'EvidenceFusion.computable_universal_anytime' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.componentValue_pos {n : ℕ} (j k : ℕ) (y : Fin n → ℝ) (hy : ∀ (i : Fin n), 0 ≤ y i) :
+  0 < EvidenceFusion.componentValue j k y
+'EvidenceFusion.componentValue_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.universalValue_half {n : ℕ} (k : ℕ) (y : Fin n → ℝ) (hy : ∀ (i : Fin n), 0 ≤ y i) :
+  1 / 2 ≤ EvidenceFusion.universalValue k y
+'EvidenceFusion.universalValue_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.universalValue_component {n : ℕ} (j k : ℕ) (y : Fin n → ℝ) (hy : ∀ (i : Fin n), 0 ≤ y i)
+  (hj : j < EvidenceFusion.activeCount n) :
+  EvidenceFusion.delayedPrior j / 2 * EvidenceFusion.componentValue j k y ≤ EvidenceFusion.universalValue k y
+'EvidenceFusion.universalValue_component' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.dyadic_growth_approximation {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) (u c : ℝ) (hu : u ∈ Set.Ioo 0 1)
+  (hc : c < EvidenceFusion.growthFunction X μ u) :
+  ∃ j, c < EvidenceFusion.growthFunction X μ (EvidenceFusion.dyadicFraction j)
+'EvidenceFusion.dyadic_growth_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.growthFunction_bddAbove {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : Ω → ℝ) (hXm : Measurable X) (hXn : ∀ (ω : Ω), 0 ≤ X ω)
+  (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X ω)) μ) :
+  BddAbove (EvidenceFusion.growthFunction X μ '' Set.Ico 0 1)
+'EvidenceFusion.growthFunction_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.computable_universal_growth {Ω : Type} {m : MeasurableSpace Ω} {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] (X : ℕ → Ω → ℝ) (hXm : ∀ (i : ℕ), Measurable (X i))
+  (hXn : ∀ (i : ℕ) (ω : Ω), 0 ≤ X i ω) (hint : MeasureTheory.Integrable (fun ω => Real.log (1 + X 0 ω)) μ)
+  (hindep : Pairwise (Function.onFun (fun x1 x2 => ProbabilityTheory.IndepFun x1 x2 μ) X))
+  (hident : ∀ (i : ℕ), ProbabilityTheory.IdentDistrib (X i) (X 0) μ μ) (k : ℕ → ℕ)
+  (hk : Filter.Tendsto (fun n => ↑(k n) / ↑n) Filter.atTop (nhds 0)) :
+  ∀ᵐ (ω : Ω) ∂μ,
+    ∀ c < sSup (EvidenceFusion.growthFunction (X 0) μ '' Set.Ico 0 1),
+      ∀ᶠ (n : ℕ) in Filter.atTop,
+        ∀ (y : Fin n → ℝ),
+          (∀ (i : Fin n), 0 ≤ y i) →
+            EvidenceFusion.hamming (fun i => X (↑i) ω) y ≤ k n →
+              c ≤ Real.log (EvidenceFusion.universalValue (k n) y) / ↑n
+'EvidenceFusion.computable_universal_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.affineNN_monotone {ι : Type} [Fintype ι] [DecidableEq ι] (a : ℝ) (w : ι → ℝ) (hw : ∀ (i : ι), 0 ≤ w i) :
+  Monotone (EvidenceFusion.affineNN a w)
+'EvidenceFusion.affineNN_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.affineNN_erase {ι : Type} [Fintype ι] [DecidableEq ι] (a : ℝ) (w : ι → ℝ) (x : ι → NNReal)
+  (C : Finset ι) :
+  EvidenceFusion.affineNN a w (EvidenceFusion.eraseCoordinates C x) = a + EvidenceFusion.keptSum w (fun i => ↑(x i)) C
+'EvidenceFusion.affineNN_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.affine_completion {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (a : ℝ) (w : ι → ℝ) (x : ι → NNReal) :
+  EvidenceFusion.trimCompletion k (EvidenceFusion.affineNN a w) x =
+    EvidenceFusion.robustAffine a w (fun i => ↑(x i)) (EvidenceFusion.cardinalityAttacks k) ⋯
+'EvidenceFusion.affine_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.worstValue_nonempty {ι : Type} [Fintype ι] [DecidableEq ι] (F : (ι → ℝ) → ℝ) (x : ι → NNReal) (l : ℕ) :
+  {v | ∃ y, EvidenceFusion.hamming x y ≤ l ∧ v = F fun i => ↑(y i)}.Nonempty
+'EvidenceFusion.worstValue_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.worstValue_bddBelow {ι : Type} [Fintype ι] [DecidableEq ι] (F : (ι → ℝ) → ℝ)
+  (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) (x : ι → NNReal) (l : ℕ) :
+  BddBelow {v | ∃ y, EvidenceFusion.hamming x y ≤ l ∧ v = F fun i => ↑(y i)}
+'EvidenceFusion.worstValue_bddBelow' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.worstValue_mono {ι : Type} [Fintype ι] [DecidableEq ι] (F G : (ι → ℝ) → ℝ)
+  (hFn : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → 0 ≤ F y) (hdom : ∀ (y : ι → ℝ), (∀ (i : ι), 0 ≤ y i) → F y ≤ G y)
+  (x : ι → NNReal) (l : ℕ) : EvidenceFusion.worstValue F x l ≤ EvidenceFusion.worstValue G x l
+'EvidenceFusion.worstValue_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustAffine_eq_trimmedSum {ι : Type} [Fintype ι] [DecidableEq ι] (k : ℕ) (a : ℝ) (w y : ι → ℝ) :
+  EvidenceFusion.robustAffine a w y (EvidenceFusion.cardinalityAttacks k) ⋯ =
+    a + EvidenceFusion.trimmedSum (fun i => w i * y i) k
+'EvidenceFusion.robustAffine_eq_trimmedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.robustAffine_worst_value {ι : Type} [Fintype ι] [DecidableEq ι] (k l : ℕ) (a : ℝ) (w : ι → ℝ)
+  (hw : ∀ (i : ι), 0 ≤ w i) (x : ι → NNReal) :
+  EvidenceFusion.worstValue (fun y => EvidenceFusion.robustAffine a w y (EvidenceFusion.cardinalityAttacks k) ⋯) x l =
+    a + EvidenceFusion.trimmedSum (fun i => w i * ↑(x i)) (min (Fintype.card ι) (k + l))
+'EvidenceFusion.robustAffine_worst_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+EvidenceFusion.worstValue_constant_one {ι : Type} [Fintype ι] [DecidableEq ι] (x : ι → NNReal) (l : ℕ) :
+  EvidenceFusion.worstValue (fun x => 1) x l = 1
+'EvidenceFusion.worstValue_constant_one' depends on axioms: [propext, Classical.choice, Quot.sound]

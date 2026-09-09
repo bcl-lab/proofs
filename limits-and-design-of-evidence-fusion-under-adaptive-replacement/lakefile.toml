@@ -1,0 +1,184 @@
+name = "evidence_fusion_verification"
+version = "2.0.0"
+defaultTargets = ["Admissibility","Anytime","BoundedCapacity","CapacityBoundary","Cardinality","CompleteClass","Completion","ConditionalFusion","ConditionalMoment","CorrectedProcess","DelayedGrowth","DelayedMixture","DyadicSchedule","Envelope","EvidenceFusion","ExchangeableRank","FailureDomains","FamilyDesign","FiniteGrid","FiniteRank","GameDuality","GraphDesign","InteriorTilt","LikelihoodRate","LogLoss","LogMoment","MatchingRate","MinimaxCapacity","ModelBridge","MonotoneCompletion","NullBridge","OrderStatistics","PositiveCapacity","Probability","Sequential","SparseTrimming","SupportReduction","Symmetry","SymmetryExamples","TensorTilt","TwoLayer","UniversalAnytime","UniversalGrowth","WorstPerformance"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "Admissibility"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Anytime"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "BoundedCapacity"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "CapacityBoundary"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Cardinality"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "CompleteClass"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Completion"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "ConditionalFusion"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "ConditionalMoment"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "CorrectedProcess"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "DelayedGrowth"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "DelayedMixture"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "DyadicSchedule"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Envelope"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "EvidenceFusion"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "ExchangeableRank"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "FailureDomains"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "FamilyDesign"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "FiniteGrid"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "FiniteRank"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "GameDuality"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "GraphDesign"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "InteriorTilt"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "LikelihoodRate"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "LogLoss"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "LogMoment"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "MatchingRate"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "MinimaxCapacity"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "ModelBridge"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "MonotoneCompletion"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "NullBridge"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "OrderStatistics"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "PositiveCapacity"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Probability"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Sequential"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "SparseTrimming"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "SupportReduction"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "Symmetry"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "SymmetryExamples"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "TensorTilt"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "TwoLayer"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "UniversalAnytime"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "UniversalGrowth"
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "WorstPerformance"
+moreLeanArgs = ["-j", "1"]

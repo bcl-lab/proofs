@@ -1,0 +1,551 @@
+import Admissibility
+import Anytime
+import BoundedCapacity
+import CapacityBoundary
+import Cardinality
+import CompleteClass
+import Completion
+import ConditionalFusion
+import ConditionalMoment
+import CorrectedProcess
+import DelayedGrowth
+import DelayedMixture
+import DyadicSchedule
+import Envelope
+import EvidenceFusion
+import ExchangeableRank
+import FailureDomains
+import FamilyDesign
+import FiniteGrid
+import FiniteRank
+import GameDuality
+import GraphDesign
+import InteriorTilt
+import LikelihoodRate
+import LogLoss
+import LogMoment
+import MatchingRate
+import MinimaxCapacity
+import ModelBridge
+import MonotoneCompletion
+import NullBridge
+import OrderStatistics
+import PositiveCapacity
+import Probability
+import Sequential
+import SparseTrimming
+import SupportReduction
+import Symmetry
+import SymmetryExamples
+import TensorTilt
+import TwoLayer
+import UniversalAnytime
+import UniversalGrowth
+import WorstPerformance
+
+set_option autoImplicit false
+
+#check EvidenceFusion.projected_subset_support
+#print axioms EvidenceFusion.projected_subset_support
+#check EvidenceFusion.projected_is_allowed
+#print axioms EvidenceFusion.projected_is_allowed
+#check EvidenceFusion.maximal_projected_extension
+#print axioms EvidenceFusion.maximal_projected_extension
+#check EvidenceFusion.keptSum_antitone_attacks
+#print axioms EvidenceFusion.keptSum_antitone_attacks
+#check EvidenceFusion.keptSum_projected
+#print axioms EvidenceFusion.keptSum_projected
+#check EvidenceFusion.exposing_configuration
+#print axioms EvidenceFusion.exposing_configuration
+#check EvidenceFusion.admissible_of_empty_maximal_intersection
+#print axioms EvidenceFusion.admissible_of_empty_maximal_intersection
+#check EvidenceFusion.erased_unavoidable_weight
+#print axioms EvidenceFusion.erased_unavoidable_weight
+#check EvidenceFusion.exact_admissibility
+#print axioms EvidenceFusion.exact_admissibility
+#check EvidenceFusion.ville_finite
+#print axioms EvidenceFusion.ville_finite
+#check EvidenceFusion.ville_crossing
+#print axioms EvidenceFusion.ville_crossing
+#check EvidenceFusion.ville_supremum
+#print axioms EvidenceFusion.ville_supremum
+#check EvidenceFusion.dominated_bounded_stopping
+#print axioms EvidenceFusion.dominated_bounded_stopping
+#check EvidenceFusion.retained_fraction_monotone
+#print axioms EvidenceFusion.retained_fraction_monotone
+#check EvidenceFusion.prefix_reciprocal_lower
+#print axioms EvidenceFusion.prefix_reciprocal_lower
+#check EvidenceFusion.bounded_positive_capacity
+#print axioms EvidenceFusion.bounded_positive_capacity
+#check EvidenceFusion.equal_signal_capacity
+#print axioms EvidenceFusion.equal_signal_capacity
+#check EvidenceFusion.positive_capacity_zero_of_budget
+#print axioms EvidenceFusion.positive_capacity_zero_of_budget
+#check EvidenceFusion.bounded_report_count
+#print axioms EvidenceFusion.bounded_report_count
+#check EvidenceFusion.equal_signal_capacity_threshold_iff
+#print axioms EvidenceFusion.equal_signal_capacity_threshold_iff
+#check EvidenceFusion.sorted_positive_extraction
+#print axioms EvidenceFusion.sorted_positive_extraction
+#check EvidenceFusion.zero_vector_capacity
+#print axioms EvidenceFusion.zero_vector_capacity
+#check EvidenceFusion.capacity_admissible_attainment
+#print axioms EvidenceFusion.capacity_admissible_attainment
+#check EvidenceFusion.pointwise_capacity_borel
+#print axioms EvidenceFusion.pointwise_capacity_borel
+#check EvidenceFusion.mem_cardinalityAttacks
+#print axioms EvidenceFusion.mem_cardinalityAttacks
+#check EvidenceFusion.cardinalityAttacks_nonempty
+#print axioms EvidenceFusion.cardinalityAttacks_nonempty
+#check EvidenceFusion.cardinalityAttacks_downward
+#print axioms EvidenceFusion.cardinalityAttacks_downward
+#check EvidenceFusion.compatible_cardinality
+#print axioms EvidenceFusion.compatible_cardinality
+#check EvidenceFusion.projected_cardinality
+#print axioms EvidenceFusion.projected_cardinality
+#check EvidenceFusion.cardinality_empty_intersection_iff
+#print axioms EvidenceFusion.cardinality_empty_intersection_iff
+#check EvidenceFusion.cardinality_admissibility
+#print axioms EvidenceFusion.cardinality_admissibility
+#check EvidenceFusion.violationRegion_convex
+#print axioms EvidenceFusion.violationRegion_convex
+#check EvidenceFusion.violationRegion_open
+#print axioms EvidenceFusion.violationRegion_open
+#check EvidenceFusion.valid_hull_disjoint
+#print axioms EvidenceFusion.valid_hull_disjoint
+#check EvidenceFusion.linear_moment_expansion
+#print axioms EvidenceFusion.linear_moment_expansion
+#check EvidenceFusion.complete_affine_converse
+#print axioms EvidenceFusion.complete_affine_converse
+#check EvidenceFusion.complete_class_finite
+#print axioms EvidenceFusion.complete_class_finite
+#check EvidenceFusion.probability_valid_implies_finite
+#print axioms EvidenceFusion.probability_valid_implies_finite
+#check EvidenceFusion.complete_class_probability
+#print axioms EvidenceFusion.complete_class_probability
+#check EvidenceFusion.completionInf_composition
+#print axioms EvidenceFusion.completionInf_composition
+#check EvidenceFusion.conditional_affine_validity
+#print axioms EvidenceFusion.conditional_affine_validity
+#check EvidenceFusion.conditional_robust_fusion
+#print axioms EvidenceFusion.conditional_robust_fusion
+#check EvidenceFusion.conditional_mul_integrable
+#print axioms EvidenceFusion.conditional_mul_integrable
+#check EvidenceFusion.correctedProcess_nonneg
+#print axioms EvidenceFusion.correctedProcess_nonneg
+#check EvidenceFusion.correctedProcess_measurable
+#print axioms EvidenceFusion.correctedProcess_measurable
+#check EvidenceFusion.correctedProcess_domination
+#print axioms EvidenceFusion.correctedProcess_domination
+#check EvidenceFusion.correctedProcess_anytime
+#print axioms EvidenceFusion.correctedProcess_anytime
+#check EvidenceFusion.maskPrefix_hamming
+#print axioms EvidenceFusion.maskPrefix_hamming
+#check EvidenceFusion.delayed_product_lower
+#print axioms EvidenceFusion.delayed_product_lower
+#check EvidenceFusion.delayed_fraction_growth_ae
+#print axioms EvidenceFusion.delayed_fraction_growth_ae
+#check EvidenceFusion.delayedPrior_pos
+#print axioms EvidenceFusion.delayedPrior_pos
+#check EvidenceFusion.fixedPriorMixture_formula
+#print axioms EvidenceFusion.fixedPriorMixture_formula
+#check EvidenceFusion.fixedPriorMixture_supermartingale
+#print axioms EvidenceFusion.fixedPriorMixture_supermartingale
+#check EvidenceFusion.fixedPriorMixture_extension
+#print axioms EvidenceFusion.fixedPriorMixture_extension
+#check EvidenceFusion.delayedMixture_supermartingale
+#print axioms EvidenceFusion.delayedMixture_supermartingale
+#check EvidenceFusion.delayedMixture_nonneg
+#print axioms EvidenceFusion.delayedMixture_nonneg
+#check EvidenceFusion.delayedMixture_zero
+#print axioms EvidenceFusion.delayedMixture_zero
+#check EvidenceFusion.delayedMixture_domination
+#print axioms EvidenceFusion.delayedMixture_domination
+#check EvidenceFusion.activeCount_zero
+#print axioms EvidenceFusion.activeCount_zero
+#check EvidenceFusion.activeCount_characterization
+#print axioms EvidenceFusion.activeCount_characterization
+#check EvidenceFusion.activeCount_monotone
+#print axioms EvidenceFusion.activeCount_monotone
+#check EvidenceFusion.activeCount_eventually
+#print axioms EvidenceFusion.activeCount_eventually
+#check EvidenceFusion.log2_dyadic_block
+#print axioms EvidenceFusion.log2_dyadic_block
+#check EvidenceFusion.dyadicFraction_block
+#print axioms EvidenceFusion.dyadicFraction_block
+#check EvidenceFusion.dyadicFraction_mem
+#print axioms EvidenceFusion.dyadicFraction_mem
+#check EvidenceFusion.dyadicFraction_dense
+#print axioms EvidenceFusion.dyadicFraction_dense
+#check EvidenceFusion.finite_replacement_count_bound
+#print axioms EvidenceFusion.finite_replacement_count_bound
+#check EvidenceFusion.finite_replacements_are_sparse
+#print axioms EvidenceFusion.finite_replacements_are_sparse
+#check EvidenceFusion.zero_path_test
+#print axioms EvidenceFusion.zero_path_test
+#check EvidenceFusion.finite_envelope_necessity
+#print axioms EvidenceFusion.finite_envelope_necessity
+#check EvidenceFusion.sparse_envelope_necessity
+#print axioms EvidenceFusion.sparse_envelope_necessity
+#check EvidenceFusion.keptSum_nonneg
+#print axioms EvidenceFusion.keptSum_nonneg
+#check EvidenceFusion.keptSum_le_clean
+#print axioms EvidenceFusion.keptSum_le_clean
+#check EvidenceFusion.robustAffine_nonneg
+#print axioms EvidenceFusion.robustAffine_nonneg
+#check EvidenceFusion.robustAffine_le_clean
+#print axioms EvidenceFusion.robustAffine_le_clean
+#check EvidenceFusion.normalized_weight_bound
+#print axioms EvidenceFusion.normalized_weight_bound
+#check EvidenceFusion.finite_probability_validity
+#print axioms EvidenceFusion.finite_probability_validity
+#check EvidenceFusion.slope_comparison
+#print axioms EvidenceFusion.slope_comparison
+#check EvidenceFusion.normalized_coordinates_equal
+#print axioms EvidenceFusion.normalized_coordinates_equal
+#check EvidenceFusion.rank_count_le
+#print axioms EvidenceFusion.rank_count_le
+#check EvidenceFusion.attacked_rank_ge
+#print axioms EvidenceFusion.attacked_rank_ge
+#check EvidenceFusion.five_percent_resolution
+#print axioms EvidenceFusion.five_percent_resolution
+#check EvidenceFusion.reciprocal_swap
+#print axioms EvidenceFusion.reciprocal_swap
+#check EvidenceFusion.layer_capacity_bound
+#print axioms EvidenceFusion.layer_capacity_bound
+#check EvidenceFusion.report_count_necessary
+#print axioms EvidenceFusion.report_count_necessary
+#check EvidenceFusion.equal_signal_threshold_iff
+#print axioms EvidenceFusion.equal_signal_threshold_iff
+#check EvidenceFusion.exact_report_examples
+#print axioms EvidenceFusion.exact_report_examples
+#check EvidenceFusion.report_count_integer_criterion
+#print axioms EvidenceFusion.report_count_integer_criterion
+#check EvidenceFusion.sharp_integer_report_counts
+#print axioms EvidenceFusion.sharp_integer_report_counts
+#check EvidenceFusion.sharp_layer_program
+#print axioms EvidenceFusion.sharp_layer_program
+#check EvidenceFusion.rearranged_cost_le
+#print axioms EvidenceFusion.rearranged_cost_le
+#check EvidenceFusion.layer_cost_identity
+#print axioms EvidenceFusion.layer_cost_identity
+#check EvidenceFusion.layer_tail_identity
+#print axioms EvidenceFusion.layer_tail_identity
+#check EvidenceFusion.normalization_example_arithmetic
+#print axioms EvidenceFusion.normalization_example_arithmetic
+#check EvidenceFusion.game_weak_duality
+#print axioms EvidenceFusion.game_weak_duality
+#check EvidenceFusion.finite_tilt_identities
+#print axioms EvidenceFusion.finite_tilt_identities
+#check EvidenceFusion.hamming_le_dimension
+#print axioms EvidenceFusion.hamming_le_dimension
+#check EvidenceFusion.hamming_triangle
+#print axioms EvidenceFusion.hamming_triangle
+#check EvidenceFusion.hamming_midpoint
+#print axioms EvidenceFusion.hamming_midpoint
+#check EvidenceFusion.hamming_ball_composition
+#print axioms EvidenceFusion.hamming_ball_composition
+#check EvidenceFusion.completion_payoff_set
+#print axioms EvidenceFusion.completion_payoff_set
+#check EvidenceFusion.replacement_product_bound
+#print axioms EvidenceFusion.replacement_product_bound
+#check EvidenceFusion.robustProduct_domination
+#print axioms EvidenceFusion.robustProduct_domination
+#check EvidenceFusion.sparse_trim_bound
+#print axioms EvidenceFusion.sparse_trim_bound
+#check EvidenceFusion.delayed_prior_mass
+#print axioms EvidenceFusion.delayed_prior_mass
+#check EvidenceFusion.log_factor_derivative_bound
+#print axioms EvidenceFusion.log_factor_derivative_bound
+#check EvidenceFusion.no_envelope_bound
+#print axioms EvidenceFusion.no_envelope_bound
+#check EvidenceFusion.measurable_upperRank
+#print axioms EvidenceFusion.measurable_upperRank
+#check EvidenceFusion.measurable_rankEvent
+#print axioms EvidenceFusion.measurable_rankEvent
+#check EvidenceFusion.integrable_rankEvent
+#print axioms EvidenceFusion.integrable_rankEvent
+#check EvidenceFusion.measure_rank_probability_equal
+#print axioms EvidenceFusion.measure_rank_probability_equal
+#check EvidenceFusion.exchangeable_rank_bound
+#print axioms EvidenceFusion.exchangeable_rank_bound
+#check EvidenceFusion.exchangeable_rank_evidence
+#print axioms EvidenceFusion.exchangeable_rank_evidence
+#check EvidenceFusion.attackedRank_ge_true
+#print axioms EvidenceFusion.attackedRank_ge_true
+#check EvidenceFusion.robust_rank_calibration
+#print axioms EvidenceFusion.robust_rank_calibration
+#check EvidenceFusion.robust_rank_probability_general
+#print axioms EvidenceFusion.robust_rank_probability_general
+#check EvidenceFusion.calibration_with_adaptive_score
+#print axioms EvidenceFusion.calibration_with_adaptive_score
+#check EvidenceFusion.domainAttacks_nonempty
+#print axioms EvidenceFusion.domainAttacks_nonempty
+#check EvidenceFusion.domainAttacks_downward
+#print axioms EvidenceFusion.domainAttacks_downward
+#check EvidenceFusion.domain_removable_weight
+#print axioms EvidenceFusion.domain_removable_weight
+#check EvidenceFusion.positive_domain_admissibility
+#print axioms EvidenceFusion.positive_domain_admissibility
+#check EvidenceFusion.failure_domain_optimum
+#print axioms EvidenceFusion.failure_domain_optimum
+#check EvidenceFusion.fractional_cover_duality
+#print axioms EvidenceFusion.fractional_cover_duality
+#check EvidenceFusion.domainMass_total
+#print axioms EvidenceFusion.domainMass_total
+#check EvidenceFusion.equal_domain_allocation
+#print axioms EvidenceFusion.equal_domain_allocation
+#check EvidenceFusion.failure_domain_game
+#print axioms EvidenceFusion.failure_domain_game
+#check EvidenceFusion.largestSum_mono
+#print axioms EvidenceFusion.largestSum_mono
+#check EvidenceFusion.uniform_log_contribution_bound
+#print axioms EvidenceFusion.uniform_log_contribution_bound
+#check EvidenceFusion.finite_grid_comparison
+#print axioms EvidenceFusion.finite_grid_comparison
+#check EvidenceFusion.upperRank_permutation
+#print axioms EvidenceFusion.upperRank_permutation
+#check EvidenceFusion.rank_probability_equal
+#print axioms EvidenceFusion.rank_probability_equal
+#check EvidenceFusion.finite_exchangeable_rank_bound
+#print axioms EvidenceFusion.finite_exchangeable_rank_bound
+#check EvidenceFusion.finite_rank_evidence
+#print axioms EvidenceFusion.finite_rank_evidence
+#check EvidenceFusion.finite_game_duality
+#print axioms EvidenceFusion.finite_game_duality
+#check EvidenceFusion.retained_fractional_cover_identity
+#print axioms EvidenceFusion.retained_fractional_cover_identity
+#check EvidenceFusion.graph_retention_identity
+#print axioms EvidenceFusion.graph_retention_identity
+#check EvidenceFusion.expected_log_hasDerivAt
+#print axioms EvidenceFusion.expected_log_hasDerivAt
+#check EvidenceFusion.interior_log_optimum_derivative_zero
+#print axioms EvidenceFusion.interior_log_optimum_derivative_zero
+#check EvidenceFusion.general_tilt_identities
+#print axioms EvidenceFusion.general_tilt_identities
+#check EvidenceFusion.interior_tilt_probability_mean_one
+#print axioms EvidenceFusion.interior_tilt_probability_mean_one
+#check EvidenceFusion.exponential_crossing_bound
+#print axioms EvidenceFusion.exponential_crossing_bound
+#check EvidenceFusion.likelihood_ratio_subexponential
+#print axioms EvidenceFusion.likelihood_ratio_subexponential
+#check EvidenceFusion.likelihood_upper_rate
+#print axioms EvidenceFusion.likelihood_upper_rate
+#check EvidenceFusion.log_factor_split
+#print axioms EvidenceFusion.log_factor_split
+#check EvidenceFusion.robustProduct_positive
+#print axioms EvidenceFusion.robustProduct_positive
+#check EvidenceFusion.log_erased_product
+#print axioms EvidenceFusion.log_erased_product
+#check EvidenceFusion.replacement_log_loss
+#print axioms EvidenceFusion.replacement_log_loss
+#check EvidenceFusion.log_factor_hasDerivAt
+#print axioms EvidenceFusion.log_factor_hasDerivAt
+#check EvidenceFusion.log_factor_lipschitz
+#print axioms EvidenceFusion.log_factor_lipschitz
+#check EvidenceFusion.cleanLog_lipschitz
+#print axioms EvidenceFusion.cleanLog_lipschitz
+#check EvidenceFusion.log_factor_abs_bound
+#print axioms EvidenceFusion.log_factor_abs_bound
+#check EvidenceFusion.log_factor_integrable
+#print axioms EvidenceFusion.log_factor_integrable
+#check EvidenceFusion.log_contribution_integrable
+#print axioms EvidenceFusion.log_contribution_integrable
+#check EvidenceFusion.expected_log_lipschitz
+#print axioms EvidenceFusion.expected_log_lipschitz
+#check EvidenceFusion.fixed_fraction_growth_ae
+#print axioms EvidenceFusion.fixed_fraction_growth_ae
+#check EvidenceFusion.tensor_tilt_ratio
+#print axioms EvidenceFusion.tensor_tilt_ratio
+#check EvidenceFusion.iid_history_law
+#print axioms EvidenceFusion.iid_history_law
+#check EvidenceFusion.matching_upper_rate
+#print axioms EvidenceFusion.matching_upper_rate
+#check EvidenceFusion.affine_probability_valid
+#print axioms EvidenceFusion.affine_probability_valid
+#check EvidenceFusion.nonnegative_capacity_attained
+#print axioms EvidenceFusion.nonnegative_capacity_attained
+#check EvidenceFusion.trimmedSum_nonneg
+#print axioms EvidenceFusion.trimmedSum_nonneg
+#check EvidenceFusion.trimmedSum_positive_support
+#print axioms EvidenceFusion.trimmedSum_positive_support
+#check EvidenceFusion.capacity_upper
+#print axioms EvidenceFusion.capacity_upper
+#check EvidenceFusion.pointwise_capacity
+#print axioms EvidenceFusion.pointwise_capacity
+#check EvidenceFusion.continuous_robustAffine
+#print axioms EvidenceFusion.continuous_robustAffine
+#check EvidenceFusion.finite_iff_probability_valid
+#print axioms EvidenceFusion.finite_iff_probability_valid
+#check EvidenceFusion.admissible_iff_probability
+#print axioms EvidenceFusion.admissible_iff_probability
+#check EvidenceFusion.exact_probability_admissibility
+#print axioms EvidenceFusion.exact_probability_admissibility
+#check EvidenceFusion.compatible_iff_differences
+#print axioms EvidenceFusion.compatible_iff_differences
+#check EvidenceFusion.erase_hamming_le
+#print axioms EvidenceFusion.erase_hamming_le
+#check EvidenceFusion.trimCompletion_le
+#print axioms EvidenceFusion.trimCompletion_le
+#check EvidenceFusion.trimCompletion_attained
+#print axioms EvidenceFusion.trimCompletion_attained
+#check EvidenceFusion.trimCompletion_isLeast
+#print axioms EvidenceFusion.trimCompletion_isLeast
+#check EvidenceFusion.monotone_trimCompletion
+#print axioms EvidenceFusion.monotone_trimCompletion
+#check EvidenceFusion.trimCompletion_composition
+#print axioms EvidenceFusion.trimCompletion_composition
+#check EvidenceFusion.monotone_affineProduct
+#print axioms EvidenceFusion.monotone_affineProduct
+#check EvidenceFusion.product_completion
+#print axioms EvidenceFusion.product_completion
+#check EvidenceFusion.robustProduct_worst_replacement
+#print axioms EvidenceFusion.robustProduct_worst_replacement
+#check EvidenceFusion.infinite_product_coordinate_law
+#print axioms EvidenceFusion.infinite_product_coordinate_law
+#check EvidenceFusion.infinite_product_independent
+#print axioms EvidenceFusion.infinite_product_independent
+#check EvidenceFusion.conditional_null_implies_iid
+#print axioms EvidenceFusion.conditional_null_implies_iid
+#check EvidenceFusion.headIndices_card
+#print axioms EvidenceFusion.headIndices_card
+#check EvidenceFusion.largestSum_sorted
+#print axioms EvidenceFusion.largestSum_sorted
+#check EvidenceFusion.largestSum_comp_le
+#print axioms EvidenceFusion.largestSum_comp_le
+#check EvidenceFusion.largestSum_permutation
+#print axioms EvidenceFusion.largestSum_permutation
+#check EvidenceFusion.descendingPermutation_antitone
+#print axioms EvidenceFusion.descendingPermutation_antitone
+#check EvidenceFusion.largestSum_order_statistics
+#print axioms EvidenceFusion.largestSum_order_statistics
+#check EvidenceFusion.keptSum_unit_eq
+#print axioms EvidenceFusion.keptSum_unit_eq
+#check EvidenceFusion.trimmedSum_is_min
+#print axioms EvidenceFusion.trimmedSum_is_min
+#check EvidenceFusion.trimmedSum_permutation
+#print axioms EvidenceFusion.trimmedSum_permutation
+#check EvidenceFusion.layerDifferences_nonneg
+#print axioms EvidenceFusion.layerDifferences_nonneg
+#check EvidenceFusion.layers_reconstruct
+#print axioms EvidenceFusion.layers_reconstruct
+#check EvidenceFusion.trimmedSum_sorted_tail
+#print axioms EvidenceFusion.trimmedSum_sorted_tail
+#check EvidenceFusion.tail_prefix_count
+#print axioms EvidenceFusion.tail_prefix_count
+#check EvidenceFusion.prefixReciprocal_pos
+#print axioms EvidenceFusion.prefixReciprocal_pos
+#check EvidenceFusion.sorted_contribution_capacity
+#print axioms EvidenceFusion.sorted_contribution_capacity
+#check EvidenceFusion.positive_capacity_upper
+#print axioms EvidenceFusion.positive_capacity_upper
+#check EvidenceFusion.positive_capacity_attained
+#print axioms EvidenceFusion.positive_capacity_attained
+#check EvidenceFusion.arbitrary_probability_validity
+#print axioms EvidenceFusion.arbitrary_probability_validity
+#check EvidenceFusion.robust_fusion_validity
+#print axioms EvidenceFusion.robust_fusion_validity
+#check EvidenceFusion.productProcess_zero
+#print axioms EvidenceFusion.productProcess_zero
+#check EvidenceFusion.productProcess_succ
+#print axioms EvidenceFusion.productProcess_succ
+#check EvidenceFusion.productProcess_nonneg
+#print axioms EvidenceFusion.productProcess_nonneg
+#check EvidenceFusion.productProcess_adapted
+#print axioms EvidenceFusion.productProcess_adapted
+#check EvidenceFusion.productProcess_supermartingale
+#print axioms EvidenceFusion.productProcess_supermartingale
+#check EvidenceFusion.predictable_betting_factor
+#print axioms EvidenceFusion.predictable_betting_factor
+#check EvidenceFusion.clean_betting_supermartingale
+#print axioms EvidenceFusion.clean_betting_supermartingale
+#check EvidenceFusion.supermartingale_bounded_stopping
+#print axioms EvidenceFusion.supermartingale_bounded_stopping
+#check EvidenceFusion.tailAbove_measurable
+#print axioms EvidenceFusion.tailAbove_measurable
+#check EvidenceFusion.tailAbove_integrable
+#print axioms EvidenceFusion.tailAbove_integrable
+#check EvidenceFusion.tail_integral_tendsto_zero
+#print axioms EvidenceFusion.tail_integral_tendsto_zero
+#check EvidenceFusion.largestSum_nonneg
+#print axioms EvidenceFusion.largestSum_nonneg
+#check EvidenceFusion.largestSum_tail_bound
+#print axioms EvidenceFusion.largestSum_tail_bound
+#check EvidenceFusion.sparse_trimming_ae
+#print axioms EvidenceFusion.sparse_trimming_ae
+#check EvidenceFusion.sum_on_embedding
+#print axioms EvidenceFusion.sum_on_embedding
+#check EvidenceFusion.embedding_preimage_card_le
+#print axioms EvidenceFusion.embedding_preimage_card_le
+#check EvidenceFusion.largestSum_restrict_support
+#print axioms EvidenceFusion.largestSum_restrict_support
+#check EvidenceFusion.trimmedSum_restrict_support
+#print axioms EvidenceFusion.trimmedSum_restrict_support
+#check EvidenceFusion.positiveCapacity_nonneg
+#print axioms EvidenceFusion.positiveCapacity_nonneg
+#check EvidenceFusion.sorted_capacity_homogeneous
+#print axioms EvidenceFusion.sorted_capacity_homogeneous
+#check EvidenceFusion.positive_capacity_homogeneous
+#print axioms EvidenceFusion.positive_capacity_homogeneous
+#check EvidenceFusion.nonnegative_capacity_upper
+#print axioms EvidenceFusion.nonnegative_capacity_upper
+#check EvidenceFusion.hamming_permutation
+#print axioms EvidenceFusion.hamming_permutation
+#check EvidenceFusion.permutation_sum_constant
+#print axioms EvidenceFusion.permutation_sum_constant
+#check EvidenceFusion.symmetric_complete_class
+#print axioms EvidenceFusion.symmetric_complete_class
+#check EvidenceFusion.symmetric_rule_admissible
+#print axioms EvidenceFusion.symmetric_rule_admissible
+#check EvidenceFusion.trimmedSum_constant
+#print axioms EvidenceFusion.trimmedSum_constant
+#check EvidenceFusion.uniform_permutation_mean
+#print axioms EvidenceFusion.uniform_permutation_mean
+#check EvidenceFusion.adaptive_normalization_counterexample
+#print axioms EvidenceFusion.adaptive_normalization_counterexample
+#check EvidenceFusion.symmetric_neutrality
+#print axioms EvidenceFusion.symmetric_neutrality
+#check EvidenceFusion.product_indicator_rectangle
+#print axioms EvidenceFusion.product_indicator_rectangle
+#check EvidenceFusion.pi_withDensity
+#print axioms EvidenceFusion.pi_withDensity
+#check EvidenceFusion.two_layer_anytime
+#print axioms EvidenceFusion.two_layer_anytime
+#check EvidenceFusion.delayed_fraction_bounds
+#print axioms EvidenceFusion.delayed_fraction_bounds
+#check EvidenceFusion.inactive_clean_component
+#print axioms EvidenceFusion.inactive_clean_component
+#check EvidenceFusion.delayedMixture_measurable
+#print axioms EvidenceFusion.delayedMixture_measurable
+#check EvidenceFusion.computable_universal_anytime
+#print axioms EvidenceFusion.computable_universal_anytime
+#check EvidenceFusion.componentValue_pos
+#print axioms EvidenceFusion.componentValue_pos
+#check EvidenceFusion.universalValue_half
+#print axioms EvidenceFusion.universalValue_half
+#check EvidenceFusion.universalValue_component
+#print axioms EvidenceFusion.universalValue_component
+#check EvidenceFusion.dyadic_growth_approximation
+#print axioms EvidenceFusion.dyadic_growth_approximation
+#check EvidenceFusion.growthFunction_bddAbove
+#print axioms EvidenceFusion.growthFunction_bddAbove
+#check EvidenceFusion.computable_universal_growth
+#print axioms EvidenceFusion.computable_universal_growth
+#check EvidenceFusion.affineNN_monotone
+#print axioms EvidenceFusion.affineNN_monotone
+#check EvidenceFusion.affineNN_erase
+#print axioms EvidenceFusion.affineNN_erase
+#check EvidenceFusion.affine_completion
+#print axioms EvidenceFusion.affine_completion
+#check EvidenceFusion.worstValue_nonempty
+#print axioms EvidenceFusion.worstValue_nonempty
+#check EvidenceFusion.worstValue_bddBelow
+#print axioms EvidenceFusion.worstValue_bddBelow
+#check EvidenceFusion.worstValue_mono
+#print axioms EvidenceFusion.worstValue_mono
+#check EvidenceFusion.robustAffine_eq_trimmedSum
+#print axioms EvidenceFusion.robustAffine_eq_trimmedSum
+#check EvidenceFusion.robustAffine_worst_value
+#print axioms EvidenceFusion.robustAffine_worst_value
+#check EvidenceFusion.worstValue_constant_one
+#print axioms EvidenceFusion.worstValue_constant_one

@@ -1,0 +1,2264 @@
+[
+  {
+    "name": "EvidenceFusion.projected_subset_support",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.projected_is_allowed",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.maximal_projected_extension",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.keptSum_antitone_attacks",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.keptSum_projected",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exposing_configuration",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.admissible_of_empty_maximal_intersection",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.erased_unavoidable_weight",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exact_admissibility",
+    "module": "Admissibility",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.ville_finite",
+    "module": "Anytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.ville_crossing",
+    "module": "Anytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.ville_supremum",
+    "module": "Anytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.dominated_bounded_stopping",
+    "module": "Anytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.retained_fraction_monotone",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.prefix_reciprocal_lower",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.bounded_positive_capacity",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.equal_signal_capacity",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positive_capacity_zero_of_budget",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.bounded_report_count",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.equal_signal_capacity_threshold_iff",
+    "module": "BoundedCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sorted_positive_extraction",
+    "module": "CapacityBoundary",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.zero_vector_capacity",
+    "module": "CapacityBoundary",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.capacity_admissible_attainment",
+    "module": "CapacityBoundary",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.pointwise_capacity_borel",
+    "module": "CapacityBoundary",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.mem_cardinalityAttacks",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.cardinalityAttacks_nonempty",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.cardinalityAttacks_downward",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.compatible_cardinality",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.projected_cardinality",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.cardinality_empty_intersection_iff",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.cardinality_admissibility",
+    "module": "Cardinality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.violationRegion_convex",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.violationRegion_open",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.valid_hull_disjoint",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.linear_moment_expansion",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.complete_affine_converse",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.complete_class_finite",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.probability_valid_implies_finite",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.complete_class_probability",
+    "module": "CompleteClass",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.completionInf_composition",
+    "module": "Completion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.conditional_affine_validity",
+    "module": "ConditionalFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.conditional_robust_fusion",
+    "module": "ConditionalFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.conditional_mul_integrable",
+    "module": "ConditionalMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.correctedProcess_nonneg",
+    "module": "CorrectedProcess",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.correctedProcess_measurable",
+    "module": "CorrectedProcess",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.correctedProcess_domination",
+    "module": "CorrectedProcess",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.correctedProcess_anytime",
+    "module": "CorrectedProcess",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.maskPrefix_hamming",
+    "module": "DelayedGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayed_product_lower",
+    "module": "DelayedGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayed_fraction_growth_ae",
+    "module": "DelayedGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedPrior_pos",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.fixedPriorMixture_formula",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.fixedPriorMixture_supermartingale",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.fixedPriorMixture_extension",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedMixture_supermartingale",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedMixture_nonneg",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedMixture_zero",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedMixture_domination",
+    "module": "DelayedMixture",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.activeCount_zero",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.activeCount_characterization",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.activeCount_monotone",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.activeCount_eventually",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log2_dyadic_block",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.dyadicFraction_block",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.dyadicFraction_mem",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.dyadicFraction_dense",
+    "module": "DyadicSchedule",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_replacement_count_bound",
+    "module": "Envelope",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_replacements_are_sparse",
+    "module": "Envelope",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.zero_path_test",
+    "module": "Envelope",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_envelope_necessity",
+    "module": "Envelope",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sparse_envelope_necessity",
+    "module": "Envelope",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.keptSum_nonneg",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.keptSum_le_clean",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustAffine_nonneg",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustAffine_le_clean",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.normalized_weight_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_probability_validity",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.slope_comparison",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.normalized_coordinates_equal",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.rank_count_le",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.attacked_rank_ge",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.five_percent_resolution",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.reciprocal_swap",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.layer_capacity_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.report_count_necessary",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.equal_signal_threshold_iff",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exact_report_examples",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.report_count_integer_criterion",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sharp_integer_report_counts",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sharp_layer_program",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.rearranged_cost_le",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.layer_cost_identity",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.layer_tail_identity",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.normalization_example_arithmetic",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.game_weak_duality",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_tilt_identities",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.hamming_le_dimension",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.hamming_triangle",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.hamming_midpoint",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.hamming_ball_composition",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.completion_payoff_set",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.replacement_product_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustProduct_domination",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sparse_trim_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayed_prior_mass",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_derivative_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.no_envelope_bound",
+    "module": "EvidenceFusion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.measurable_upperRank",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.measurable_rankEvent",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.integrable_rankEvent",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.measure_rank_probability_equal",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exchangeable_rank_bound",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exchangeable_rank_evidence",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.attackedRank_ge_true",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robust_rank_calibration",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robust_rank_probability_general",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.calibration_with_adaptive_score",
+    "module": "ExchangeableRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.domainAttacks_nonempty",
+    "module": "FailureDomains",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.domainAttacks_downward",
+    "module": "FailureDomains",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.domain_removable_weight",
+    "module": "FailureDomains",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positive_domain_admissibility",
+    "module": "FailureDomains",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.failure_domain_optimum",
+    "module": "FailureDomains",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.fractional_cover_duality",
+    "module": "FamilyDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.domainMass_total",
+    "module": "FamilyDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.equal_domain_allocation",
+    "module": "FamilyDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.failure_domain_game",
+    "module": "FamilyDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_mono",
+    "module": "FiniteGrid",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.uniform_log_contribution_bound",
+    "module": "FiniteGrid",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_grid_comparison",
+    "module": "FiniteGrid",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.upperRank_permutation",
+    "module": "FiniteRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.rank_probability_equal",
+    "module": "FiniteRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_exchangeable_rank_bound",
+    "module": "FiniteRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_rank_evidence",
+    "module": "FiniteRank",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_game_duality",
+    "module": "GameDuality",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.retained_fractional_cover_identity",
+    "module": "GraphDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.graph_retention_identity",
+    "module": "GraphDesign",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.expected_log_hasDerivAt",
+    "module": "InteriorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.interior_log_optimum_derivative_zero",
+    "module": "InteriorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.general_tilt_identities",
+    "module": "InteriorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.interior_tilt_probability_mean_one",
+    "module": "InteriorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exponential_crossing_bound",
+    "module": "LikelihoodRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.likelihood_ratio_subexponential",
+    "module": "LikelihoodRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.likelihood_upper_rate",
+    "module": "LikelihoodRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_split",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustProduct_positive",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_erased_product",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.replacement_log_loss",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_hasDerivAt",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_lipschitz",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.cleanLog_lipschitz",
+    "module": "LogLoss",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_abs_bound",
+    "module": "LogMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_factor_integrable",
+    "module": "LogMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.log_contribution_integrable",
+    "module": "LogMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.expected_log_lipschitz",
+    "module": "LogMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.fixed_fraction_growth_ae",
+    "module": "LogMoment",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.tensor_tilt_ratio",
+    "module": "MatchingRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.iid_history_law",
+    "module": "MatchingRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.matching_upper_rate",
+    "module": "MatchingRate",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.affine_probability_valid",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.nonnegative_capacity_attained",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_nonneg",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_positive_support",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.capacity_upper",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.pointwise_capacity",
+    "module": "MinimaxCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.continuous_robustAffine",
+    "module": "ModelBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.finite_iff_probability_valid",
+    "module": "ModelBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.admissible_iff_probability",
+    "module": "ModelBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.exact_probability_admissibility",
+    "module": "ModelBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.compatible_iff_differences",
+    "module": "ModelBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.erase_hamming_le",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimCompletion_le",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimCompletion_attained",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimCompletion_isLeast",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.monotone_trimCompletion",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimCompletion_composition",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.monotone_affineProduct",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.product_completion",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustProduct_worst_replacement",
+    "module": "MonotoneCompletion",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.infinite_product_coordinate_law",
+    "module": "NullBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.infinite_product_independent",
+    "module": "NullBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.conditional_null_implies_iid",
+    "module": "NullBridge",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.headIndices_card",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_sorted",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_comp_le",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_permutation",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.descendingPermutation_antitone",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_order_statistics",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.keptSum_unit_eq",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_is_min",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_permutation",
+    "module": "OrderStatistics",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.layerDifferences_nonneg",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.layers_reconstruct",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_sorted_tail",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.tail_prefix_count",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.prefixReciprocal_pos",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sorted_contribution_capacity",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positive_capacity_upper",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positive_capacity_attained",
+    "module": "PositiveCapacity",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.arbitrary_probability_validity",
+    "module": "Probability",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robust_fusion_validity",
+    "module": "Probability",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.productProcess_zero",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.productProcess_succ",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.productProcess_nonneg",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.productProcess_adapted",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.productProcess_supermartingale",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.predictable_betting_factor",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.clean_betting_supermartingale",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.supermartingale_bounded_stopping",
+    "module": "Sequential",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.tailAbove_measurable",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.tailAbove_integrable",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.tail_integral_tendsto_zero",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_nonneg",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_tail_bound",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sparse_trimming_ae",
+    "module": "SparseTrimming",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sum_on_embedding",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.embedding_preimage_card_le",
+    "module": "SupportReduction",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.largestSum_restrict_support",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_restrict_support",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positiveCapacity_nonneg",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.sorted_capacity_homogeneous",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.positive_capacity_homogeneous",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.nonnegative_capacity_upper",
+    "module": "SupportReduction",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.hamming_permutation",
+    "module": "Symmetry",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.permutation_sum_constant",
+    "module": "Symmetry",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.symmetric_complete_class",
+    "module": "Symmetry",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.symmetric_rule_admissible",
+    "module": "Symmetry",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.trimmedSum_constant",
+    "module": "SymmetryExamples",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.uniform_permutation_mean",
+    "module": "SymmetryExamples",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.adaptive_normalization_counterexample",
+    "module": "SymmetryExamples",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.symmetric_neutrality",
+    "module": "SymmetryExamples",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.product_indicator_rectangle",
+    "module": "TensorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.pi_withDensity",
+    "module": "TensorTilt",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.two_layer_anytime",
+    "module": "TwoLayer",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayed_fraction_bounds",
+    "module": "UniversalAnytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.inactive_clean_component",
+    "module": "UniversalAnytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.delayedMixture_measurable",
+    "module": "UniversalAnytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.computable_universal_anytime",
+    "module": "UniversalAnytime",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.componentValue_pos",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.universalValue_half",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.universalValue_component",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.dyadic_growth_approximation",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.growthFunction_bddAbove",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.computable_universal_growth",
+    "module": "UniversalGrowth",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.affineNN_monotone",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.affineNN_erase",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.affine_completion",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.worstValue_nonempty",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.worstValue_bddBelow",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.worstValue_mono",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustAffine_eq_trimmedSum",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.robustAffine_worst_value",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "name": "EvidenceFusion.worstValue_constant_one",
+    "module": "WorstPerformance",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+]

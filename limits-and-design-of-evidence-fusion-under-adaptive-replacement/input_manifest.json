@@ -1,0 +1,12 @@
+{
+  "paper_title": "Limits and design of evidence fusion under adaptive replacement",
+  "source_archive": "nature_computational_science_reproducibility.zip",
+  "source_archive_version": 8,
+  "source_archive_sha256": "ffa403e4ca2ec99c4b1cff337131cc57adefd17b3e84c277fce40cba91be49c7",
+  "sha256": {
+    "input/manuscript.docx": "ee6f34eb9445fb9cfd6aa589dba8d69009a0a5ee2ac19a40ffa2059f6cd65243",
+    "input/manuscript.md": "e60a345d9aaabf7a9def06755a8b2ab2f1211ea6744ca21017299039d6402e02",
+    "input/supplement.docx": "f53bbce9bbdc6904b2de524e434bf429f867ddd3a8ab8d526835a0b2bd1ddb7a",
+    "input/supplement.md": "c67d51af5c93c184f7d52a7997523d041452fd7715d8e0771d04bd7b2ea8db18"
+  }
+}
