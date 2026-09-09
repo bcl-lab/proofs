@@ -1,0 +1,12 @@
+name = "hubAveragingVerification"
+version = "0.2.0"
+defaultTargets = ["HubAveragingVerification"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+
+[[lean_lib]]
+name = "HubAveragingVerification"
+roots = ["HubAveraging", "CutAndBudget", "Network", "GraphMoments", "RandomSweep", "PermutationMean", "EdgeProcess", "GraphCut", "SpectralBridge", "GraphSpectral", "UniformPolicy", "Minimax", "RandomCut", "SpectrumEndpoints", "EqualBudget", "GapRange", "Asymptotic"]
