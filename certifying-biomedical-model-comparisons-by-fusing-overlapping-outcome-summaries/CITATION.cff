@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and this pinned source release."
+type: software
+title: "Certifying biomedical model comparisons by fusing overlapping outcome summaries: Lean verification"
+authors:
+  - family-names: Alterovitz
+    given-names: Gil
+    affiliation: Harvard Medical School
+version: 1.0.0
+date-released: 2026-09-09
+repository-code: "https://github.com/bcl-lab/proofs/tree/main/certifying-biomedical-model-comparisons-by-fusing-overlapping-outcome-summaries"

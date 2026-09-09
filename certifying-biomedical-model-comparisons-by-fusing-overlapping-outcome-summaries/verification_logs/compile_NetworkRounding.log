@@ -1,0 +1,42 @@
+Fusion/NetworkRounding.lean:35:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_zero':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:37:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_add':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:40:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_sub':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:43:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_scale':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:48:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_single':
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:56:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.cut_balance':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:64:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.cutTerm_int':
+  [Fintype V]
+  [Fintype E]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype E] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

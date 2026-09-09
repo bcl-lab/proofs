@@ -1,0 +1,22 @@
+Fusion/DisjointMinimax.lean:12:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_completionCandidates':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:79:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.eraseAt_of_not_mem':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:109:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_eraseAt':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:128:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_fixedQueries':
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,25 @@
+Fusion/Laminar.lean:15:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.child_subset':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:18:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.child_smaller':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:22:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.children_disjoint':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:74:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.parent_unique':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:87:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.mem_children':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,28 @@
+Fusion/LaminarFusion.lean:53:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.tree_bounds_iff':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:63:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.record_bounds_iff':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:81:41: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Fusion/LaminarFusion.lean:81:41: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+Fusion/LaminarFusion.lean:89:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Fusion/LaminarFusion.lean:257:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.integer_counts_iff':
+  [DecidableEq ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:281:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.record_objective':
+  [DecidableEq ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

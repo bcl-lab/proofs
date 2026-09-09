@@ -1,0 +1,1905 @@
+{
+  "status": "passed",
+  "execution_clock_utc": "2026-09-09T17:47:57.092755+00:00",
+  "verification_method": "All local proof outputs removed; lake env lean compiled every module and aggregate import; separate axiom audit",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "declarations": 305,
+  "modules": 29,
+  "compile_order": [
+    "Basic",
+    "AUROC",
+    "Disjoint",
+    "DisjointDiameter",
+    "DisjointGame",
+    "DisjointMinimax",
+    "DisjointSemantics",
+    "DisjointRealization",
+    "DisjointReviewSets",
+    "Flow",
+    "Endpoints",
+    "Finite",
+    "Laminar",
+    "LaminarComplete",
+    "NetworkRounding",
+    "NetworkStep",
+    "NetworkOpt",
+    "LaminarNetwork",
+    "LaminarFusion",
+    "PartitionNetwork",
+    "Review",
+    "Tree",
+    "TreeRank",
+    "TreeCounts",
+    "Separation",
+    "MainTheorems",
+    "Variation",
+    "RankVariation",
+    "Slack"
+  ],
+  "exit_codes": {
+    "lean_version": 0,
+    "compile_Basic": 0,
+    "compile_AUROC": 0,
+    "compile_Disjoint": 0,
+    "compile_DisjointDiameter": 0,
+    "compile_DisjointGame": 0,
+    "compile_DisjointMinimax": 0,
+    "compile_DisjointSemantics": 0,
+    "compile_DisjointRealization": 0,
+    "compile_DisjointReviewSets": 0,
+    "compile_Flow": 0,
+    "compile_Endpoints": 0,
+    "compile_Finite": 0,
+    "compile_Laminar": 0,
+    "compile_LaminarComplete": 0,
+    "compile_NetworkRounding": 0,
+    "compile_NetworkStep": 0,
+    "compile_NetworkOpt": 0,
+    "compile_LaminarNetwork": 0,
+    "compile_LaminarFusion": 0,
+    "compile_PartitionNetwork": 0,
+    "compile_Review": 0,
+    "compile_Tree": 0,
+    "compile_TreeRank": 0,
+    "compile_TreeCounts": 0,
+    "compile_Separation": 0,
+    "compile_MainTheorems": 0,
+    "compile_Variation": 0,
+    "compile_RankVariation": 0,
+    "compile_Slack": 0,
+    "compile_Fusion": 0,
+    "axioms": 0
+  },
+  "declarations_by_module": {
+    "AUROC": [
+      "FusionAUROC.credit_symmetry",
+      "FusionAUROC.midrank_credit",
+      "FusionAUROC.within_positive_credit",
+      "FusionAUROC.pairwise_rank_sum",
+      "FusionAUROC.paired_area_contrast"
+    ],
+    "Basic": [
+      "Fusion.contrast_bounds",
+      "Fusion.attained_contrast_bounds",
+      "Fusion.restrict_bounds",
+      "Fusion.rank_contrast_identity",
+      "Fusion.brier_pointwise",
+      "Fusion.brier_sum",
+      "Fusion.net_benefit_pointwise",
+      "Fusion.positive_denominator",
+      "Fusion.margin_certificate",
+      "Fusion.certificate_inclusion",
+      "Fusion.margin_monotone",
+      "Fusion.unresolved_reduction",
+      "Fusion.scaled_target_difference",
+      "Fusion.scaled_width_bound"
+    ],
+    "Disjoint": [
+      "Fusion.cancel_common",
+      "Fusion.remainders_card_bound",
+      "Fusion.pad_remainders",
+      "Fusion.difference_set_identity",
+      "Fusion.majority_step",
+      "Fusion.bounded_total_slack",
+      "Fusion.majority_invariant",
+      "Fusion.round_five_compatibility"
+    ],
+    "DisjointDiameter": [
+      "FusionDisjoint.mem_candidates",
+      "FusionDisjoint.maximum_witness",
+      "FusionDisjoint.le_maximum",
+      "FusionDisjoint.maximum_le",
+      "FusionDisjoint.difference_nonempty",
+      "FusionDisjoint.residual_nonempty",
+      "FusionDisjoint.residual_to_difference",
+      "FusionDisjoint.difference_to_residual",
+      "FusionDisjoint.diameter_eq_potential",
+      "FusionDisjoint.potential_mono"
+    ],
+    "DisjointGame": [
+      "FusionDisjoint.compatible_exists",
+      "FusionDisjoint.next_good",
+      "FusionDisjoint.observed_can",
+      "FusionDisjoint.observed_compatible",
+      "FusionDisjoint.extend_completion",
+      "FusionDisjoint.dominated_self",
+      "FusionDisjoint.dominated_next",
+      "FusionDisjoint.balanced_initial",
+      "FusionDisjoint.majority_can",
+      "FusionDisjoint.balanced_next",
+      "FusionDisjoint.execution_invariants",
+      "FusionDisjoint.adversary_input"
+    ],
+    "DisjointMinimax": [
+      "FusionDisjoint.mem_completionCandidates",
+      "FusionDisjoint.completionCandidates_nonempty",
+      "FusionDisjoint.good_diameter",
+      "FusionDisjoint.balanced_diameter",
+      "FusionDisjoint.diameter_upper",
+      "FusionDisjoint.policy_lower",
+      "FusionDisjoint.eraseAt_of_not_mem",
+      "FusionDisjoint.execute_fixed_remaining",
+      "FusionDisjoint.fixedPlan_legal",
+      "FusionDisjoint.mem_eraseAt",
+      "FusionDisjoint.mem_eraseAll",
+      "FusionDisjoint.mem_fixedQueries",
+      "FusionDisjoint.eraseAll_fixed",
+      "FusionDisjoint.fixed_upper",
+      "FusionDisjoint.fixed_adaptive_minimax"
+    ],
+    "DisjointRealization": [
+      "FusionDisjoint.residual_realization"
+    ],
+    "DisjointSemantics": [
+      "FusionDisjoint.positive_union_step",
+      "FusionDisjoint.execution_label_preservation",
+      "FusionDisjoint.known_contribution_cancels",
+      "FusionDisjoint.empty_review_family"
+    ],
+    "DisjointReviewSets": [
+      "FusionDisjoint.initial_good",
+      "FusionDisjoint.remaining_subset",
+      "FusionDisjoint.reviewed_remaining",
+      "FusionDisjoint.remaining_reviewed",
+      "FusionDisjoint.fixedQueries_exact_set",
+      "FusionDisjoint.allowed_nonempty",
+      "FusionDisjoint.allowed_subset",
+      "FusionDisjoint.fixed_prefixes_permitted",
+      "FusionDisjoint.review_set_minimax",
+      "FusionDisjoint.threshold_formula"
+    ],
+    "Endpoints": [
+      "Fusion.finite_binary_extrema",
+      "Fusion.binary_encoding",
+      "Fusion.binary_integer_extrema",
+      "Fusion.integer_flow_endpoints"
+    ],
+    "Flow": [
+      "Fusion.integer_unit_capacity",
+      "Fusion.sum_group_counts",
+      "Fusion.count_flow_correspondence",
+      "Fusion.integral_optimizer_transfer",
+      "Fusion.complement_binary",
+      "Fusion.signed_count_conversion"
+    ],
+    "Finite": [
+      "FusionFinite.four_record_cancellation",
+      "FusionFinite.path_states_k1",
+      "FusionFinite.path_states_k2",
+      "FusionFinite.path_states_k2_realizations",
+      "FusionFinite.ranks_k1",
+      "FusionFinite.distinct_states_k1",
+      "FusionFinite.ranks_k2",
+      "FusionFinite.distinct_states_k2"
+    ],
+    "Laminar": [
+      "FusionLaminar.child_subset",
+      "FusionLaminar.child_smaller",
+      "FusionLaminar.children_disjoint",
+      "FusionLaminar.child_covers",
+      "FusionLaminar.parent_exists",
+      "FusionLaminar.parent_unique",
+      "FusionLaminar.mem_children",
+      "FusionLaminar.children_union",
+      "FusionLaminar.sum_children",
+      "FusionLaminar.tree_flow_determined",
+      "FusionLaminar.laminar_representation"
+    ],
+    "LaminarComplete": [
+      "FusionLaminar.completed_root",
+      "FusionLaminar.completed_singleton",
+      "FusionLaminar.completed_original",
+      "FusionLaminar.completed_nonempty",
+      "FusionLaminar.singleton_laminar",
+      "FusionLaminar.completed_laminar",
+      "FusionLaminar.completed_representation",
+      "FusionLaminar.root_flow_total",
+      "FusionLaminar.two_completed_trees"
+    ],
+    "LaminarFusion": [
+      "FusionHierarchy.tree_bounds_iff",
+      "FusionHierarchy.record_bounds_iff",
+      "FusionHierarchy.balance_A_node",
+      "FusionHierarchy.balance_B_node",
+      "FusionHierarchy.balance_rootA",
+      "FusionHierarchy.balance_rootB",
+      "FusionHierarchy.treeLift_original",
+      "FusionHierarchy.treeLift_bounds",
+      "FusionHierarchy.tree_zero_outside",
+      "FusionHierarchy.counts_lift",
+      "FusionHierarchy.flow_projects",
+      "FusionHierarchy.integer_counts_iff",
+      "FusionHierarchy.record_objective",
+      "FusionHierarchy.two_laminar_sharp"
+    ],
+    "LaminarNetwork": [
+      "FusionHierarchy.has_parent",
+      "FusionHierarchy.parent_root",
+      "FusionHierarchy.parent_outside",
+      "FusionHierarchy.parent_some_iff",
+      "FusionHierarchy.treeOut_children",
+      "FusionHierarchy.treeOut_outside",
+      "FusionHierarchy.treeOut_singleton",
+      "FusionHierarchy.leafTerm_singleton",
+      "FusionHierarchy.leafTerm_nonsingleton",
+      "FusionHierarchy.leafTerm_outside",
+      "FusionHierarchy.treeLift_node",
+      "FusionHierarchy.node_determines_tree",
+      "FusionHierarchy.rootOut_eq"
+    ],
+    "NetworkOpt": [
+      "FusionNetwork.integer_bounds",
+      "FusionNetwork.round_feasible",
+      "FusionNetwork.min_cost_integral",
+      "FusionNetwork.integral_flow_extrema"
+    ],
+    "NetworkStep": [
+      "FusionNetwork.fractional_strict_bounds",
+      "FusionNetwork.stepLimit_pos",
+      "FusionNetwork.step_inside",
+      "FusionNetwork.step_hits_integer",
+      "FusionNetwork.mem_fractionalSet",
+      "FusionNetwork.rounding_step",
+      "FusionNetwork.round_flow",
+      "FusionNetwork.real_flow_rounding"
+    ],
+    "NetworkRounding": [
+      "FusionNetwork.int_zero",
+      "FusionNetwork.int_add",
+      "FusionNetwork.int_sub",
+      "FusionNetwork.int_sum",
+      "FusionNetwork.balance_zero",
+      "FusionNetwork.balance_add",
+      "FusionNetwork.balance_sub",
+      "FusionNetwork.balance_scale",
+      "FusionNetwork.balance_single",
+      "FusionNetwork.cut_balance",
+      "FusionNetwork.cutTerm_int",
+      "FusionNetwork.fractional_connected",
+      "FusionNetwork.path_transport",
+      "FusionNetwork.fractional_circulation",
+      "FusionNetwork.improving_direction"
+    ],
+    "MainTheorems": [
+      "FusionPaper.positive_scale_bounds",
+      "FusionPaper.theorem1",
+      "FusionPaper.theorem2",
+      "FusionPaper.theorem2_all_finite",
+      "FusionPaper.theorem3_input_lower"
+    ],
+    "PartitionNetwork": [
+      "FusionPartition.groups_sum",
+      "FusionPartition.group_cast",
+      "FusionPartition.balance_source",
+      "FusionPartition.balance_sink",
+      "FusionPartition.balance_A",
+      "FusionPartition.balance_B",
+      "FusionPartition.record_bounds",
+      "FusionPartition.completion_lifts",
+      "FusionPartition.feasible_projects",
+      "FusionPartition.integer_completion_iff",
+      "FusionPartition.objective_eq",
+      "FusionPartition.two_partition_sharp"
+    ],
+    "Separation": [
+      "FusionTree.label_target_sign",
+      "FusionTree.sign_injective",
+      "FusionTree.label_observations_equal",
+      "FusionTree.fixed_labels_iff",
+      "FusionTree.flip_depth",
+      "FusionTree.flip_run",
+      "FusionTree.flow_run_as_labels",
+      "FusionTree.labels_run_as_flow",
+      "FusionTree.label_adaptive_correct",
+      "FusionTree.label_adaptive_depth",
+      "FusionTree.label_adaptive_lower",
+      "FusionTree.runQueries_le_depth",
+      "FusionTree.cut_depth",
+      "FusionTree.cut_correct",
+      "FusionTree.label_adaptive_input_lower",
+      "FusionTree.label_adaptive_input_upper",
+      "FusionTree.numeric_certification_iff",
+      "FusionTree.groups_sum",
+      "FusionTree.positive_total",
+      "FusionTree.label_feasible",
+      "FusionTree.total_nontrivial",
+      "FusionTree.two_partition_separation",
+      "FusionTree.numeric_policy_iff",
+      "FusionTree.runQueries_ext",
+      "FusionTree.exact_numeric_budgets",
+      "FusionTree.auc_denominator_positive",
+      "FusionTree.normalized_exactness"
+    ],
+    "TreeCounts": [
+      "FusionTree.root_even",
+      "FusionTree.origin_parity",
+      "FusionTree.destination_parity",
+      "FusionTree.group_sides",
+      "FusionTree.labels_coordinate",
+      "FusionTree.outgoing_root",
+      "FusionTree.node_pair_eq",
+      "FusionTree.node_some_ne_root",
+      "FusionTree.outgoing_child",
+      "FusionTree.incoming_root",
+      "FusionTree.incoming_child",
+      "FusionTree.flow_conservation",
+      "FusionTree.fullBalance_node",
+      "FusionTree.balance_sum",
+      "FusionTree.full_conservation",
+      "FusionTree.complemented_count",
+      "FusionTree.balance_groups",
+      "FusionTree.inactive_groupA",
+      "FusionTree.inactive_groupB",
+      "FusionTree.flow_positive_counts",
+      "FusionTree.positive_counts_iff_path"
+    ],
+    "TreeRank": [
+      "FusionTree.size_formula",
+      "FusionTree.rank_bound",
+      "FusionTree.rank_injective",
+      "FusionTree.rank_bijective",
+      "FusionTree.labels_involution",
+      "FusionTree.root_coefficient",
+      "FusionTree.child_coefficient",
+      "FusionTree.coefficient_sum",
+      "FusionTree.bit_not",
+      "FusionTree.target_step",
+      "FusionTree.target_zero",
+      "FusionTree.target_path",
+      "FusionTree.one_based_rank_difference"
+    ],
+    "Tree": [
+      "FusionTree.leaf_card",
+      "FusionTree.edge_card",
+      "FusionTree.zero_flow",
+      "FusionTree.zero_unique",
+      "FusionTree.path_feasible",
+      "FusionTree.path_exhaustive",
+      "FusionTree.path_injective",
+      "FusionTree.map_depth",
+      "FusionTree.map_run",
+      "FusionTree.run_ext",
+      "FusionTree.adaptive_depth",
+      "FusionTree.adaptive_correct",
+      "FusionTree.payload_injective",
+      "FusionTree.path_payload",
+      "FusionTree.fixed_card",
+      "FusionTree.fixed_correct",
+      "FusionTree.kind_some",
+      "FusionTree.kind_none",
+      "FusionTree.path_encoded",
+      "FusionTree.fixed_lower",
+      "FusionTree.adaptive_lower",
+      "FusionTree.review_optima"
+    ],
+    "Review": [
+      "Fusion.indistinguishable_obstruction",
+      "Fusion.all_payloads_certify",
+      "Fusion.missing_payload_obstruction",
+      "Fusion.payload_retains_half",
+      "Fusion.split_retains_half",
+      "Fusion.survival_power",
+      "Fusion.adjacent_rank_swap",
+      "Fusion.payload_complement_cancellation",
+      "Fusion.reported_budget_arithmetic",
+      "Fusion.fixed_pair_coverage",
+      "Fusion.fixed_budget_lower",
+      "Fusion.adaptive_pair_lower"
+    ],
+    "RankVariation": [
+      "Fusion.weighted_monotone_variation",
+      "Fusion.weighted_antitone_variation",
+      "Fusion.rank_prefix_eight_bound",
+      "Fusion.clipped_width"
+    ],
+    "Variation": [
+      "Fusion.summation_by_parts",
+      "Fusion.summation_by_parts_fixed_total",
+      "Fusion.difference_of_interval",
+      "Fusion.prefix_variation_bound",
+      "Fusion.residual_bound",
+      "Fusion.coarsening_assembly",
+      "Fusion.monotone_variation",
+      "Fusion.two_rank_variations",
+      "Fusion.prefix_difference",
+      "Fusion.bin_is_prefix_increment",
+      "Fusion.grouped_weight_sum",
+      "Fusion.prefix_at_zero",
+      "Fusion.prefix_at_total",
+      "Fusion.coarsening_bound"
+    ],
+    "Slack": [
+      "FusionSlack.slack_subsets",
+      "FusionSlack.zero_slack_target",
+      "FusionSlack.transcript_target_equivalence",
+      "FusionSlack.grouped_slack_encoding"
+    ]
+  },
+  "axioms_by_declaration": {
+    "Fusion.contrast_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.attained_contrast_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.restrict_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.rank_contrast_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.brier_pointwise": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.brier_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.net_benefit_pointwise": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.positive_denominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.margin_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.certificate_inclusion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.margin_monotone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.unresolved_reduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.scaled_target_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.scaled_width_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionAUROC.credit_symmetry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionAUROC.midrank_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionAUROC.within_positive_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionAUROC.pairwise_rank_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionAUROC.paired_area_contrast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.cancel_common": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.remainders_card_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.pad_remainders": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.difference_set_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.majority_step": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.bounded_total_slack": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.majority_invariant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.round_five_compatibility": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.mem_candidates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.maximum_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.le_maximum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.maximum_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.difference_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.residual_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.residual_to_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.difference_to_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.diameter_eq_potential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.potential_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.compatible_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.next_good": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.observed_can": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.observed_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.extend_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.dominated_self": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.dominated_next": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.balanced_initial": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.majority_can": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.balanced_next": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.execution_invariants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.adversary_input": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.mem_completionCandidates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.completionCandidates_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.good_diameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.balanced_diameter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.diameter_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.policy_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.eraseAt_of_not_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.execute_fixed_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.fixedPlan_legal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.mem_eraseAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.mem_eraseAll": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.mem_fixedQueries": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.eraseAll_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.fixed_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.fixed_adaptive_minimax": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.positive_union_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.execution_label_preservation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.known_contribution_cancels": [
+      "propext"
+    ],
+    "FusionDisjoint.empty_review_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.residual_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.initial_good": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.remaining_subset": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.reviewed_remaining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.remaining_reviewed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.fixedQueries_exact_set": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.allowed_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.allowed_subset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.fixed_prefixes_permitted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.review_set_minimax": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionDisjoint.threshold_formula": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.integer_unit_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.sum_group_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.count_flow_correspondence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.integral_optimizer_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.complement_binary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.signed_count_conversion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.finite_binary_extrema": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.binary_encoding": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.binary_integer_extrema": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.integer_flow_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.four_record_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.path_states_k1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.path_states_k2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.ranks_k1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.ranks_k2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.child_subset": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionLaminar.child_smaller": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionLaminar.children_disjoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionLaminar.child_covers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.parent_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.parent_unique": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionLaminar.mem_children": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.children_union": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.sum_children": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.tree_flow_determined": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.laminar_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_original": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.singleton_laminar": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_laminar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.completed_representation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.root_flow_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionLaminar.two_completed_trees": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.int_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.int_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.int_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.int_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.balance_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.balance_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.balance_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.balance_scale": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.balance_single": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.cut_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.cutTerm_int": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.fractional_connected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.path_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.fractional_circulation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.improving_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.fractional_strict_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.stepLimit_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.step_inside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.step_hits_integer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.mem_fractionalSet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.rounding_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.round_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.real_flow_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.integer_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.round_feasible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.min_cost_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionNetwork.integral_flow_extrema": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.has_parent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.parent_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.parent_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.parent_some_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeOut_children": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeOut_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeOut_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.leafTerm_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.leafTerm_nonsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.leafTerm_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeLift_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.node_determines_tree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.rootOut_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.tree_bounds_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.record_bounds_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.balance_A_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.balance_B_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.balance_rootA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.balance_rootB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeLift_original": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.treeLift_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.tree_zero_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.counts_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.flow_projects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.integer_counts_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.record_objective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionHierarchy.two_laminar_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.groups_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.group_cast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.balance_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.balance_sink": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.balance_A": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.balance_B": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.record_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.completion_lifts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.feasible_projects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.integer_completion_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.objective_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPartition.two_partition_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.all_payloads_certify": [
+      "propext"
+    ],
+    "Fusion.missing_payload_obstruction": [
+      "propext"
+    ],
+    "Fusion.payload_retains_half": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.split_retains_half": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.survival_power": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.adjacent_rank_swap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.payload_complement_cancellation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Fusion.reported_budget_arithmetic": [
+      "propext"
+    ],
+    "Fusion.fixed_pair_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.fixed_budget_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.adaptive_pair_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.leaf_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.edge_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.zero_unique": [
+      "propext"
+    ],
+    "FusionTree.path_feasible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.path_exhaustive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.path_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.map_depth": [
+      "propext"
+    ],
+    "FusionTree.map_run": [
+      "propext"
+    ],
+    "FusionTree.run_ext": [
+      "propext"
+    ],
+    "FusionTree.adaptive_depth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.adaptive_correct": [
+      "propext"
+    ],
+    "FusionTree.path_payload": [
+      "propext"
+    ],
+    "FusionTree.fixed_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.fixed_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.kind_some": [
+      "propext"
+    ],
+    "FusionTree.kind_none": [
+      "propext"
+    ],
+    "FusionTree.path_encoded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.fixed_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.adaptive_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.review_optima": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.size_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.rank_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.rank_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.rank_bijective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.labels_involution": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.root_coefficient": [
+      "propext"
+    ],
+    "FusionTree.child_coefficient": [
+      "propext"
+    ],
+    "FusionTree.coefficient_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.target_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.target_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.target_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.one_based_rank_difference": [
+      "propext"
+    ],
+    "FusionTree.origin_parity": [
+      "propext"
+    ],
+    "FusionTree.destination_parity": [
+      "propext"
+    ],
+    "FusionTree.group_sides": [
+      "propext"
+    ],
+    "FusionTree.labels_coordinate": [
+      "propext"
+    ],
+    "FusionTree.outgoing_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.node_pair_eq": [
+      "propext"
+    ],
+    "FusionTree.node_some_ne_root": [
+      "propext"
+    ],
+    "FusionTree.outgoing_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.incoming_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.incoming_child": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.flow_conservation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.fullBalance_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.balance_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.full_conservation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.complemented_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.balance_groups": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.inactive_groupA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.inactive_groupB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.flow_positive_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.positive_counts_iff_path": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.label_target_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.sign_injective": [
+      "propext"
+    ],
+    "FusionTree.label_observations_equal": [
+      "propext"
+    ],
+    "FusionTree.fixed_labels_iff": [
+      "propext"
+    ],
+    "FusionTree.flip_depth": [
+      "propext"
+    ],
+    "FusionTree.flip_run": [
+      "propext"
+    ],
+    "FusionTree.flow_run_as_labels": [
+      "propext"
+    ],
+    "FusionTree.labels_run_as_flow": [
+      "propext"
+    ],
+    "FusionTree.label_adaptive_correct": [
+      "propext"
+    ],
+    "FusionTree.label_adaptive_depth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.label_adaptive_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.runQueries_le_depth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.cut_depth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.cut_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.label_adaptive_input_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.label_adaptive_input_upper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionTree.numeric_certification_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.groups_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.positive_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.label_feasible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.total_nontrivial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.two_partition_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.numeric_policy_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.runQueries_ext": [
+      "propext"
+    ],
+    "FusionTree.exact_numeric_budgets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.auc_denominator_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionTree.normalized_exactness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPaper.positive_scale_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPaper.theorem1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPaper.theorem2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPaper.theorem2_all_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionPaper.theorem3_input_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.summation_by_parts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.summation_by_parts_fixed_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.difference_of_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.prefix_variation_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.residual_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.coarsening_assembly": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.monotone_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.two_rank_variations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.prefix_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.bin_is_prefix_increment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.grouped_weight_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.prefix_at_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.prefix_at_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.coarsening_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.weighted_monotone_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.weighted_antitone_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.rank_prefix_eight_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Fusion.clipped_width": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionSlack.slack_subsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionSlack.zero_slack_target": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FusionSlack.transcript_target_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionSlack.grouped_slack_encoding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FusionFinite.path_states_k2_realizations": [],
+    "FusionFinite.distinct_states_k1": [],
+    "FusionFinite.distinct_states_k2": [],
+    "Fusion.indistinguishable_obstruction": [],
+    "FusionTree.zero_flow": [],
+    "FusionTree.payload_injective": [],
+    "FusionTree.bit_not": [],
+    "FusionTree.root_even": []
+  },
+  "source_sha256": {
+    "Fusion/Basic.lean": "9934268bce40918c72c43e9840e9dff8dd99feca0942af466ec637c872c0a6cb",
+    "Fusion/AUROC.lean": "848232ee25ac98c94c9b50773577a43ff7137ad44504154b0696663f97740a1d",
+    "Fusion/Disjoint.lean": "ab08479f7a8681523656935541f79de0e561fec7d4b32ccac96ec31bd898022b",
+    "Fusion/DisjointDiameter.lean": "3925baf2772f6f403de0de826d531daaf0561fb3c485d98b1e133c3e5e1b9e0d",
+    "Fusion/DisjointGame.lean": "2c27ed9958acbebe65b4ea581be60601f35fd164b1ddd8a8badd1b652980eeda",
+    "Fusion/DisjointMinimax.lean": "98b43b8f028a75c96085e541c96797eb8548c5db9a9c9c307191d0901b7fbe48",
+    "Fusion/DisjointSemantics.lean": "f7e720d2d8d97c3e3f840bf0cdc394ff8a8d1c3379c4aa7548f29600d1620da9",
+    "Fusion/DisjointRealization.lean": "efcb96c9a11ea3226b87307698e3dbf3111a05ff7d981b0e7e839fd3f1ff939c",
+    "Fusion/DisjointReviewSets.lean": "05c262106bb7ad7a428c13e86d70db43d831b308d2ce47ce00f5bc33f2adce83",
+    "Fusion/Flow.lean": "f5d5bdd7540541dc4a9ca1b94d1a48aa7e4002467f64a2b08eebe7d78ff06270",
+    "Fusion/Endpoints.lean": "a98a8c4ab1f4a854e0a57d351079fd09a69546bc59d51f4a6b5436db781a1dd7",
+    "Fusion/Finite.lean": "dd8a527b5838287e531c2c6160373aebed9a89c6f307700893b1020ba2950fc0",
+    "Fusion/Laminar.lean": "f95cdee69e1c286e912060ad6f2fa25d605d32cc0279f16d17504ab5ebdf2629",
+    "Fusion/LaminarComplete.lean": "bd27cd59e466055c39979606369f8cb5c55ce5d83b4b3ecd5424fd7f8bba1b31",
+    "Fusion/NetworkRounding.lean": "d7dfcd29418ff947197ec60d598f0bfb40172176517580c67f373fd7f9d36ec0",
+    "Fusion/NetworkStep.lean": "d0985bb334d8966e1bf0704f345dde6915e5d4ef7277c3fc7a2b3d3ddbb6d579",
+    "Fusion/NetworkOpt.lean": "1bc2685606bfdff67d86c8da9bc25ca056ff9035863d4d3c4eea41e8b5f6ee10",
+    "Fusion/LaminarNetwork.lean": "521daae9fa635f1c0c197ed0c04cc867c5989ebbb92c6d6bc93883fd0430b016",
+    "Fusion/LaminarFusion.lean": "0a49ebae41bc9d285d3db72b1f747d1f47d3d6ad88e1970c927c875fce7eeecd",
+    "Fusion/PartitionNetwork.lean": "bb7d15deb4e226333cce17177bc6a167b5b1a4bae288d2950826d86d0c49e742",
+    "Fusion/Review.lean": "7e4bf9553de903aafc97d8cbf6939113bc01ecafafd510c3621157d8621592b3",
+    "Fusion/Tree.lean": "e973d45c8c12b38525afffc87b38bf00c2a1b3d490195846129f98ba61f75f2e",
+    "Fusion/TreeRank.lean": "a28f4c5b8d30bf95518235b367093f3b6f5cb5e5f917410c47ff7a8381129071",
+    "Fusion/TreeCounts.lean": "552a038faefef1b4299de37f08f6375cce93bc698f0156723e90ea2ea8435960",
+    "Fusion/Separation.lean": "b9cb4f5effa9aa8d4b239c8b6188ee633d3c0ba93dc66d9a85f31390278bd8a4",
+    "Fusion/MainTheorems.lean": "aaa65b083fe39b3f2353c2ebf845974003cdb6a7cc22307438d7341a692f5ae7",
+    "Fusion/Variation.lean": "d038aa6433500be446c20e0eaba078d57dd4ce79bcf7326a2bb7baa7db9c664b",
+    "Fusion/RankVariation.lean": "5f5bf86563a4eef52479442d78b828a004b0f4bd093f8a2de01d1e8bec1bee7d",
+    "Fusion/Slack.lean": "131fb5f7373423b4947bcd6e4736f23c46e172b71bc076f4441b04cc9f6d8403",
+    "Fusion.lean": "c4853372a4733622970f05118d0aeb1d5491845f482339f785a9250dd787195b",
+    "Audit.lean": "2193b8a80373d36d7424c74bf441f1ed720dbf88053dbace16362c35572f6d47",
+    "verify.py": "f01cab429435fd1ed6677781e9d465804eec52550b089d24f7f656c702c80333",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lakefile.toml": "70e89da2821e812cc851b7e7002a607d1eb3a2b7f8d86e24bc35dc5684d20ea9",
+    "lake-manifest.json": "c15a1cda66c14c86c5448a0bf50db2b0e42e302e2cbd212ddde9d880142007e6"
+  },
+  "main_theorems_fully_formalized": [
+    1,
+    2,
+    3
+  ],
+  "whole_paper_formally_verified": false,
+  "closed_prior_obligations": [
+    "Cost-nonincreasing rounding of arbitrary bounded real flows with integer bounds and balances",
+    "Integral attainment of both endpoints over the full real-flow relaxation",
+    "Explicit directed network encoding of arbitrary two-laminar-family constraints",
+    "Disjoint-group diameter and fixed/adaptive minimax over nonempty allowed review families",
+    "Fixed input witnesses for majority transcripts and realization of residual completions",
+    "General tied-score AUROC identity derived from pairwise credit"
+  ],
+  "statement_clarifications": [
+    "Supplementary S4.2 requires a nonempty permitted review-set family; downward closure alone is insufficient"
+  ],
+  "scope_limits": [
+    "No verification of biomedical data processing, floating-point solver implementation, empirical results, or novelty",
+    "Constructive integral endpoint proof replaces the textual total-unimodularity argument; matrix total unimodularity itself is not formalized",
+    "No polynomial runtime or compact graph-size bound for the laminar encoding indexed by all finite subsets",
+    "Finite deterministic query policies and diameter are formalized; randomized policies and enclosing radius are outside the statements",
+    "Slack encoding is proved as transcriptwise target-set equivalence; no separately named bounded-total policy minimax assembly"
+  ],
+  "open_prior_proof_obligations": []
+}

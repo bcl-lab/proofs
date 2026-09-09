@@ -1,0 +1,19 @@
+Fusion/Finite.lean:7:1: warning: unused variable `ha`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:7:22: warning: unused variable `hb`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:8:1: warning: unused variable `hc`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:9:40: warning: unused variable `h4`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:16:2: warning: unused variable `b1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:24:2: warning: unused variable `cB1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'FusionFinite.path_states_k1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion/Finite.lean:38:2: warning: unused variable `b1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:58:2: warning: unused variable `cB2`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'FusionFinite.path_states_k2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FusionFinite.path_states_k2_realizations' does not depend on any axioms

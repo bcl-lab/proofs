@@ -1,0 +1,1810 @@
+$ lake env lean --version
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Basic.olean Fusion/Basic.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/AUROC.olean Fusion/AUROC.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Disjoint.olean Fusion/Disjoint.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointDiameter.olean Fusion/DisjointDiameter.lean
+Fusion/DisjointDiameter.lean:28:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_candidates':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointDiameter.lean:77:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.residual_to_difference':
+  [Fintype I]
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointDiameter.lean:98:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.difference_to_residual':
+  [Fintype I]
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointGame.olean Fusion/DisjointGame.lean
+Fusion/DisjointGame.lean:31:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.compatible_exists':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:38:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.next_good':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:48:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.observed_can':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:66:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.observed_compatible':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:87:4: warning: try 'simp at hh' instead of 'simpa using hh'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+Fusion/DisjointGame.lean:79:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.extend_completion':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:79:44: warning: unused variable `hc`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/DisjointGame.lean:133:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.dominated_self':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:134:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.dominated_next':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:141:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.balanced_initial':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:149:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.majority_can':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:155:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.balanced_next':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointMinimax.olean Fusion/DisjointMinimax.lean
+Fusion/DisjointMinimax.lean:12:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_completionCandidates':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:79:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.eraseAt_of_not_mem':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:109:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_eraseAt':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointMinimax.lean:128:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.mem_fixedQueries':
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointSemantics.olean Fusion/DisjointSemantics.lean
+Fusion/DisjointSemantics.lean:16:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.positive_union_step':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointRealization.olean Fusion/DisjointRealization.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/DisjointReviewSets.olean Fusion/DisjointReviewSets.lean
+Fusion/DisjointReviewSets.lean:12:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.initial_good':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointReviewSets.lean:25:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.remaining_subset':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointReviewSets.lean:53:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.allowed_nonempty':
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointReviewSets.lean:97:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.threshold_formula':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Flow.olean Fusion/Flow.lean
+Fusion/Flow.lean:69:5: warning: unused variable `hy`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Flow.lean:92:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Endpoints.olean Fusion/Endpoints.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Finite.olean Fusion/Finite.lean
+Fusion/Finite.lean:7:1: warning: unused variable `ha`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:7:22: warning: unused variable `hb`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:8:1: warning: unused variable `hc`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:9:40: warning: unused variable `h4`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:16:2: warning: unused variable `b1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:24:2: warning: unused variable `cB1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'FusionFinite.path_states_k1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion/Finite.lean:38:2: warning: unused variable `b1`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Finite.lean:58:2: warning: unused variable `cB2`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'FusionFinite.path_states_k2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FusionFinite.path_states_k2_realizations' does not depend on any axioms
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Laminar.olean Fusion/Laminar.lean
+Fusion/Laminar.lean:15:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.child_subset':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:18:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.child_smaller':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:22:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.children_disjoint':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:74:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.parent_unique':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Laminar.lean:87:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.mem_children':
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/LaminarComplete.olean Fusion/LaminarComplete.lean
+Fusion/LaminarComplete.lean:12:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.completed_root':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarComplete.lean:16:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.completed_singleton':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarComplete.lean:20:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.completed_original':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarComplete.lean:36:0: warning: automatically included section variable(s) unused in theorem 'FusionLaminar.singleton_laminar':
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/NetworkRounding.olean Fusion/NetworkRounding.lean
+Fusion/NetworkRounding.lean:35:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_zero':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:37:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_add':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:40:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_sub':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:43:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_scale':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:48:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.balance_single':
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:56:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.cut_balance':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/NetworkRounding.lean:64:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.cutTerm_int':
+  [Fintype V]
+  [Fintype E]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype E] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/NetworkStep.olean Fusion/NetworkStep.lean
+Fusion/NetworkStep.lean:56:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.mem_fractionalSet':
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/NetworkOpt.olean Fusion/NetworkOpt.lean
+Fusion/NetworkOpt.lean:17:0: warning: automatically included section variable(s) unused in theorem 'FusionNetwork.integer_bounds':
+  [Fintype V]
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq E] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/LaminarNetwork.olean Fusion/LaminarNetwork.lean
+Fusion/LaminarNetwork.lean:86:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.leafTerm_singleton':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarNetwork.lean:89:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.leafTerm_nonsingleton':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/LaminarFusion.olean Fusion/LaminarFusion.lean
+Fusion/LaminarFusion.lean:53:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.tree_bounds_iff':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:63:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.record_bounds_iff':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:81:41: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Fusion/LaminarFusion.lean:81:41: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+Fusion/LaminarFusion.lean:89:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Fusion/LaminarFusion.lean:257:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.integer_counts_iff':
+  [DecidableEq ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarFusion.lean:281:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.record_objective':
+  [DecidableEq ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/PartitionNetwork.olean Fusion/PartitionNetwork.lean
+Fusion/PartitionNetwork.lean:102:8: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Review.olean Fusion/Review.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Tree.olean Fusion/Tree.lean
+Fusion/Tree.lean:38:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Tree.lean:259:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/TreeRank.olean Fusion/TreeRank.lean
+Fusion/TreeRank.lean:23:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/TreeRank.lean:84:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/TreeCounts.olean Fusion/TreeCounts.lean
+Fusion/TreeCounts.lean:110:2: warning: 'change (some (b, u) : Option (Bool × Node k)) = some (c, v) ↔ _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Fusion/TreeCounts.lean:245:43: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Fusion/TreeCounts.lean:252:53: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Separation.olean Fusion/Separation.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/MainTheorems.olean Fusion/MainTheorems.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Variation.olean Fusion/Variation.lean
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/RankVariation.olean Fusion/RankVariation.lean
+Fusion/RankVariation.lean:28:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion/Slack.olean Fusion/Slack.lean
+Fusion/Slack.lean:21:0: warning: automatically included section variable(s) unused in theorem 'FusionSlack.zero_slack_target':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Slack.lean:26:0: warning: automatically included section variable(s) unused in theorem 'FusionSlack.transcript_target_equivalence':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/Slack.lean:40:0: warning: automatically included section variable(s) unused in theorem 'FusionSlack.grouped_slack_encoding':
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+
+exit=0
+
+$ lake env lean -o .lake/build/lib/lean/Fusion.olean Fusion.lean
+
+exit=0
+
+$ lake env lean Audit.lean
+Fusion.contrast_bounds (a b la ua lb ub : ℝ) (ha : la ≤ a ∧ a ≤ ua) (hb : lb ≤ b ∧ b ≤ ub) :
+  la - ub ≤ a - b ∧ a - b ≤ ua - lb
+'Fusion.contrast_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.attained_contrast_bounds.{u_1} {X : Type u_1} (Y : Set X) (a b : X → ℝ) (la ua lb ub L U : ℝ) (xlo xhi : X)
+  (hlo : xlo ∈ Y) (hhi : xhi ∈ Y) (ha : ∀ x ∈ Y, la ≤ a x ∧ a x ≤ ua) (hb : ∀ x ∈ Y, lb ≤ b x ∧ b x ≤ ub)
+  (hL : L = a xlo - b xlo) (hU : U = a xhi - b xhi) : la - ub ≤ L ∧ U ≤ ua - lb
+'Fusion.attained_contrast_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.restrict_bounds.{u_1} {X : Type u_1} (Y Z : Set X) (f : X → ℝ) (L U : ℝ) (hsub : Z ⊆ Y)
+  (h : ∀ x ∈ Y, L ≤ f x ∧ f x ≤ U) (x : X) : x ∈ Z → L ≤ f x ∧ f x ≤ U
+'Fusion.restrict_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.rank_contrast_identity {n : ℕ} (rA rB y : Fin n → ℝ) (offset D : ℝ) :
+  (∑ i, rA i * y i - offset) / D - (∑ i, rB i * y i - offset) / D = (∑ i, (rA i - rB i) * y i) / D
+'Fusion.rank_contrast_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.brier_pointwise (pA pB y : ℝ) : (pB - y) ^ 2 - (pA - y) ^ 2 = pB ^ 2 - pA ^ 2 + 2 * (pA - pB) * y
+'Fusion.brier_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.brier_sum {n : ℕ} (pA pB y : Fin n → ℝ) :
+  ∑ i, ((pB i - y i) ^ 2 - (pA i - y i) ^ 2) = ∑ i, (pB i ^ 2 - pA i ^ 2) + ∑ i, 2 * (pA i - pB i) * y i
+'Fusion.brier_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.net_benefit_pointwise (a b y w : ℝ) :
+  a * y - w * a * (1 - y) - (b * y - w * b * (1 - y)) = (1 + w) * (a - b) * y - w * (a - b)
+'Fusion.net_benefit_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.positive_denominator (N M : ℝ) (hM : 0 < M) (hN : M < N) : 0 < M * (N - M)
+'Fusion.positive_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.margin_certificate (L U t d : ℝ) (ht : L ≤ t ∧ t ≤ U) (h : d < L ∨ U < -d) : d < t ∨ t < -d
+'Fusion.margin_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.certificate_inclusion (L U l u d : ℝ) (h : L ≤ l ∧ u ≤ U) : d < L ∨ U < -d → d < l ∨ u < -d
+'Fusion.certificate_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.margin_monotone (L U d e : ℝ) (h : d ≤ e) : e < L ∨ U < -e → d < L ∨ U < -d
+'Fusion.margin_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.unresolved_reduction : (16 - 11) / 16 = 5 / 16
+'Fusion.unresolved_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.scaled_target_difference (C x y D : ℝ) (hD : 0 < D) : D * ((C + x) / D - (C + y) / D) = x - y
+'Fusion.scaled_target_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.scaled_width_bound (C x y D B : ℝ) (hD : 0 < D) (h : |x - y| ≤ B) : D * ((C + x) / D - (C + y) / D) ≤ B
+'Fusion.scaled_width_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionAUROC.credit_symmetry (a b : ℝ) : FusionAUROC.credit a b + FusionAUROC.credit b a = 1
+'FusionAUROC.credit_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionAUROC.midrank_credit.{u_1} {ι : Type u_1} [Fintype ι] (score : ι → ℝ) (i : ι) :
+  FusionAUROC.midrank score i = 1 / 2 + ∑ j, FusionAUROC.credit (score i) (score j)
+'FusionAUROC.midrank_credit' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionAUROC.within_positive_credit.{u_1} {ι : Type u_1} [Fintype ι] (score y : ι → ℝ) :
+  ∑ i, ∑ j, FusionAUROC.credit (score i) (score j) * y i * y j = (∑ i, y i) ^ 2 / 2
+'FusionAUROC.within_positive_credit' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionAUROC.pairwise_rank_sum.{u_1} {ι : Type u_1} [Fintype ι] (score y : ι → ℝ) :
+  ∑ i, ∑ j, FusionAUROC.credit (score i) (score j) * y i * (1 - y j) =
+    ∑ i, FusionAUROC.midrank score i * y i - (∑ i, y i) * (∑ i, y i + 1) / 2
+'FusionAUROC.pairwise_rank_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionAUROC.paired_area_contrast.{u_1} {ι : Type u_1} [Fintype ι] (scoreA scoreB y : ι → ℝ) (D : ℝ) :
+  (∑ i, ∑ j, FusionAUROC.credit (scoreA i) (scoreA j) * y i * (1 - y j)) / D -
+      (∑ i, ∑ j, FusionAUROC.credit (scoreB i) (scoreB j) * y i * (1 - y j)) / D =
+    (∑ i, (FusionAUROC.midrank scoreA i - FusionAUROC.midrank scoreB i) * y i) / D
+'FusionAUROC.paired_area_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.cancel_common.{u_1, u_2} {ι : Type u_1} [DecidableEq ι] {V : Type u_2} [AddCommGroup V] (v : ι → V)
+  (A B : Finset ι) : ∑ i ∈ A, v i - ∑ i ∈ B, v i = ∑ i ∈ A \ B, v i - ∑ i ∈ B \ A, v i
+'Fusion.cancel_common' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.remainders_card_bound.{u_1} {ι : Type u_1} [DecidableEq ι] (R A B : Finset ι) (k : ℕ) (hA : A ⊆ R) (hB : B ⊆ R)
+  (hkA : A.card = k) (hkB : B.card = k) : (A \ B).card = (B \ A).card ∧ (A \ B).card ≤ min k (R.card - k)
+'Fusion.remainders_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.pad_remainders.{u_1} {ι : Type u_1} [DecidableEq ι] (R P Q : Finset ι) (k : ℕ) (hP : P ⊆ R) (hQ : Q ⊆ R)
+  (hd : Disjoint P Q) (heq : P.card = Q.card) (hk : k ≤ R.card) (hh : P.card ≤ min k (R.card - k)) :
+  ∃ C ⊆ R \ (P ∪ Q), (P ∪ C).card = k ∧ (Q ∪ C).card = k
+'Fusion.pad_remainders' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.difference_set_identity.{u_1, u_2} {ι : Type u_1} [DecidableEq ι] {V : Type u_2} [AddCommGroup V] (R : Finset ι)
+  (v : ι → V) (k : ℕ) (hk : k ≤ R.card) (z : V) :
+  (∃ A ⊆ R, ∃ B ⊆ R, A.card = k ∧ B.card = k ∧ z = ∑ i ∈ A, v i - ∑ i ∈ B, v i) ↔
+    ∃ P ⊆ R, ∃ Q ⊆ R, Disjoint P Q ∧ P.card = Q.card ∧ P.card ≤ min k (R.card - k) ∧ z = ∑ i ∈ P, v i - ∑ i ∈ Q, v i
+'Fusion.difference_set_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.majority_step (p q : ℕ) (h : 0 < p + q) :
+  (if q ≤ p then min (p - 1) q else min p (q - 1)) = min (min p q) ((p + q - 1) / 2)
+'Fusion.majority_step' depends on axioms: [propext, Quot.sound]
+Fusion.bounded_total_slack (L U m : ℕ) (hLU : L ≤ U) : L ≤ m ∧ m ≤ U ↔ ∃ s ≤ U - L, m + s = U
+'Fusion.bounded_total_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.majority_invariant (t p q : ℕ) (ht : t ≤ p + q) :
+  (Fusion.majorityProcess t p q).1 + (Fusion.majorityProcess t p q).2 = p + q - t ∧
+    min (Fusion.majorityProcess t p q).1 (Fusion.majorityProcess t p q).2 = min (min p q) ((p + q - t) / 2)
+'Fusion.majority_invariant' depends on axioms: [propext, Quot.sound]
+Fusion.round_five_compatibility (c : ℤ) :
+  let r := 5 * ((c + 2) / 5);
+  r - 2 ≤ c ∧ c ≤ r + 2 ∧ r + 2 - (r - 2) = 4
+'Fusion.round_five_compatibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.mem_candidates.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (P : FusionDisjoint.Selections G I → Prop) (s : FusionDisjoint.Selections G I) :
+  s ∈ FusionDisjoint.candidates P ↔ P s
+'FusionDisjoint.mem_candidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.maximum_witness.{u_4} {A : Type u_4} (S : Finset A) (f : A → ℝ) (h : S.Nonempty) :
+  ∃ a ∈ S, FusionDisjoint.maximum S f = f a ∧ ∀ b ∈ S, f b ≤ f a
+'FusionDisjoint.maximum_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.le_maximum.{u_4} {A : Type u_4} (S : Finset A) (f : A → ℝ) (a : A) (ha : a ∈ S) :
+  f a ≤ FusionDisjoint.maximum S f
+'FusionDisjoint.le_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.maximum_le.{u_4} {A : Type u_4} (S : Finset A) (f : A → ℝ) (h : S.Nonempty) (b : ℝ)
+  (hb : ∀ a ∈ S, f a ≤ b) : FusionDisjoint.maximum S f ≤ b
+'FusionDisjoint.maximum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.difference_nonempty.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (t : G → ℕ) :
+  (FusionDisjoint.candidates (FusionDisjoint.GoodDifference R t)).Nonempty
+'FusionDisjoint.difference_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.residual_nonempty.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (p : G → ℕ) (hp : ∀ (g : G), p g ≤ (R g).card) :
+  (FusionDisjoint.candidates (FusionDisjoint.GoodResidual R p)).Nonempty
+'FusionDisjoint.residual_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.residual_to_difference.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G]
+  [Fintype I] [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (R : G → Finset I)
+  (p : G → ℕ) (hp : ∀ (g : G), p g ≤ (R g).card) (s : FusionDisjoint.Selections G I)
+  (hs : FusionDisjoint.GoodResidual R p s) :
+  ∃ t,
+    FusionDisjoint.GoodDifference R (fun g => min (p g) ((R g).card - p g)) t ∧
+      FusionDisjoint.score v measure s = FusionDisjoint.score v measure t
+'FusionDisjoint.residual_to_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.difference_to_residual.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G]
+  [Fintype I] [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (R : G → Finset I)
+  (p : G → ℕ) (hp : ∀ (g : G), p g ≤ (R g).card) (s : FusionDisjoint.Selections G I)
+  (hs : FusionDisjoint.GoodDifference R (fun g => min (p g) ((R g).card - p g)) s) :
+  ∃ t, FusionDisjoint.GoodResidual R p t ∧ FusionDisjoint.score v measure s = FusionDisjoint.score v measure t
+'FusionDisjoint.difference_to_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.diameter_eq_potential.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G]
+  [Fintype I] [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (R : G → Finset I)
+  (p : G → ℕ) (hp : ∀ (g : G), p g ≤ (R g).card) :
+  FusionDisjoint.diameter v measure R p = FusionDisjoint.potential v measure R fun g => min (p g) ((R g).card - p g)
+'FusionDisjoint.diameter_eq_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.potential_mono.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (R : G → Finset I) (s t : G → ℕ)
+  (hst : ∀ (g : G), s g ≤ t g) : FusionDisjoint.potential v measure R s ≤ FusionDisjoint.potential v measure R t
+'FusionDisjoint.potential_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.compatible_exists.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) : ∃ A, FusionDisjoint.Compatible c A
+'FusionDisjoint.compatible_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.next_good.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (q : G × I) (hq : q.2 ∈ c.remaining q.1)
+  (b : Bool) (hb : FusionDisjoint.CanAnswer c q b) : FusionDisjoint.Good (FusionDisjoint.next c q b)
+'FusionDisjoint.next_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.observed_can.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (A : G → Finset I)
+  (hA : FusionDisjoint.Compatible c A) (q : G × I) (hq : q.2 ∈ c.remaining q.1) :
+  FusionDisjoint.CanAnswer c q (decide (q.2 ∈ A q.1))
+'FusionDisjoint.observed_can' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.observed_compatible.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (A : G → Finset I) (hA : FusionDisjoint.Compatible c A) (q : G × I) :
+  FusionDisjoint.Compatible (FusionDisjoint.next c q (decide (q.2 ∈ A q.1))) (FusionDisjoint.eraseAt A q)
+'FusionDisjoint.observed_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.extend_completion.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (q : G × I) (hq : q.2 ∈ c.remaining q.1)
+  (b : Bool) (hb : FusionDisjoint.CanAnswer c q b) (A : G → Finset I)
+  (hA : FusionDisjoint.Compatible (FusionDisjoint.next c q b) A) :
+  ∃ B, FusionDisjoint.Compatible c B ∧ decide (q.2 ∈ B q.1) = b ∧ FusionDisjoint.eraseAt B q = A
+'FusionDisjoint.extend_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.dominated_self.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) : FusionDisjoint.Dominated c c
+'FusionDisjoint.dominated_self' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.dominated_next.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (initial c : FusionDisjoint.Config G I) (h : FusionDisjoint.Dominated initial c) (q : G × I)
+  (b : Bool) : FusionDisjoint.Dominated initial (FusionDisjoint.next c q b)
+'FusionDisjoint.dominated_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.balanced_initial.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) : FusionDisjoint.Balanced c c
+'FusionDisjoint.balanced_initial' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.majority_can.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (q : G × I)
+  (hq : q.2 ∈ c.remaining q.1) : FusionDisjoint.CanAnswer c q (FusionDisjoint.majority c q)
+'FusionDisjoint.majority_can' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.balanced_next.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (initial c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c)
+  (hbal : FusionDisjoint.Balanced initial c) (q : G × I) (hq : q.2 ∈ c.remaining q.1) :
+  FusionDisjoint.Balanced initial (FusionDisjoint.next c q (FusionDisjoint.majority c q))
+'FusionDisjoint.balanced_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.execution_invariants.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (F : Finset (G → Finset I)) (initial c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c)
+  (hd : FusionDisjoint.Dominated initial c) (p : FusionDisjoint.Policy G I) (hp : FusionDisjoint.Legal F c p)
+  (A : G → Finset I) (hA : FusionDisjoint.Compatible c A) :
+  FusionDisjoint.Good (FusionDisjoint.execute c p A) ∧
+    FusionDisjoint.Dominated initial (FusionDisjoint.execute c p A) ∧ (FusionDisjoint.execute c p A).remaining ∈ F
+'FusionDisjoint.execution_invariants' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.adversary_input.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (F : Finset (G → Finset I)) (initial c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c)
+  (hbal : FusionDisjoint.Balanced initial c) (p : FusionDisjoint.Policy G I) (hp : FusionDisjoint.Legal F c p) :
+  ∃ A,
+    FusionDisjoint.Compatible c A ∧
+      FusionDisjoint.Good (FusionDisjoint.execute c p A) ∧
+        FusionDisjoint.Balanced initial (FusionDisjoint.execute c p A) ∧ (FusionDisjoint.execute c p A).remaining ∈ F
+'FusionDisjoint.adversary_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.mem_completionCandidates.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (A : G → Finset I) :
+  A ∈ FusionDisjoint.completionCandidates c ↔ FusionDisjoint.Compatible c A
+'FusionDisjoint.mem_completionCandidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.completionCandidates_nonempty.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) :
+  (FusionDisjoint.completionCandidates c).Nonempty
+'FusionDisjoint.completionCandidates_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.good_diameter.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (c : FusionDisjoint.Config G I)
+  (hc : FusionDisjoint.Good c) :
+  FusionDisjoint.diameter v measure c.remaining c.pos =
+    FusionDisjoint.potential v measure c.remaining fun g => min (c.pos g) (c.neg g)
+'FusionDisjoint.good_diameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.balanced_diameter.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ)
+  (initial c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (hb : FusionDisjoint.Balanced initial c) :
+  FusionDisjoint.diameter v measure c.remaining c.pos =
+    FusionDisjoint.potential v measure c.remaining (FusionDisjoint.threshold initial c.remaining)
+'FusionDisjoint.balanced_diameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.diameter_upper.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ)
+  (initial c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (hd : FusionDisjoint.Dominated initial c) :
+  FusionDisjoint.diameter v measure c.remaining c.pos ≤
+    FusionDisjoint.potential v measure c.remaining (FusionDisjoint.threshold initial c.remaining)
+'FusionDisjoint.diameter_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.policy_lower.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (F : Finset (G → Finset I))
+  (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (b : ℝ)
+  (hb : ∀ R ∈ F, b ≤ FusionDisjoint.potential v measure R (FusionDisjoint.threshold c R))
+  (p : FusionDisjoint.Policy G I) (hp : FusionDisjoint.Legal F c p) : b ≤ FusionDisjoint.worst v measure c p
+'FusionDisjoint.policy_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.eraseAt_of_not_mem.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (q : G × I) (h : q.2 ∉ R q.1) : FusionDisjoint.eraseAt R q = R
+'FusionDisjoint.eraseAt_of_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.execute_fixed_remaining.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (qs : List (G × I)) (A : G → Finset I) :
+  (FusionDisjoint.execute c (FusionDisjoint.fixedPlan qs) A).remaining = FusionDisjoint.eraseAll c.remaining qs
+'FusionDisjoint.execute_fixed_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.fixedPlan_legal.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (F : Finset (G → Finset I)) (c : FusionDisjoint.Config G I) (qs : List (G × I))
+  (hF : FusionDisjoint.eraseAll c.remaining qs ∈ F) : FusionDisjoint.Legal F c (FusionDisjoint.fixedPlan qs)
+'FusionDisjoint.fixedPlan_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.mem_eraseAt.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (q : G × I) (g : G) (i : I) :
+  i ∈ FusionDisjoint.eraseAt R q g ↔ i ∈ R g ∧ (g, i) ≠ q
+'FusionDisjoint.mem_eraseAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.mem_eraseAll.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (qs : List (G × I)) (g : G) (i : I) :
+  i ∈ FusionDisjoint.eraseAll R qs g ↔ i ∈ R g ∧ (g, i) ∉ qs
+'FusionDisjoint.mem_eraseAll' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.mem_fixedQueries.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R T : G → Finset I) (q : G × I) : q ∈ FusionDisjoint.fixedQueries R T ↔ q.2 ∈ R q.1 ∧ q.2 ∉ T q.1
+'FusionDisjoint.mem_fixedQueries' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.eraseAll_fixed.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R T : G → Finset I) (h : ∀ (g : G), T g ⊆ R g) :
+  FusionDisjoint.eraseAll R (FusionDisjoint.fixedQueries R T) = T
+'FusionDisjoint.eraseAll_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.fixed_upper.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (F : Finset (G → Finset I))
+  (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (T : G → Finset I) (hT : T ∈ F)
+  (hsub : ∀ (g : G), T g ⊆ c.remaining g) :
+  FusionDisjoint.Legal F c (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries c.remaining T)) ∧
+    FusionDisjoint.worst v measure c (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries c.remaining T)) ≤
+      FusionDisjoint.potential v measure T (FusionDisjoint.threshold c T)
+'FusionDisjoint.fixed_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.fixed_adaptive_minimax.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G]
+  [Fintype I] [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ)
+  (F : Finset (G → Finset I)) (hne : F.Nonempty) (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c)
+  (hsub : ∀ T ∈ F, ∀ (g : G), T g ⊆ c.remaining g) :
+  ∃ T ∈ F,
+    (∀ R ∈ F,
+        FusionDisjoint.potential v measure T (FusionDisjoint.threshold c T) ≤
+          FusionDisjoint.potential v measure R (FusionDisjoint.threshold c R)) ∧
+      FusionDisjoint.Legal F c (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries c.remaining T)) ∧
+        FusionDisjoint.worst v measure c (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries c.remaining T)) =
+            FusionDisjoint.potential v measure T (FusionDisjoint.threshold c T) ∧
+          ∀ (p : FusionDisjoint.Policy G I),
+            FusionDisjoint.Legal F c p →
+              FusionDisjoint.potential v measure T (FusionDisjoint.threshold c T) ≤ FusionDisjoint.worst v measure c p
+'FusionDisjoint.fixed_adaptive_minimax' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.positive_union_step.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (A : G → Finset I) (q : G × I) (g : G) :
+  (FusionDisjoint.next c q (decide (q.2 ∈ A q.1))).known g ∪ FusionDisjoint.eraseAt A q g = c.known g ∪ A g
+'FusionDisjoint.positive_union_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.execution_label_preservation.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] (c : FusionDisjoint.Config G I) (p : FusionDisjoint.Policy G I) (A : G → Finset I)
+  (hA : FusionDisjoint.Compatible c A) :
+  FusionDisjoint.Compatible (FusionDisjoint.execute c p A) (FusionDisjoint.executeSelection c p A) ∧
+    ∀ (g : G), (FusionDisjoint.execute c p A).known g ∪ FusionDisjoint.executeSelection c p A g = c.known g ∪ A g
+'FusionDisjoint.execution_label_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.known_contribution_cancels.{u_3} {Z : Type u_3} [AddCommGroup Z] (known a b : Z) :
+  known + a - (known + b) = a - b
+'FusionDisjoint.known_contribution_cancels' depends on axioms: [propext]
+FusionDisjoint.empty_review_family.{u_3} {J : Type u_3} [DecidableEq J] : (∀ S ∈ ∅, ∀ T ⊆ S, T ∈ ∅) ∧ ¬∃ S, S ∈ ∅
+'FusionDisjoint.empty_review_family' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.residual_realization.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (c : FusionDisjoint.Config G I) (hc : FusionDisjoint.Good c) (p : FusionDisjoint.Policy G I)
+  (A : G → Finset I) (hA : FusionDisjoint.Compatible c A) (B : G → Finset I)
+  (hB : FusionDisjoint.Compatible (FusionDisjoint.execute c p A) B) :
+  ∃ C,
+    FusionDisjoint.Compatible c C ∧
+      FusionDisjoint.execute c p C = FusionDisjoint.execute c p A ∧ FusionDisjoint.executeSelection c p C = B
+'FusionDisjoint.residual_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.initial_good.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (m : G → ℕ) (hm : ∀ (g : G), m g ≤ (R g).card) :
+  FusionDisjoint.Good (FusionDisjoint.initialConfig R m)
+'FusionDisjoint.initial_good' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.remaining_subset.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (S : Finset (G × I)) (g : G) : FusionDisjoint.remainingOf R S g ⊆ R g
+'FusionDisjoint.remaining_subset' depends on axioms: [propext, Quot.sound]
+FusionDisjoint.reviewed_remaining.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (S : Finset (G × I)) (hS : ∀ q ∈ S, q.2 ∈ R q.1) :
+  FusionDisjoint.reviewedOf R (FusionDisjoint.remainingOf R S) = S
+'FusionDisjoint.reviewed_remaining' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.remaining_reviewed.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R T : G → Finset I) (hT : ∀ (g : G), T g ⊆ R g) :
+  FusionDisjoint.remainingOf R (FusionDisjoint.reviewedOf R T) = T
+'FusionDisjoint.remaining_reviewed' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.fixedQueries_exact_set.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (S : Finset (G × I)) (hS : ∀ q ∈ S, q.2 ∈ R q.1) :
+  (FusionDisjoint.fixedQueries R (FusionDisjoint.remainingOf R S)).toFinset = S
+'FusionDisjoint.fixedQueries_exact_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.allowed_nonempty.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (F : Finset (Finset (G × I))) (hF : F.Nonempty) :
+  (FusionDisjoint.AllowedRemaining R F).Nonempty
+'FusionDisjoint.allowed_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.allowed_subset.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (F : Finset (Finset (G × I))) (T : G → Finset I) :
+  T ∈ FusionDisjoint.AllowedRemaining R F → ∀ (g : G), T g ⊆ R g
+'FusionDisjoint.allowed_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.fixed_prefixes_permitted.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (F : Finset (Finset (G × I))) (hdown : ∀ S ∈ F, ∀ T ⊆ S, T ∈ F)
+  (S : Finset (G × I)) (hS : S ∈ F) (hactual : ∀ q ∈ S, q.2 ∈ R q.1) (j : ℕ) :
+  (List.take j (FusionDisjoint.fixedQueries R (FusionDisjoint.remainingOf R S))).toFinset ∈ F
+'FusionDisjoint.fixed_prefixes_permitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.review_set_minimax.{u_1, u_2, u_3} {G : Type u_1} {I : Type u_2} {Z : Type u_3} [Fintype G] [Fintype I]
+  [DecidableEq G] [DecidableEq I] [AddCommGroup Z] (v : G → I → Z) (measure : Z → ℝ) (R : G → Finset I) (m : G → ℕ)
+  (hm : ∀ (g : G), m g ≤ (R g).card) (F : Finset (Finset (G × I))) (hne : F.Nonempty)
+  (hactual : ∀ S ∈ F, ∀ q ∈ S, q.2 ∈ R q.1) :
+  ∃ S ∈ F,
+    (FusionDisjoint.fixedQueries R (FusionDisjoint.remainingOf R S)).toFinset = S ∧
+      (∀ T ∈ F,
+          FusionDisjoint.potential v measure (FusionDisjoint.remainingOf R S)
+              (FusionDisjoint.threshold (FusionDisjoint.initialConfig R m) (FusionDisjoint.remainingOf R S)) ≤
+            FusionDisjoint.potential v measure (FusionDisjoint.remainingOf R T)
+              (FusionDisjoint.threshold (FusionDisjoint.initialConfig R m) (FusionDisjoint.remainingOf R T))) ∧
+        FusionDisjoint.Legal (FusionDisjoint.AllowedRemaining R F) (FusionDisjoint.initialConfig R m)
+            (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries R (FusionDisjoint.remainingOf R S))) ∧
+          FusionDisjoint.worst v measure (FusionDisjoint.initialConfig R m)
+                (FusionDisjoint.fixedPlan (FusionDisjoint.fixedQueries R (FusionDisjoint.remainingOf R S))) =
+              FusionDisjoint.potential v measure (FusionDisjoint.remainingOf R S)
+                (FusionDisjoint.threshold (FusionDisjoint.initialConfig R m) (FusionDisjoint.remainingOf R S)) ∧
+            ∀ (p : FusionDisjoint.Policy G I),
+              FusionDisjoint.Legal (FusionDisjoint.AllowedRemaining R F) (FusionDisjoint.initialConfig R m) p →
+                FusionDisjoint.potential v measure (FusionDisjoint.remainingOf R S)
+                    (FusionDisjoint.threshold (FusionDisjoint.initialConfig R m) (FusionDisjoint.remainingOf R S)) ≤
+                  FusionDisjoint.worst v measure (FusionDisjoint.initialConfig R m) p
+'FusionDisjoint.review_set_minimax' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionDisjoint.threshold_formula.{u_1, u_2} {G : Type u_1} {I : Type u_2} [Fintype G] [Fintype I] [DecidableEq G]
+  [DecidableEq I] (R : G → Finset I) (m : G → ℕ) (S : Finset (G × I)) (g : G) :
+  FusionDisjoint.threshold (FusionDisjoint.initialConfig R m) (FusionDisjoint.remainingOf R S) g =
+    min (min (m g) ((R g).card - m g)) ((FusionDisjoint.remainingOf R S g).card / 2)
+'FusionDisjoint.threshold_formula' depends on axioms: [propext, Quot.sound]
+Fusion.integer_unit_capacity (x : ℤ) : 0 ≤ x ∧ x ≤ 1 ↔ x = 0 ∨ x = 1
+'Fusion.integer_unit_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.sum_group_counts {n h : ℕ} (g : Fin n → Fin h) (y : Fin n → ℤ) : ∑ b, ∑ i ∈ {i | g i = b}, y i = ∑ i, y i
+'Fusion.sum_group_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.count_flow_correspondence {n h k : ℕ} (d : Fusion.CountData n h k) (y : Fin n → ℤ) :
+  Fusion.CountFeasible d y ↔ ∃ s t, Fusion.FlowFeasible d y s t
+'Fusion.count_flow_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.integral_optimizer_transfer {n h k : ℕ} (d : Fusion.CountData n h k) (cost : (Fin n → ℤ) → ℝ) (y : Fin n → ℤ)
+  (hy : Fusion.CountFeasible d y) :
+  (∀ (z : Fin n → ℤ), Fusion.CountFeasible d z → cost y ≤ cost z) ↔
+    ∀ (z : Fin n → ℤ) (s : Fin h → ℤ) (t : Fin k → ℤ), Fusion.FlowFeasible d z s t → cost y ≤ cost z
+'Fusion.integral_optimizer_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.complement_binary (x : ℤ) (hx : x = 0 ∨ x = 1) : (1 - x = 0 ∨ 1 - x = 1) ∧ 1 - (1 - x) = x
+'Fusion.complement_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.signed_count_conversion {n : ℕ} (neg : Fin n → Bool) (x : Fin n → ℤ) :
+  (∑ i, if neg i = true then 1 - x i else x i) =
+    (∑ i, if neg i = true then -x i else x i) + ∑ i, if neg i = true then 1 else 0
+'Fusion.signed_count_conversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.finite_binary_extrema.{u_1} {ι : Type u_1} [Fintype ι] (P : (ι → Bool) → Prop) (cost : (ι → Bool) → ℝ)
+  (h : ∃ y, P y) : ∃ lo hi, P lo ∧ P hi ∧ ∀ (y : ι → Bool), P y → cost lo ≤ cost y ∧ cost y ≤ cost hi
+'Fusion.finite_binary_extrema' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.binary_encoding.{u_1} {ι : Type u_1} (y : ι → ℤ) (h : ∀ (i : ι), y i = 0 ∨ y i = 1) : ∃ b, Fusion.boolToInt b = y
+'Fusion.binary_encoding' depends on axioms: [propext, Quot.sound]
+Fusion.binary_integer_extrema.{u_1} {ι : Type u_1} [Fintype ι] (P : (ι → ℤ) → Prop) (cost : (ι → ℤ) → ℝ)
+  (hb : ∀ (y : ι → ℤ), P y → ∀ (i : ι), y i = 0 ∨ y i = 1) (hne : ∃ y, P y) :
+  ∃ lo hi, P lo ∧ P hi ∧ ∀ (y : ι → ℤ), P y → cost lo ≤ cost y ∧ cost y ≤ cost hi
+'Fusion.binary_integer_extrema' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.integer_flow_endpoints {n h k : ℕ} (d : Fusion.CountData n h k) (cost : (Fin n → ℤ) → ℝ)
+  (hne : ∃ y, Fusion.CountFeasible d y) :
+  ∃ lo hi slo tlo shi thi,
+    Fusion.CountFeasible d lo ∧
+      Fusion.CountFeasible d hi ∧
+        Fusion.FlowFeasible d lo slo tlo ∧
+          Fusion.FlowFeasible d hi shi thi ∧
+            (∀ (y : Fin n → ℤ), Fusion.CountFeasible d y → cost lo ≤ cost y ∧ cost y ≤ cost hi) ∧
+              ∀ (y : Fin n → ℤ) (s : Fin h → ℤ) (t : Fin k → ℤ),
+                Fusion.FlowFeasible d y s t → cost lo ≤ cost y ∧ cost y ≤ cost hi
+'Fusion.integer_flow_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.four_record_cancellation (a b c d : ℤ) (ha : 0 ≤ a ∧ a ≤ 1) (hb : 0 ≤ b ∧ b ≤ 1) (hc : 0 ≤ c ∧ c ≤ 1)
+  (hd : 0 ≤ d ∧ d ≤ 1) (h1 : a + b = 1) (h2 : c + d = 1) (h3 : b + d = 1) (h4 : a + c = 1) :
+  (a = 1 ∧ b = 0 ∧ c = 0 ∧ d = 1 ∨ a = 0 ∧ b = 1 ∧ c = 1 ∧ d = 0) ∧
+    a + 2 * b + 4 * c + 3 * d = 3 * a + 2 * b + 4 * c + d ∧
+      (a + 2 * b + 4 * c + 3 * d = 4 ∨ a + 2 * b + 4 * c + 3 * d = 6)
+'FusionFinite.four_record_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.path_states_k1 (x0 x1 x2 x3 x4 x5 : ℤ) (b0 : 0 ≤ x0 ∧ x0 ≤ 1) (b1 : 0 ≤ x1 ∧ x1 ≤ 1) (b2 : 0 ≤ x2 ∧ x2 ≤ 1)
+  (b3 : 0 ≤ x3 ∧ x3 ≤ 1) (b4 : 0 ≤ x4 ∧ x4 ≤ 1) (b5 : 0 ≤ x5 ∧ x5 ≤ 1) (cA0 : x0 + x1 = 1) (cA1 : x2 + x3 + x4 + x5 = 3)
+  (cB0 : x0 + x2 + x3 = 2) (cB1 : x1 + x4 + x5 = 2) :
+  x0 = 1 ∧ x1 = 0 ∧ x2 = 1 ∧ x3 = 0 ∧ x4 = 1 ∧ x5 = 1 ∨
+    x0 = 1 ∧ x1 = 0 ∧ x2 = 0 ∧ x3 = 1 ∧ x4 = 1 ∧ x5 = 1 ∨
+      x0 = 0 ∧ x1 = 1 ∧ x2 = 1 ∧ x3 = 1 ∧ x4 = 1 ∧ x5 = 0 ∨ x0 = 0 ∧ x1 = 1 ∧ x2 = 1 ∧ x3 = 1 ∧ x4 = 0 ∧ x5 = 1
+'FusionFinite.path_states_k1' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.path_states_k2 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : ℤ) (b0 : 0 ≤ x0 ∧ x0 ≤ 1)
+  (b1 : 0 ≤ x1 ∧ x1 ≤ 1) (b2 : 0 ≤ x2 ∧ x2 ≤ 1) (b3 : 0 ≤ x3 ∧ x3 ≤ 1) (b4 : 0 ≤ x4 ∧ x4 ≤ 1) (b5 : 0 ≤ x5 ∧ x5 ≤ 1)
+  (b6 : 0 ≤ x6 ∧ x6 ≤ 1) (b7 : 0 ≤ x7 ∧ x7 ≤ 1) (b8 : 0 ≤ x8 ∧ x8 ≤ 1) (b9 : 0 ≤ x9 ∧ x9 ≤ 1) (b10 : 0 ≤ x10 ∧ x10 ≤ 1)
+  (b11 : 0 ≤ x11 ∧ x11 ≤ 1) (b12 : 0 ≤ x12 ∧ x12 ≤ 1) (b13 : 0 ≤ x13 ∧ x13 ≤ 1) (cA0 : x0 + x1 = 1)
+  (cA1 : x2 + x6 + x7 = 1) (cA2 : x3 + x8 + x9 = 1) (cA3 : x4 + x10 + x11 = 1) (cA4 : x5 + x12 + x13 = 1)
+  (cB0 : x0 + x2 + x3 = 2) (cB1 : x1 + x4 + x5 = 2) (cB2 : x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13 = 1) :
+  x0 = 1 ∧
+      x1 = 0 ∧
+        x2 = 0 ∧ x3 = 1 ∧ x4 = 1 ∧ x5 = 1 ∧ x6 = 0 ∧ x7 = 1 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 0 ∨
+    x0 = 1 ∧
+        x1 = 0 ∧
+          x2 = 0 ∧
+            x3 = 1 ∧ x4 = 1 ∧ x5 = 1 ∧ x6 = 1 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 0 ∨
+      x0 = 1 ∧
+          x1 = 0 ∧
+            x2 = 1 ∧
+              x3 = 0 ∧ x4 = 1 ∧ x5 = 1 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 1 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 0 ∨
+        x0 = 1 ∧
+            x1 = 0 ∧
+              x2 = 1 ∧
+                x3 = 0 ∧ x4 = 1 ∧ x5 = 1 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 1 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 0 ∨
+          x0 = 0 ∧
+              x1 = 1 ∧
+                x2 = 1 ∧
+                  x3 = 1 ∧ x4 = 0 ∧ x5 = 1 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 1 ∧ x12 = 0 ∧ x13 = 0 ∨
+            x0 = 0 ∧
+                x1 = 1 ∧
+                  x2 = 1 ∧
+                    x3 = 1 ∧
+                      x4 = 0 ∧ x5 = 1 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 1 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 0 ∨
+              x0 = 0 ∧
+                  x1 = 1 ∧
+                    x2 = 1 ∧
+                      x3 = 1 ∧
+                        x4 = 1 ∧ x5 = 0 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 0 ∧ x13 = 1 ∨
+                x0 = 0 ∧
+                  x1 = 1 ∧
+                    x2 = 1 ∧
+                      x3 = 1 ∧
+                        x4 = 1 ∧ x5 = 0 ∧ x6 = 0 ∧ x7 = 0 ∧ x8 = 0 ∧ x9 = 0 ∧ x10 = 0 ∧ x11 = 0 ∧ x12 = 1 ∧ x13 = 0
+'FusionFinite.path_states_k2' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.path_states_k2_realizations :
+  (0 ≤ 1 ∧ 1 ≤ 1) ∧
+    (0 ≤ 0 ∧ 0 ≤ 1) ∧
+      (0 ≤ 0 ∧ 0 ≤ 1) ∧
+        (0 ≤ 1 ∧ 1 ≤ 1) ∧
+          (0 ≤ 1 ∧ 1 ≤ 1) ∧
+            (0 ≤ 1 ∧ 1 ≤ 1) ∧
+              (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                  (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                    (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                      (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                        (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                          (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                            (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                              1 + 0 = 1 ∧
+                                0 + 0 + 1 = 1 ∧
+                                  1 + 0 + 0 = 1 ∧
+                                    1 + 0 + 0 = 1 ∧
+                                      1 + 0 + 0 = 1 ∧
+                                        1 + 0 + 1 = 2 ∧
+                                          0 + 1 + 1 = 2 ∧
+                                            0 + 1 + 0 + 0 + 0 + 0 + 0 + 0 = 1 ∧
+                                              (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                  (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                    (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                      (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                        (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                          (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                            (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                              (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                  (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                    (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                      (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                        (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                          1 + 0 = 1 ∧
+                                                                            0 + 1 + 0 = 1 ∧
+                                                                              1 + 0 + 0 = 1 ∧
+                                                                                1 + 0 + 0 = 1 ∧
+                                                                                  1 + 0 + 0 = 1 ∧
+                                                                                    1 + 0 + 1 = 2 ∧
+                                                                                      0 + 1 + 1 = 2 ∧
+                                                                                        1 + 0 + 0 + 0 + 0 + 0 + 0 + 0 =
+                                                                                            1 ∧
+                                                                                          (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                                                            (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                                              (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                                                                (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                                                  (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                                                                    (0 ≤ 1 ∧ 1 ≤ 1) ∧
+                                                                                                      (0 ≤ 0 ∧ 0 ≤ 1) ∧
+                                                                                                        ⋯
+'FusionFinite.path_states_k2_realizations' does not depend on any axioms
+FusionFinite.ranks_k1 :
+  [5, 6, 1, 2, 3, 4].Perm (List.map Int.ofNat (List.range' 1 6)) ∧
+    [5, 6, 2, 1, 4, 3].Perm (List.map Int.ofNat (List.range' 1 6)) ∧
+      List.zipWith (fun a b => a - b) [5, 6, 1, 2, 3, 4] [5, 6, 2, 1, 4, 3] = [0, 0, -1, 1, -1, 1]
+'FusionFinite.ranks_k1' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.distinct_states_k1 : [[1, 0, 1, 0, 1, 1], [1, 0, 0, 1, 1, 1], [0, 1, 1, 1, 1, 0], [0, 1, 1, 1, 0, 1]].Nodup
+'FusionFinite.distinct_states_k1' does not depend on any axioms
+FusionFinite.ranks_k2 :
+  [9, 10, 11, 12, 13, 14, 2, 1, 4, 3, 6, 5, 8, 7].Perm (List.map Int.ofNat (List.range' 1 14)) ∧
+    [9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8].Perm (List.map Int.ofNat (List.range' 1 14)) ∧
+      List.zipWith (fun a b => a - b) [9, 10, 11, 12, 13, 14, 2, 1, 4, 3, 6, 5, 8, 7]
+          [9, 10, 11, 12, 13, 14, 1, 2, 3, 4, 5, 6, 7, 8] =
+        [0, 0, 0, 0, 0, 0, 1, -1, 1, -1, 1, -1, 1, -1]
+'FusionFinite.ranks_k2' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionFinite.distinct_states_k2 :
+  [[1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0], [1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0], [0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1], [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]].Nodup
+'FusionFinite.distinct_states_k2' does not depend on any axioms
+FusionLaminar.child_subset.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (S C : Finset ι)
+  (h : FusionLaminar.Child F S C) : C ⊆ S
+'FusionLaminar.child_subset' depends on axioms: [propext, Quot.sound]
+FusionLaminar.child_smaller.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (S C : Finset ι)
+  (h : FusionLaminar.Child F S C) : C.card < S.card
+'FusionLaminar.child_smaller' depends on axioms: [propext, Quot.sound]
+FusionLaminar.children_disjoint.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (S A B : Finset ι) (hA : FusionLaminar.Child F S A) (hB : FusionLaminar.Child F S B)
+  (hne : A ≠ B) : Disjoint A B
+'FusionLaminar.children_disjoint' depends on axioms: [propext, Quot.sound]
+FusionLaminar.child_covers.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (hsingle : ∀ (i : ι), {i} ∈ F)
+  (S : Finset ι) (hsize : 1 < S.card) (i : ι) (hi : i ∈ S) : ∃ C, FusionLaminar.Child F S C ∧ i ∈ C
+'FusionLaminar.child_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.parent_exists.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (U C : Finset ι) (hU : U ∈ F)
+  (hC : C ∈ F) (hCU : C ⊂ U) : ∃ S ∈ F, FusionLaminar.Child F S C
+'FusionLaminar.parent_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.parent_unique.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (hl : FusionLaminar.Laminar F)
+  (A B C : Finset ι) (hA : A ∈ F) (hB : B ∈ F) (hC : C.Nonempty) (hcA : FusionLaminar.Child F A C)
+  (hcB : FusionLaminar.Child F B C) : A = B
+'FusionLaminar.parent_unique' depends on axioms: [propext, Quot.sound]
+FusionLaminar.mem_children.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (S C : Finset ι) :
+  C ∈ FusionLaminar.children F S ↔ FusionLaminar.Child F S C
+'FusionLaminar.mem_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.children_union.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι)) (hsingle : ∀ (i : ι), {i} ∈ F)
+  (S : Finset ι) (hsize : 1 < S.card) : (FusionLaminar.children F S).biUnion id = S
+'FusionLaminar.children_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.sum_children.{u_1, u_2} {ι : Type u_1} [DecidableEq ι] {V : Type u_2} [AddCommMonoid V]
+  (F : Finset (Finset ι)) (hl : FusionLaminar.Laminar F) (hsingle : ∀ (i : ι), {i} ∈ F) (S : Finset ι)
+  (hsize : 1 < S.card) (w : ι → V) : ∑ C ∈ FusionLaminar.children F S, ∑ i ∈ C, w i = ∑ i ∈ S, w i
+'FusionLaminar.sum_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.tree_flow_determined.{u_1, u_2} {ι : Type u_1} [DecidableEq ι] {V : Type u_2} [AddCommMonoid V]
+  (F : Finset (Finset ι)) (hl : FusionLaminar.Laminar F) (hsingle : ∀ (i : ι), {i} ∈ F) (hne : ∀ S ∈ F, S.Nonempty)
+  (w : ι → V) (flow : Finset ι → V) (hleaf : ∀ (i : ι), flow {i} = w i)
+  (hcons : ∀ S ∈ F, 1 < S.card → flow S = ∑ C ∈ FusionLaminar.children F S, flow C) (S : Finset ι) :
+  S ∈ F → flow S = ∑ i ∈ S, w i
+'FusionLaminar.tree_flow_determined' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.laminar_representation.{u_1} {ι : Type u_1} [DecidableEq ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (hsingle : ∀ (i : ι), {i} ∈ F) (hne : ∀ S ∈ F, S.Nonempty) (w : ι → ℤ)
+  (lower upper : Finset ι → ℤ) :
+  (∀ S ∈ F, lower S ≤ ∑ i ∈ S, w i ∧ ∑ i ∈ S, w i ≤ upper S) ↔
+    ∃ flow,
+      (∀ (i : ι), flow {i} = w i) ∧
+        (∀ S ∈ F, 1 < S.card → flow S = ∑ C ∈ FusionLaminar.children F S, flow C) ∧
+          ∀ S ∈ F, lower S ≤ flow S ∧ flow S ≤ upper S
+'FusionLaminar.laminar_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.completed_root.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι)) :
+  Finset.univ ∈ FusionLaminar.completed F
+'FusionLaminar.completed_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.completed_singleton.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (i : ι) : {i} ∈ FusionLaminar.completed F
+'FusionLaminar.completed_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.completed_original.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (S : Finset ι) (h : S ∈ F) (hs : S.Nonempty) : S ∈ FusionLaminar.completed F
+'FusionLaminar.completed_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.completed_nonempty.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (S : Finset ι) : S ∈ FusionLaminar.completed F → S.Nonempty
+'FusionLaminar.completed_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.singleton_laminar.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (i : ι) (S : Finset ι) :
+  Disjoint {i} S ∨ {i} ⊆ S ∨ S ⊆ {i}
+'FusionLaminar.singleton_laminar' depends on axioms: [propext, Quot.sound]
+FusionLaminar.completed_laminar.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) : FusionLaminar.Laminar (FusionLaminar.completed F)
+'FusionLaminar.completed_laminar' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.completed_representation.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (F : Finset (Finset ι)) (hl : FusionLaminar.Laminar F) (y : ι → ℤ) (lower upper : Finset ι → ℤ) :
+  (∀ S ∈ F, lower S ≤ ∑ i ∈ S, y i ∧ ∑ i ∈ S, y i ≤ upper S) ↔ ∃ flow, FusionLaminar.TreeWitness F y lower upper flow
+'FusionLaminar.completed_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.root_flow_total.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (y : ι → ℤ) (lower upper flow : Finset ι → ℤ)
+  (h : FusionLaminar.TreeWitness F y lower upper flow) : flow Finset.univ = ∑ i, y i
+'FusionLaminar.root_flow_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionLaminar.two_completed_trees.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (A B : Finset (Finset ι)) (ha : FusionLaminar.Laminar A) (hb : FusionLaminar.Laminar B) (la ua lb ub : Finset ι → ℤ)
+  (M : ℤ) (O : Finset ι) (observed y : ι → ℤ) :
+  ((∀ (i : ι), y i = 0 ∨ y i = 1) ∧
+      ∑ i, y i = M ∧
+        (∀ i ∈ O, y i = observed i) ∧
+          (∀ S ∈ A, la S ≤ ∑ i ∈ S, y i ∧ ∑ i ∈ S, y i ≤ ua S) ∧ ∀ S ∈ B, lb S ≤ ∑ i ∈ S, y i ∧ ∑ i ∈ S, y i ≤ ub S) ↔
+    (∀ (i : ι), 0 ≤ y i ∧ y i ≤ 1) ∧
+      (∀ i ∈ O, y i = observed i) ∧
+        ∃ fA fB,
+          FusionLaminar.TreeWitness A y la ua fA ∧
+            FusionLaminar.TreeWitness B y lb ub fB ∧ fA Finset.univ = M ∧ fB Finset.univ = M
+'FusionLaminar.two_completed_trees' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.int_zero : FusionNetwork.IsInt 0
+'FusionNetwork.int_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.int_add {x y : ℝ} (hx : FusionNetwork.IsInt x) (hy : FusionNetwork.IsInt y) : FusionNetwork.IsInt (x + y)
+'FusionNetwork.int_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.int_sub {x y : ℝ} (hx : FusionNetwork.IsInt x) (hy : FusionNetwork.IsInt y) : FusionNetwork.IsInt (x - y)
+'FusionNetwork.int_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.int_sum.{u_3} {ι : Type u_3} (S : Finset ι) (x : ι → ℝ) (h : ∀ i ∈ S, FusionNetwork.IsInt (x i)) :
+  FusionNetwork.IsInt (∑ i ∈ S, x i)
+'FusionNetwork.int_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.balance_zero.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (v : V) : FusionNetwork.balance src dst (fun x => 0) v = 0
+'FusionNetwork.balance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.balance_add.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x y : E → ℝ) (v : V) :
+  FusionNetwork.balance src dst (fun e => x e + y e) v =
+    FusionNetwork.balance src dst x v + FusionNetwork.balance src dst y v
+'FusionNetwork.balance_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.balance_sub.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x y : E → ℝ) (v : V) :
+  FusionNetwork.balance src dst (fun e => x e - y e) v =
+    FusionNetwork.balance src dst x v - FusionNetwork.balance src dst y v
+'FusionNetwork.balance_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.balance_scale.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x : E → ℝ) (t : ℝ) (v : V) :
+  FusionNetwork.balance src dst (fun e => t * x e) v = t * FusionNetwork.balance src dst x v
+'FusionNetwork.balance_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.balance_single.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (e : E) (a : ℝ) (v : V) :
+  FusionNetwork.balance src dst (Pi.single e a) v = FusionNetwork.incidence src dst v e * a
+'FusionNetwork.balance_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.cut_balance.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (S : Finset V) (x : E → ℝ) :
+  ∑ v ∈ S, FusionNetwork.balance src dst x v = ∑ e, FusionNetwork.cutTerm src dst S x e
+'FusionNetwork.cut_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.cutTerm_int.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (S : Finset V) (x : E → ℝ) (e : E) (h : FusionNetwork.IsInt (x e)) :
+  FusionNetwork.IsInt (FusionNetwork.cutTerm src dst S x e)
+'FusionNetwork.cutTerm_int' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.fractional_connected.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x : E → ℝ)
+  (hb : ∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) (e0 : E)
+  (he0 : ¬FusionNetwork.IsInt (x e0)) : Relation.ReflTransGen (FusionNetwork.Step src dst x e0) (src e0) (dst e0)
+'FusionNetwork.fractional_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.path_transport.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x : E → ℝ) (e0 : E) (a b : V)
+  (hp : Relation.ReflTransGen (FusionNetwork.Step src dst x e0) a b) :
+  ∃ d,
+    d e0 = 0 ∧
+      (∀ (e : E), FusionNetwork.IsInt (x e) → d e = 0) ∧
+        ∀ (v : V), FusionNetwork.balance src dst d v = (if a = v then 1 else 0) - if b = v then 1 else 0
+'FusionNetwork.path_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.fractional_circulation.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x : E → ℝ)
+  (hb : ∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) (e0 : E)
+  (he0 : ¬FusionNetwork.IsInt (x e0)) :
+  ∃ d, d e0 = 1 ∧ (∀ (e : E), FusionNetwork.IsInt (x e) → d e = 0) ∧ ∀ (v : V), FusionNetwork.balance src dst d v = 0
+'FusionNetwork.fractional_circulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.improving_direction.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (x cost : E → ℝ)
+  (hb : ∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) (hf : ∃ e, ¬FusionNetwork.IsInt (x e)) :
+  ∃ d,
+    (∃ e, d e ≠ 0) ∧
+      (∀ (e : E), FusionNetwork.IsInt (x e) → d e = 0) ∧
+        (∀ (v : V), FusionNetwork.balance src dst d v = 0) ∧ ∑ e, cost e * d e ≤ 0
+'FusionNetwork.improving_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.fractional_strict_bounds (x : ℝ) (hx : ¬FusionNetwork.IsInt x) : ↑⌊x⌋ < x ∧ x < ↑⌈x⌉
+'FusionNetwork.fractional_strict_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.stepLimit_pos (x d : ℝ) (hx : ¬FusionNetwork.IsInt x) (hd : d ≠ 0) : 0 < FusionNetwork.stepLimit x d
+'FusionNetwork.stepLimit_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.step_inside (x d t : ℝ) (hd : d ≠ 0) (ht : 0 ≤ t) (hlim : t ≤ FusionNetwork.stepLimit x d) :
+  ↑⌊x⌋ ≤ x + t * d ∧ x + t * d ≤ ↑⌈x⌉
+'FusionNetwork.step_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.step_hits_integer (x d : ℝ) (hd : d ≠ 0) : FusionNetwork.IsInt (x + FusionNetwork.stepLimit x d * d)
+'FusionNetwork.step_hits_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.mem_fractionalSet.{u_2} {E : Type u_2} [Fintype E] [DecidableEq E] (x : E → ℝ) (e : E) :
+  e ∈ FusionNetwork.fractionalSet x ↔ ¬FusionNetwork.IsInt (x e)
+'FusionNetwork.mem_fractionalSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.rounding_step.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (x cost : E → ℝ)
+  (hx : ∀ (e : E), ↑(lower e) ≤ x e ∧ x e ≤ ↑(upper e))
+  (hb : ∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) (hf : ∃ e, ¬FusionNetwork.IsInt (x e)) :
+  ∃ y,
+    (∀ (e : E), ↑(lower e) ≤ y e ∧ y e ≤ ↑(upper e)) ∧
+      (∀ (v : V), FusionNetwork.balance src dst y v = FusionNetwork.balance src dst x v) ∧
+        ∑ e, cost e * y e ≤ ∑ e, cost e * x e ∧
+          (FusionNetwork.fractionalSet y).card < (FusionNetwork.fractionalSet x).card
+'FusionNetwork.rounding_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.round_flow.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (cost x : E → ℝ) :
+  (∀ (e : E), ↑(lower e) ≤ x e ∧ x e ≤ ↑(upper e)) →
+    (∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) →
+      ∃ y,
+        (∀ (e : E), FusionNetwork.IsInt (y e)) ∧
+          (∀ (e : E), ↑(lower e) ≤ y e ∧ y e ≤ ↑(upper e)) ∧
+            (∀ (v : V), FusionNetwork.balance src dst y v = FusionNetwork.balance src dst x v) ∧
+              ∑ e, cost e * y e ≤ ∑ e, cost e * x e
+'FusionNetwork.round_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.real_flow_rounding.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (cost x : E → ℝ)
+  (hx : ∀ (e : E), ↑(lower e) ≤ x e ∧ x e ≤ ↑(upper e))
+  (hb : ∀ (v : V), FusionNetwork.IsInt (FusionNetwork.balance src dst x v)) :
+  ∃ z,
+    (∀ (e : E), lower e ≤ z e ∧ z e ≤ upper e) ∧
+      (∀ (v : V), FusionNetwork.balance src dst (fun e => ↑(z e)) v = FusionNetwork.balance src dst x v) ∧
+        ∑ e, cost e * ↑(z e) ≤ ∑ e, cost e * x e
+'FusionNetwork.real_flow_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.integer_bounds.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (supply : V → ℤ) (z : E → ℤ)
+  (hz : FusionNetwork.IntegerFeasible src dst lower upper supply z) (e : E) : lower e ≤ z e ∧ z e ≤ upper e
+'FusionNetwork.integer_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.round_feasible.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (supply : V → ℤ) (cost x : E → ℝ)
+  (hx : FusionNetwork.RealFeasible src dst lower upper supply x) :
+  ∃ z, FusionNetwork.IntegerFeasible src dst lower upper supply z ∧ ∑ e, cost e * ↑(z e) ≤ ∑ e, cost e * x e
+'FusionNetwork.round_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.min_cost_integral.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (supply : V → ℤ) (cost : E → ℝ)
+  (hne : ∃ x, FusionNetwork.RealFeasible src dst lower upper supply x) :
+  ∃ z,
+    FusionNetwork.IntegerFeasible src dst lower upper supply z ∧
+      ∀ (x : E → ℝ), FusionNetwork.RealFeasible src dst lower upper supply x → ∑ e, cost e * ↑(z e) ≤ ∑ e, cost e * x e
+'FusionNetwork.min_cost_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionNetwork.integral_flow_extrema.{u_1, u_2} {V : Type u_1} {E : Type u_2} [Fintype V] [Fintype E] [DecidableEq V]
+  [DecidableEq E] (src dst : E → V) (lower upper : E → ℤ) (supply : V → ℤ) (cost : E → ℝ)
+  (hne : ∃ x, FusionNetwork.RealFeasible src dst lower upper supply x) :
+  ∃ lo hi,
+    FusionNetwork.IntegerFeasible src dst lower upper supply lo ∧
+      FusionNetwork.IntegerFeasible src dst lower upper supply hi ∧
+        ∀ (x : E → ℝ),
+          FusionNetwork.RealFeasible src dst lower upper supply x →
+            ∑ e, cost e * ↑(lo e) ≤ ∑ e, cost e * x e ∧ ∑ e, cost e * x e ≤ ∑ e, cost e * ↑(hi e)
+'FusionNetwork.integral_flow_extrema' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.has_parent.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (C : Finset ι) (hC : C ∈ FusionLaminar.completed F ∧ C ≠ Finset.univ) :
+  ∃ S ∈ FusionLaminar.completed F, FusionLaminar.Child (FusionLaminar.completed F) S C
+'FusionHierarchy.has_parent' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.parent_root.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι)) :
+  FusionHierarchy.parent F Finset.univ = none
+'FusionHierarchy.parent_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.parent_outside.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (C : Finset ι) (h : C ∉ FusionLaminar.completed F) : FusionHierarchy.parent F C = none
+'FusionHierarchy.parent_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.parent_some_iff.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (S C : Finset ι) :
+  FusionHierarchy.parent F C = some S ↔
+    S ∈ FusionLaminar.completed F ∧ FusionLaminar.Child (FusionLaminar.completed F) S C
+'FusionHierarchy.parent_some_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeOut_children.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (q : Finset ι → ℝ) (S : Finset ι) (hS : S ∈ FusionLaminar.completed F) :
+  FusionHierarchy.treeOut F q S = ∑ C ∈ FusionLaminar.children (FusionLaminar.completed F) S, q C
+'FusionHierarchy.treeOut_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeOut_outside.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (q : Finset ι → ℝ) (S : Finset ι) (hS : S ∉ FusionLaminar.completed F) :
+  FusionHierarchy.treeOut F q S = 0
+'FusionHierarchy.treeOut_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeOut_singleton.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (q : Finset ι → ℝ) (i : ι) : FusionHierarchy.treeOut F q {i} = 0
+'FusionHierarchy.treeOut_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.leafTerm_singleton.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (y : ι → ℝ) (i : ι) :
+  FusionHierarchy.leafTerm y {i} = y i
+'FusionHierarchy.leafTerm_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.leafTerm_nonsingleton.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (y : ι → ℝ)
+  (S : Finset ι) (hs : 1 < S.card) : FusionHierarchy.leafTerm y S = 0
+'FusionHierarchy.leafTerm_nonsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.leafTerm_outside.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (y : ι → ℝ) (S : Finset ι) (hS : S ∉ FusionLaminar.completed F) : FusionHierarchy.leafTerm y S = 0
+'FusionHierarchy.leafTerm_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeLift_node.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (hl : FusionLaminar.Laminar F) (y : ι → ℝ) (S : Finset ι) :
+  FusionHierarchy.treeOut F (FusionHierarchy.treeLift F y) S + FusionHierarchy.leafTerm y S =
+    FusionHierarchy.treeLift F y S
+'FusionHierarchy.treeLift_node' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.node_determines_tree.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (F : Finset (Finset ι)) (hl : FusionLaminar.Laminar F) (q : Finset ι → ℝ) (y : ι → ℝ)
+  (hc : ∀ (S : Finset ι), FusionHierarchy.treeOut F q S + FusionHierarchy.leafTerm y S = q S) (S : Finset ι) :
+  S ∈ FusionLaminar.completed F → q S = ∑ i ∈ S, y i
+'FusionHierarchy.node_determines_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.rootOut_eq.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (q : Finset ι → ℝ) (hz : ∀ S ∉ FusionLaminar.completed F, q S = 0) : FusionHierarchy.rootOut F q = q Finset.univ
+'FusionHierarchy.rootOut_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.tree_bounds_iff.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (lo up : Finset ι → ℤ) (C : Finset ι) (q : ℝ) :
+  ↑(FusionHierarchy.treeLower F lo C) ≤ q ∧ q ≤ ↑(FusionHierarchy.treeUpper F up C) ↔
+    (0 ≤ q ∧ q ≤ ↑(FusionHierarchy.treeCap F C)) ∧ (C ∈ F → ↑(lo C) ≤ q ∧ q ≤ ↑(up C))
+'FusionHierarchy.tree_bounds_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.record_bounds_iff.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (d : FusionHierarchy.Data ι) (i : ι) (q : ℝ) :
+  ↑(FusionHierarchy.arcLower d (Sum.inr (Sum.inl i))) ≤ q ∧ q ≤ ↑(FusionHierarchy.arcUpper d (Sum.inr (Sum.inl i))) ↔
+    (0 ≤ q ∧ q ≤ 1) ∧ (i ∈ d.reviewed → q = ↑(d.outcome i))
+'FusionHierarchy.record_bounds_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.balance_A_node.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (d : FusionHierarchy.Data ι) (x : FusionHierarchy.Arc ι → ℝ) (S : Finset ι) :
+  FusionNetwork.balance (FusionHierarchy.source d) (FusionHierarchy.destination d) x (Sum.inl (some S)) =
+    FusionHierarchy.treeOut d.A (fun C => x (Sum.inl C)) S +
+        FusionHierarchy.leafTerm (fun i => x (Sum.inr (Sum.inl i))) S -
+      x (Sum.inl S)
+'FusionHierarchy.balance_A_node' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.balance_B_node.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (d : FusionHierarchy.Data ι) (x : FusionHierarchy.Arc ι → ℝ) (S : Finset ι) :
+  FusionNetwork.balance (FusionHierarchy.source d) (FusionHierarchy.destination d) x (Sum.inr (some S)) =
+    x (Sum.inr (Sum.inr S)) - FusionHierarchy.treeOut d.B (fun C => x (Sum.inr (Sum.inr C))) S -
+      FusionHierarchy.leafTerm (fun i => x (Sum.inr (Sum.inl i))) S
+'FusionHierarchy.balance_B_node' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.balance_rootA.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (d : FusionHierarchy.Data ι)
+  (x : FusionHierarchy.Arc ι → ℝ) :
+  FusionNetwork.balance (FusionHierarchy.source d) (FusionHierarchy.destination d) x (Sum.inl none) =
+    FusionHierarchy.rootOut d.A fun C => x (Sum.inl C)
+'FusionHierarchy.balance_rootA' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.balance_rootB.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (d : FusionHierarchy.Data ι)
+  (x : FusionHierarchy.Arc ι → ℝ) :
+  FusionNetwork.balance (FusionHierarchy.source d) (FusionHierarchy.destination d) x (Sum.inr none) =
+    -FusionHierarchy.rootOut d.B fun C => x (Sum.inr (Sum.inr C))
+'FusionHierarchy.balance_rootB' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeLift_original.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (y : ι → ℝ) (S : Finset ι) (hS : S ∈ F) : FusionHierarchy.treeLift F y S = ∑ i ∈ S, y i
+'FusionHierarchy.treeLift_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.treeLift_bounds.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (lo up : Finset ι → ℤ) (y : ι → ℝ) (hy : ∀ (i : ι), 0 ≤ y i ∧ y i ≤ 1)
+  (hc : ∀ S ∈ F, ↑(lo S) ≤ ∑ i ∈ S, y i ∧ ∑ i ∈ S, y i ≤ ↑(up S)) (S : Finset ι) :
+  ↑(FusionHierarchy.treeLower F lo S) ≤ FusionHierarchy.treeLift F y S ∧
+    FusionHierarchy.treeLift F y S ≤ ↑(FusionHierarchy.treeUpper F up S)
+'FusionHierarchy.treeLift_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.tree_zero_outside.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (F : Finset (Finset ι))
+  (lo up : Finset ι → ℤ) (q : Finset ι → ℝ)
+  (hq : ∀ (S : Finset ι), ↑(FusionHierarchy.treeLower F lo S) ≤ q S ∧ q S ≤ ↑(FusionHierarchy.treeUpper F up S))
+  (S : Finset ι) : S ∉ FusionLaminar.completed F → q S = 0
+'FusionHierarchy.tree_zero_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.counts_lift.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (d : FusionHierarchy.Data ι)
+  (ha : FusionLaminar.Laminar d.A) (hb : FusionLaminar.Laminar d.B) (y : ι → ℝ) (hy : FusionHierarchy.RealCounts d y) :
+  FusionNetwork.RealFeasible (FusionHierarchy.source d) (FusionHierarchy.destination d) (FusionHierarchy.arcLower d)
+    (FusionHierarchy.arcUpper d) (FusionHierarchy.supplies d) (FusionHierarchy.networkLift d y)
+'FusionHierarchy.counts_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.flow_projects.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (d : FusionHierarchy.Data ι)
+  (ha : FusionLaminar.Laminar d.A) (hb : FusionLaminar.Laminar d.B) (x : FusionHierarchy.Arc ι → ℝ)
+  (hx :
+    FusionNetwork.RealFeasible (FusionHierarchy.source d) (FusionHierarchy.destination d) (FusionHierarchy.arcLower d)
+      (FusionHierarchy.arcUpper d) (FusionHierarchy.supplies d) x) :
+  FusionHierarchy.RealCounts d fun i => x (Sum.inr (Sum.inl i))
+'FusionHierarchy.flow_projects' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.integer_counts_iff.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (d : FusionHierarchy.Data ι) (y : ι → ℤ) :
+  FusionHierarchy.IntegerCounts d y ↔ FusionHierarchy.RealCounts d fun i => ↑(y i)
+'FusionHierarchy.integer_counts_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.record_objective.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (a : ι → ℝ)
+  (x : FusionHierarchy.Arc ι → ℝ) : ∑ e, FusionHierarchy.recordCost a e * x e = ∑ i, a i * x (Sum.inr (Sum.inl i))
+'FusionHierarchy.record_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionHierarchy.two_laminar_sharp.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι]
+  (d : FusionHierarchy.Data ι) (ha : FusionLaminar.Laminar d.A) (hb : FusionLaminar.Laminar d.B) (a : ι → ℝ)
+  (hne : ∃ y, FusionHierarchy.IntegerCounts d y) :
+  ∃ lo hi,
+    FusionHierarchy.IntegerCounts d lo ∧
+      FusionHierarchy.IntegerCounts d hi ∧
+        ∀ (y : ι → ℝ),
+          FusionHierarchy.RealCounts d y → ∑ i, a i * ↑(lo i) ≤ ∑ i, a i * y i ∧ ∑ i, a i * y i ≤ ∑ i, a i * ↑(hi i)
+'FusionHierarchy.two_laminar_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.groups_sum {n h : ℕ} (g : Fin n → Fin h) (y : Fin n → ℝ) :
+  ∑ a, FusionPartition.realGroup g y a = ∑ i, y i
+'FusionPartition.groups_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.group_cast {n h : ℕ} (g : Fin n → Fin h) (y : Fin n → ℤ) (a : Fin h) :
+  FusionPartition.realGroup g (fun i => ↑(y i)) a = ↑(Fusion.groupCount g y a)
+'FusionPartition.group_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.balance_source {n h k : ℕ} (d : Fusion.CountData n h k) (x : FusionPartition.Arc n h k → ℝ) :
+  FusionNetwork.balance (FusionPartition.src d) (FusionPartition.dst d) x (Sum.inl false) = ∑ a, x (Sum.inl a)
+'FusionPartition.balance_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.balance_sink {n h k : ℕ} (d : Fusion.CountData n h k) (x : FusionPartition.Arc n h k → ℝ) :
+  FusionNetwork.balance (FusionPartition.src d) (FusionPartition.dst d) x (Sum.inl true) = -∑ b, x (Sum.inr (Sum.inr b))
+'FusionPartition.balance_sink' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.balance_A {n h k : ℕ} (d : Fusion.CountData n h k) (x : FusionPartition.Arc n h k → ℝ) (a : Fin h) :
+  FusionNetwork.balance (FusionPartition.src d) (FusionPartition.dst d) x (Sum.inr (Sum.inl a)) =
+    FusionPartition.realGroup d.gA (fun i => x (Sum.inr (Sum.inl i))) a - x (Sum.inl a)
+'FusionPartition.balance_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.balance_B {n h k : ℕ} (d : Fusion.CountData n h k) (x : FusionPartition.Arc n h k → ℝ) (b : Fin k) :
+  FusionNetwork.balance (FusionPartition.src d) (FusionPartition.dst d) x (Sum.inr (Sum.inr b)) =
+    x (Sum.inr (Sum.inr b)) - FusionPartition.realGroup d.gB (fun i => x (Sum.inr (Sum.inl i))) b
+'FusionPartition.balance_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.record_bounds {n h k : ℕ} (d : Fusion.CountData n h k) (i : Fin n) (x : ℝ) :
+  ↑(FusionPartition.lower d (Sum.inr (Sum.inl i))) ≤ x ∧ x ≤ ↑(FusionPartition.upper d (Sum.inr (Sum.inl i))) ↔
+    (0 ≤ x ∧ x ≤ 1) ∧ (i ∈ d.reviewed → x = ↑(d.outcome i))
+'FusionPartition.record_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.completion_lifts {n h k : ℕ} (d : Fusion.CountData n h k) (y : Fin n → ℝ)
+  (hy : FusionPartition.RealCountFeasible d y) :
+  FusionNetwork.RealFeasible (FusionPartition.src d) (FusionPartition.dst d) (FusionPartition.lower d)
+    (FusionPartition.upper d) (FusionPartition.supply d) (FusionPartition.liftFlow d y)
+'FusionPartition.completion_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.feasible_projects {n h k : ℕ} (d : Fusion.CountData n h k) (x : FusionPartition.Arc n h k → ℝ)
+  (hx :
+    FusionNetwork.RealFeasible (FusionPartition.src d) (FusionPartition.dst d) (FusionPartition.lower d)
+      (FusionPartition.upper d) (FusionPartition.supply d) x) :
+  FusionPartition.RealCountFeasible d fun i => x (Sum.inr (Sum.inl i))
+'FusionPartition.feasible_projects' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.integer_completion_iff {n h k : ℕ} (d : Fusion.CountData n h k) (y : Fin n → ℤ) :
+  Fusion.CountFeasible d y ↔ FusionPartition.RealCountFeasible d fun i => ↑(y i)
+'FusionPartition.integer_completion_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.objective_eq {n h k : ℕ} (a : Fin n → ℝ) (x : FusionPartition.Arc n h k → ℝ) :
+  ∑ e, FusionPartition.arcCost a e * x e = ∑ i, a i * x (Sum.inr (Sum.inl i))
+'FusionPartition.objective_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPartition.two_partition_sharp {n h k : ℕ} (d : Fusion.CountData n h k) (a : Fin n → ℝ)
+  (hne : ∃ y, Fusion.CountFeasible d y) :
+  ∃ lo hi,
+    Fusion.CountFeasible d lo ∧
+      Fusion.CountFeasible d hi ∧
+        ∀ (y : Fin n → ℝ),
+          FusionPartition.RealCountFeasible d y →
+            ∑ i, a i * ↑(lo i) ≤ ∑ i, a i * y i ∧ ∑ i, a i * y i ≤ ∑ i, a i * ↑(hi i)
+'FusionPartition.two_partition_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.indistinguishable_obstruction.{u_1, u_2} {X : Type u_1} {I : Type u_2} (S : Set I) (obs : X → I → Bool)
+  (target : X → Bool) (x z : X) (hobs : ∀ i ∈ S, obs x i = obs z i) (ht : target x ≠ target z) :
+  ¬Fusion.Certifies S obs target
+'Fusion.indistinguishable_obstruction' does not depend on any axioms
+Fusion.all_payloads_certify (K : ℕ) : Fusion.Certifies Set.univ Fusion.payloadObs fun x => x.2
+'Fusion.all_payloads_certify' depends on axioms: [propext]
+Fusion.missing_payload_obstruction {K : ℕ} (S : Set (Fin K)) (leaf : Fin K) (hmiss : leaf ∉ S) :
+  ¬Fusion.Certifies S Fusion.payloadObs fun x => x.2
+'Fusion.missing_payload_obstruction' depends on axioms: [propext]
+Fusion.payload_retains_half (p : ℕ) (hp : 2 ≤ p) : (p + 1) / 2 ≤ p - 1
+'Fusion.payload_retains_half' depends on axioms: [propext, Quot.sound]
+Fusion.split_retains_half (p q : ℕ) : (p + q + 1) / 2 ≤ p ∨ (p + q + 1) / 2 ≤ q
+'Fusion.split_retains_half' depends on axioms: [propext, Quot.sound]
+Fusion.survival_power (p : ℕ → ℕ) (k : ℕ) (h0 : 2 ^ k ≤ p 0) (hstep : ∀ t < k, p t ≤ 2 * p (t + 1)) (t : ℕ) :
+  t ≤ k → 2 ^ (k - t) ≤ p t
+'Fusion.survival_power' depends on axioms: [propext, Quot.sound]
+Fusion.adjacent_rank_swap (r : ℤ) : r + 1 - r = 1 ∧ r - (r + 1) = -1
+'Fusion.adjacent_rank_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.payload_complement_cancellation (x y : ℤ) : 1 - x - (1 - y) = -(x - y)
+'Fusion.payload_complement_cancellation' depends on axioms: [propext, Quot.sound]
+Fusion.reported_budget_arithmetic : 2 ^ 10 = 1024 ∧ 4 * 2 ^ 10 - 2 = 4094 ∧ 10 + 1 = 11
+'Fusion.reported_budget_arithmetic' depends on axioms: [propext]
+Fusion.fixed_pair_coverage.{u_1} {K : ℕ} {Tree : Type u_1} (treeObs : Fin K → Tree → Bool)
+  (S : Set (Fusion.PairQuery K Tree)) (hc : Fusion.Certifies S (Fusion.pairObs treeObs) fun x => x.2) (leaf : Fin K) :
+  Sum.inr (leaf, false) ∈ S ∨ Sum.inr (leaf, true) ∈ S
+'Fusion.fixed_pair_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.fixed_budget_lower.{u_1} {K : ℕ} {Tree : Type u_1} [DecidableEq Tree] (treeObs : Fin K → Tree → Bool)
+  (S : Finset (Fusion.PairQuery K Tree)) (hc : Fusion.Certifies (↑S) (Fusion.pairObs treeObs) fun x => x.2) : K ≤ S.card
+'Fusion.fixed_budget_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.adaptive_pair_lower.{u_1} {K : ℕ} {Tree : Type u_1} (treeObs : Fin K → Tree → Bool) (k : ℕ)
+  (p : Fusion.ReviewPolicy (Fusion.PairQuery K Tree)) (S : Finset (Fin K)) :
+  Fusion.policyDepth p ≤ k →
+    2 ^ k ≤ S.card → ¬∀ a ∈ S, ∀ (b : Bool), Fusion.policyRun (Fusion.pairObs treeObs) p (a, b) = b
+'Fusion.adaptive_pair_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.leaf_card (k : ℕ) : Fintype.card (FusionTree.Leaf k) = 2 ^ k
+'FusionTree.leaf_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.edge_card (k : ℕ) : Fintype.card (FusionTree.Edge k) = 4 * 2 ^ k - 2
+'FusionTree.edge_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.zero_flow (k : ℕ) : FusionTree.Flow k (fun x => false) false
+'FusionTree.zero_flow' does not depend on any axioms
+FusionTree.zero_unique (k : ℕ) (x : FusionTree.Edge k → Bool) (h : FusionTree.Flow k x false) (e : FusionTree.Edge k) :
+  x e = false
+'FusionTree.zero_unique' depends on axioms: [propext]
+FusionTree.path_feasible (k : ℕ) (s : FusionTree.Leaf k × Bool) : FusionTree.Flow k (FusionTree.path k s) true
+'FusionTree.path_feasible' depends on axioms: [propext, Quot.sound]
+FusionTree.path_exhaustive (k : ℕ) (x : FusionTree.Edge k → Bool) (h : FusionTree.Flow k x true) :
+  ∃ s, x = FusionTree.path k s
+'FusionTree.path_exhaustive' depends on axioms: [propext, Quot.sound]
+FusionTree.path_injective (k : ℕ) : Function.Injective (FusionTree.path k)
+'FusionTree.path_injective' depends on axioms: [propext, Quot.sound]
+FusionTree.map_depth.{u_1, u_2} {I : Type u_1} {J : Type u_2} (f : I → J) (p : Fusion.ReviewPolicy I) :
+  Fusion.policyDepth (FusionTree.mapPolicy f p) = Fusion.policyDepth p
+'FusionTree.map_depth' depends on axioms: [propext]
+FusionTree.map_run.{u_1, u_2, u_3} {I : Type u_1} {J : Type u_2} {X : Type u_3} (f : I → J) (obs : X → J → Bool)
+  (p : Fusion.ReviewPolicy I) (x : X) :
+  Fusion.policyRun obs (FusionTree.mapPolicy f p) x = Fusion.policyRun (fun x i => obs x (f i)) p x
+'FusionTree.map_run' depends on axioms: [propext]
+FusionTree.run_ext.{u_1, u_2, u_3} {I : Type u_1} {X : Type u_2} {Y : Type u_3} (p : Fusion.ReviewPolicy I)
+  (o : X → I → Bool) (v : Y → I → Bool) (x : X) (y : Y) (h : ∀ (i : I), o x i = v y i) :
+  Fusion.policyRun o p x = Fusion.policyRun v p y
+'FusionTree.run_ext' depends on axioms: [propext]
+FusionTree.adaptive_depth (k : ℕ) : Fusion.policyDepth (FusionTree.adaptive k) = k + 1
+'FusionTree.adaptive_depth' depends on axioms: [propext, Quot.sound]
+FusionTree.adaptive_correct (k : ℕ) (s : FusionTree.Leaf k × Bool) :
+  Fusion.policyRun (FusionTree.path k) (FusionTree.adaptive k) s = s.2
+'FusionTree.adaptive_correct' depends on axioms: [propext]
+FusionTree.payload_injective (k : ℕ) : Function.Injective (FusionTree.payload k)
+'FusionTree.payload_injective' does not depend on any axioms
+FusionTree.path_payload (k : ℕ) (s t : FusionTree.Leaf k × Bool) :
+  FusionTree.path k s (FusionTree.payload k t) = decide (s = t)
+'FusionTree.path_payload' depends on axioms: [propext]
+FusionTree.fixed_card (k : ℕ) : (FusionTree.fixed k).card = 2 ^ k
+'FusionTree.fixed_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.fixed_correct (k : ℕ) : Fusion.Certifies (↑(FusionTree.fixed k)) (FusionTree.path k) fun s => s.2
+'FusionTree.fixed_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.kind_some (k : ℕ) (e : FusionTree.Edge k) (s : FusionTree.Leaf k × Bool) (h : FusionTree.kind k e = some s) :
+  e = FusionTree.payload k s
+'FusionTree.kind_some' depends on axioms: [propext]
+FusionTree.kind_none (k : ℕ) (e : FusionTree.Edge k) (h : FusionTree.kind k e = none) (a : FusionTree.Leaf k)
+  (b c : Bool) : FusionTree.path k (a, b) e = FusionTree.path k (a, c) e
+'FusionTree.kind_none' depends on axioms: [propext]
+FusionTree.path_encoded (k : ℕ) (s : FusionTree.Leaf k × Bool) (e : FusionTree.Edge k) :
+  FusionTree.path k s e =
+    Fusion.pairObs (FusionTree.addressObservation k) ((FusionTree.leafFin k) s.1, s.2) (FusionTree.encodedQuery k e)
+'FusionTree.path_encoded' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.fixed_lower (k : ℕ) (S : Finset (FusionTree.Edge k))
+  (h : Fusion.Certifies (↑S) (FusionTree.path k) fun s => s.2) : 2 ^ k ≤ S.card
+'FusionTree.fixed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.adaptive_lower (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k))
+  (h : ∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.path k) p s = s.2) : k + 1 ≤ Fusion.policyDepth p
+'FusionTree.adaptive_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.review_optima (k : ℕ) :
+  ((FusionTree.fixed k).card = 2 ^ k ∧ Fusion.Certifies (↑(FusionTree.fixed k)) (FusionTree.path k) fun s => s.2) ∧
+    (∀ (S : Finset (FusionTree.Edge k)), (Fusion.Certifies (↑S) (FusionTree.path k) fun s => s.2) → 2 ^ k ≤ S.card) ∧
+      (Fusion.policyDepth (FusionTree.adaptive k) = k + 1 ∧
+          ∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.path k) (FusionTree.adaptive k) s = s.2) ∧
+        ∀ (p : Fusion.ReviewPolicy (FusionTree.Edge k)),
+          (∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.path k) p s = s.2) →
+            k + 1 ≤ Fusion.policyDepth p
+'FusionTree.review_optima' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.size_formula (k : ℕ) : FusionTree.size k = 4 * 2 ^ k - 2
+'FusionTree.size_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.rank_bound (k : ℕ) (flip : Bool) (e : FusionTree.Edge k) : FusionTree.rank k flip e < FusionTree.size k
+'FusionTree.rank_bound' depends on axioms: [propext, Quot.sound]
+FusionTree.rank_injective (k : ℕ) (flip : Bool) : Function.Injective (FusionTree.rank k flip)
+'FusionTree.rank_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.rank_bijective (k : ℕ) (flip : Bool) : Function.Bijective (FusionTree.rankFin k flip)
+'FusionTree.rank_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.labels_involution (k : ℕ) (x : FusionTree.Edge k → Bool) : FusionTree.labels k (FusionTree.labels k x) = x
+'FusionTree.labels_involution' depends on axioms: [propext, Quot.sound]
+FusionTree.root_coefficient (k : ℕ) (b : Bool) : FusionTree.coefficient (k + 1) (Sum.inl b) = 0
+'FusionTree.root_coefficient' depends on axioms: [propext]
+FusionTree.child_coefficient (k : ℕ) (b : Bool) (e : FusionTree.Edge k) :
+  FusionTree.coefficient (k + 1) (Sum.inr (b, e)) = -FusionTree.coefficient k e
+'FusionTree.child_coefficient' depends on axioms: [propext]
+FusionTree.coefficient_sum (k : ℕ) : ∑ e, FusionTree.coefficient k e = 0
+'FusionTree.coefficient_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.bit_not (b : Bool) : (FusionTree.bit !b) = 1 - FusionTree.bit b
+'FusionTree.bit_not' does not depend on any axioms
+FusionTree.target_step (k : ℕ) (x : FusionTree.Edge (k + 1) → Bool) :
+  FusionTree.target (k + 1) x =
+    (FusionTree.target k fun e => x (Sum.inr (false, e))) + FusionTree.target k fun e => x (Sum.inr (true, e))
+'FusionTree.target_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.target_zero (k : ℕ) : (FusionTree.target k fun x => false) = 0
+'FusionTree.target_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.target_path (k : ℕ) (s : FusionTree.Leaf k × Bool) :
+  FusionTree.target k (FusionTree.path k s) = if s.2 = true then 1 else -1
+'FusionTree.target_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.one_based_rank_difference (k : ℕ) (e : FusionTree.Edge k) :
+  ↑(FusionTree.rank k false e) + 1 - (↑(FusionTree.rank k true e) + 1) = FusionTree.coefficient k e
+'FusionTree.one_based_rank_difference' depends on axioms: [propext]
+FusionTree.root_even (k : ℕ) : FusionTree.nodeOdd k (FusionTree.root k) = false
+'FusionTree.root_even' does not depend on any axioms
+FusionTree.origin_parity (k : ℕ) (e : FusionTree.Edge k) :
+  FusionTree.nodeOdd k (FusionTree.origin k e) = FusionTree.edgeOdd k e
+'FusionTree.origin_parity' depends on axioms: [propext]
+FusionTree.destination_parity (k : ℕ) (e : FusionTree.Edge k) :
+  FusionTree.side k (FusionTree.destination k e) = !FusionTree.edgeOdd k e
+'FusionTree.destination_parity' depends on axioms: [propext]
+FusionTree.group_sides (k : ℕ) (e : FusionTree.Edge k) :
+  FusionTree.side k (FusionTree.groupA k e) = false ∧ FusionTree.side k (FusionTree.groupB k e) = true
+'FusionTree.group_sides' depends on axioms: [propext]
+FusionTree.labels_coordinate (k : ℕ) (x : FusionTree.Edge k → Bool) (e : FusionTree.Edge k) :
+  FusionTree.labels k x e = if FusionTree.edgeOdd k e = true then !x e else x e
+'FusionTree.labels_coordinate' depends on axioms: [propext]
+FusionTree.outgoing_root (k : ℕ) (x : FusionTree.Edge (k + 1) → Bool) :
+  FusionTree.outgoing (k + 1) x (FusionTree.root (k + 1)) =
+    FusionTree.bit (x (Sum.inl false)) + FusionTree.bit (x (Sum.inl true))
+'FusionTree.outgoing_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.node_pair_eq (k : ℕ) (b c : Bool) (u v : FusionTree.Node k) : some (b, u) = some (c, v) ↔ b = c ∧ u = v
+'FusionTree.node_pair_eq' depends on axioms: [propext]
+FusionTree.node_some_ne_root (k : ℕ) (b : Bool) (v : FusionTree.Node k) : some (b, v) ≠ FusionTree.root (k + 1)
+'FusionTree.node_some_ne_root' depends on axioms: [propext]
+FusionTree.outgoing_child (k : ℕ) (x : FusionTree.Edge (k + 1) → Bool) (b : Bool) (v : FusionTree.Node k) :
+  FusionTree.outgoing (k + 1) x (some (b, v)) = FusionTree.outgoing k (fun e => x (Sum.inr (b, e))) v
+'FusionTree.outgoing_child' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.incoming_root (k : ℕ) (x : FusionTree.Edge (k + 1) → Bool) :
+  FusionTree.incoming (k + 1) x (FusionTree.root (k + 1)) = 0
+'FusionTree.incoming_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.incoming_child (k : ℕ) (x : FusionTree.Edge (k + 1) → Bool) (b : Bool) (v : FusionTree.Node k) :
+  FusionTree.incoming (k + 1) x (some (b, v)) =
+    FusionTree.incoming k (fun e => x (Sum.inr (b, e))) v +
+      if v = FusionTree.root k then FusionTree.bit (x (Sum.inl b)) else 0
+'FusionTree.incoming_child' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.flow_conservation (k : ℕ) (x : FusionTree.Edge k → Bool) (u : Bool) :
+  FusionTree.Flow k x u ↔
+    ∀ (v : FusionTree.Node k), FusionTree.nodeBalance k x v = if v = FusionTree.root k then FusionTree.bit u else 0
+'FusionTree.flow_conservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.fullBalance_node (k : ℕ) (x : FusionTree.Edge k → Bool) (v : FusionTree.Node k) :
+  FusionTree.fullBalance k x (some v) = FusionTree.nodeBalance k x v
+'FusionTree.fullBalance_node' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.balance_sum (k : ℕ) (x : FusionTree.Edge k → Bool) : ∑ v, FusionTree.fullBalance k x v = 0
+'FusionTree.balance_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.full_conservation (k : ℕ) (x : FusionTree.Edge k → Bool) (u : Bool) :
+  FusionTree.Flow k x u ↔ ∀ (v : Option (FusionTree.Node k)), FusionTree.fullBalance k x v = FusionTree.supply k u v
+'FusionTree.full_conservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.complemented_count.{u_1} {G : Type u_1} [DecidableEq G] (k : ℕ) (g : FusionTree.Edge k → G)
+  (x : FusionTree.Edge k → Bool) (v : G) :
+  FusionTree.groupCount k g (FusionTree.labels k x) v = FusionTree.signedGroup k g x v + FusionTree.offset k g v
+'FusionTree.complemented_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.balance_groups (k : ℕ) (x : FusionTree.Edge k → Bool) (v : Option (FusionTree.Node k)) :
+  FusionTree.fullBalance k x v =
+    FusionTree.signedGroup k (FusionTree.groupA k) x v - FusionTree.signedGroup k (FusionTree.groupB k) x v
+'FusionTree.balance_groups' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.inactive_groupA (k : ℕ) (x : FusionTree.Edge k → Bool) (v : Option (FusionTree.Node k))
+  (hv : FusionTree.side k v = true) : FusionTree.signedGroup k (FusionTree.groupA k) x v = 0
+'FusionTree.inactive_groupA' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.inactive_groupB (k : ℕ) (x : FusionTree.Edge k → Bool) (v : Option (FusionTree.Node k))
+  (hv : FusionTree.side k v = false) : FusionTree.signedGroup k (FusionTree.groupB k) x v = 0
+'FusionTree.inactive_groupB' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.flow_positive_counts (k : ℕ) (x : FusionTree.Edge k → Bool) :
+  FusionTree.PositiveCounts k (FusionTree.labels k x) ↔ FusionTree.Flow k x true
+'FusionTree.flow_positive_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.positive_counts_iff_path (k : ℕ) (y : FusionTree.Edge k → Bool) :
+  FusionTree.PositiveCounts k y ↔ ∃ s, y = FusionTree.labels k (FusionTree.path k s)
+'FusionTree.positive_counts_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.label_target_sign (k : ℕ) (s : FusionTree.Leaf k × Bool) :
+  FusionTree.labelTarget k (FusionTree.labelObs k s) = if s.2 = true then 1 else -1
+'FusionTree.label_target_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.sign_injective (b c : Bool) : ((if b = true then 1 else -1) = if c = true then 1 else -1) ↔ b = c
+'FusionTree.sign_injective' depends on axioms: [propext]
+FusionTree.label_observations_equal (k : ℕ) (s t : FusionTree.Leaf k × Bool) (e : FusionTree.Edge k) :
+  FusionTree.labelObs k s e = FusionTree.labelObs k t e ↔ FusionTree.path k s e = FusionTree.path k t e
+'FusionTree.label_observations_equal' depends on axioms: [propext]
+FusionTree.fixed_labels_iff (k : ℕ) (S : Set (FusionTree.Edge k)) :
+  (Fusion.Certifies S (FusionTree.labelObs k) fun s => s.2) ↔ Fusion.Certifies S (FusionTree.path k) fun s => s.2
+'FusionTree.fixed_labels_iff' depends on axioms: [propext]
+FusionTree.flip_depth.{u_1} {I : Type u_1} (mask : I → Bool) (p : Fusion.ReviewPolicy I) :
+  Fusion.policyDepth (FusionTree.flipPolicy mask p) = Fusion.policyDepth p
+'FusionTree.flip_depth' depends on axioms: [propext]
+FusionTree.flip_run.{u_1, u_2} {I : Type u_1} {X : Type u_2} (mask : I → Bool) (obs : X → I → Bool)
+  (p : Fusion.ReviewPolicy I) (x : X) :
+  Fusion.policyRun obs (FusionTree.flipPolicy mask p) x =
+    Fusion.policyRun (fun x i => if mask i = true then !obs x i else obs x i) p x
+'FusionTree.flip_run' depends on axioms: [propext]
+FusionTree.flow_run_as_labels (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k)) (s : FusionTree.Leaf k × Bool) :
+  Fusion.policyRun (FusionTree.path k) (FusionTree.flipPolicy (FusionTree.edgeOdd k) p) s =
+    Fusion.policyRun (FusionTree.labelObs k) p s
+'FusionTree.flow_run_as_labels' depends on axioms: [propext]
+FusionTree.labels_run_as_flow (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k)) (s : FusionTree.Leaf k × Bool) :
+  Fusion.policyRun (FusionTree.labelObs k) (FusionTree.flipPolicy (FusionTree.edgeOdd k) p) s =
+    Fusion.policyRun (FusionTree.path k) p s
+'FusionTree.labels_run_as_flow' depends on axioms: [propext]
+FusionTree.label_adaptive_correct (k : ℕ) (s : FusionTree.Leaf k × Bool) :
+  Fusion.policyRun (FusionTree.labelObs k) (FusionTree.labelAdaptive k) s = s.2
+'FusionTree.label_adaptive_correct' depends on axioms: [propext]
+FusionTree.label_adaptive_depth (k : ℕ) : Fusion.policyDepth (FusionTree.labelAdaptive k) = k + 1
+'FusionTree.label_adaptive_depth' depends on axioms: [propext, Quot.sound]
+FusionTree.label_adaptive_lower (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k))
+  (h : ∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.labelObs k) p s = s.2) :
+  k + 1 ≤ Fusion.policyDepth p
+'FusionTree.label_adaptive_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.runQueries_le_depth.{u_1, u_2} {I : Type u_1} {X : Type u_2} (obs : X → I → Bool) (p : Fusion.ReviewPolicy I)
+  (x : X) : FusionTree.runQueries obs p x ≤ Fusion.policyDepth p
+'FusionTree.runQueries_le_depth' depends on axioms: [propext, Quot.sound]
+FusionTree.cut_depth.{u_1} {I : Type u_1} (n : ℕ) (p : Fusion.ReviewPolicy I) :
+  Fusion.policyDepth (FusionTree.cutPolicy n p) ≤ n
+'FusionTree.cut_depth' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.cut_correct.{u_1, u_2} {I : Type u_1} {X : Type u_2} (obs : X → I → Bool) (n : ℕ) (p : Fusion.ReviewPolicy I)
+  (x : X) (h : FusionTree.runQueries obs p x ≤ n) :
+  Fusion.policyRun obs (FusionTree.cutPolicy n p) x = Fusion.policyRun obs p x
+'FusionTree.cut_correct' depends on axioms: [propext, Quot.sound]
+FusionTree.label_adaptive_input_lower (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k))
+  (h : ∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.labelObs k) p s = s.2) :
+  ∃ s, k + 1 ≤ FusionTree.runQueries (FusionTree.labelObs k) p s
+'FusionTree.label_adaptive_input_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.label_adaptive_input_upper (k : ℕ) (s : FusionTree.Leaf k × Bool) :
+  FusionTree.runQueries (FusionTree.labelObs k) (FusionTree.labelAdaptive k) s ≤ k + 1
+'FusionTree.label_adaptive_input_upper' depends on axioms: [propext, Quot.sound]
+FusionTree.numeric_certification_iff (k : ℕ) (S : Set (FusionTree.Edge k)) :
+  (∀ (y z : FusionTree.Edge k → Bool),
+      FusionTree.PositiveCounts k y →
+        FusionTree.PositiveCounts k z →
+          (∀ e ∈ S, y e = z e) → FusionTree.labelTarget k y = FusionTree.labelTarget k z) ↔
+    Fusion.Certifies S (FusionTree.labelObs k) fun s => s.2
+'FusionTree.numeric_certification_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.groups_sum.{u_1, u_2} {E : Type u_1} {G : Type u_2} [Fintype E] [Fintype G] [DecidableEq G] (g : E → G)
+  (w : E → ℤ) : (∑ v, ∑ e, if g e = v then w e else 0) = ∑ e, w e
+'FusionTree.groups_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.positive_total (k : ℕ) (y : FusionTree.Edge k → Bool) (h : FusionTree.PositiveCounts k y) :
+  ∑ e, FusionTree.bit (y e) = FusionTree.totalCount k
+'FusionTree.positive_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.label_feasible (k : ℕ) (s : FusionTree.Leaf k × Bool) : FusionTree.PositiveCounts k (FusionTree.labelObs k s)
+'FusionTree.label_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.total_nontrivial (k : ℕ) (hk : 1 ≤ k) :
+  0 < FusionTree.totalCount k ∧ FusionTree.totalCount k < ↑(Fintype.card (FusionTree.Edge k))
+'FusionTree.total_nontrivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.two_partition_separation (k : ℕ) (hk : 1 ≤ k) :
+  Fintype.card (FusionTree.Edge k) = 4 * 2 ^ k - 2 ∧
+    Function.Bijective (FusionTree.rankFin k false) ∧
+      Function.Bijective (FusionTree.rankFin k true) ∧
+        (∀ (y : FusionTree.Edge k → Bool), FusionTree.PositiveCounts k y ↔ ∃ s, y = FusionTree.labelObs k s) ∧
+          (∀ (s : FusionTree.Leaf k × Bool),
+              FusionTree.labelTarget k (FusionTree.labelObs k s) = if s.2 = true then 1 else -1) ∧
+            (0 < FusionTree.totalCount k ∧ FusionTree.totalCount k < ↑(Fintype.card (FusionTree.Edge k))) ∧
+              (∀ (y : FusionTree.Edge k → Bool),
+                  FusionTree.PositiveCounts k y → ∑ e, FusionTree.bit (y e) = FusionTree.totalCount k) ∧
+                ((FusionTree.fixed k).card = 2 ^ k ∧
+                    Fusion.Certifies (↑(FusionTree.fixed k)) (FusionTree.labelObs k) fun s => s.2) ∧
+                  (∀ (S : Finset (FusionTree.Edge k)),
+                      (Fusion.Certifies (↑S) (FusionTree.labelObs k) fun s => s.2) → 2 ^ k ≤ S.card) ∧
+                    (Fusion.policyDepth (FusionTree.labelAdaptive k) = k + 1 ∧
+                        ∀ (s : FusionTree.Leaf k × Bool),
+                          Fusion.policyRun (FusionTree.labelObs k) (FusionTree.labelAdaptive k) s = s.2) ∧
+                      (∀ (p : Fusion.ReviewPolicy (FusionTree.Edge k)),
+                          (∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.labelObs k) p s = s.2) →
+                            k + 1 ≤ Fusion.policyDepth p) ∧
+                        (∀ (s : FusionTree.Leaf k × Bool),
+                            FusionTree.runQueries (FusionTree.labelObs k) (FusionTree.labelAdaptive k) s ≤ k + 1) ∧
+                          ∀ (p : Fusion.ReviewPolicy (FusionTree.Edge k)),
+                            (∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.labelObs k) p s = s.2) →
+                              ∃ s, k + 1 ≤ FusionTree.runQueries (FusionTree.labelObs k) p s
+'FusionTree.two_partition_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.numeric_policy_iff (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k)) :
+  FusionTree.NumericPolicyCorrect k p ↔
+    ∀ (s : FusionTree.Leaf k × Bool), Fusion.policyRun (FusionTree.labelObs k) p s = s.2
+'FusionTree.numeric_policy_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.runQueries_ext.{u_1, u_2, u_3} {I : Type u_1} {X : Type u_2} {Y : Type u_3} (p : Fusion.ReviewPolicy I)
+  (o : X → I → Bool) (v : Y → I → Bool) (x : X) (y : Y) (h : ∀ (i : I), o x i = v y i) :
+  FusionTree.runQueries o p x = FusionTree.runQueries v p y
+'FusionTree.runQueries_ext' depends on axioms: [propext]
+FusionTree.exact_numeric_budgets (k : ℕ) :
+  ((FusionTree.fixed k).card = 2 ^ k ∧
+      ∀ (y z : FusionTree.Edge k → Bool),
+        FusionTree.PositiveCounts k y →
+          FusionTree.PositiveCounts k z →
+            (∀ e ∈ FusionTree.fixed k, y e = z e) → FusionTree.labelTarget k y = FusionTree.labelTarget k z) ∧
+    (∀ (S : Finset (FusionTree.Edge k)),
+        (∀ (y z : FusionTree.Edge k → Bool),
+            FusionTree.PositiveCounts k y →
+              FusionTree.PositiveCounts k z →
+                (∀ e ∈ S, y e = z e) → FusionTree.labelTarget k y = FusionTree.labelTarget k z) →
+          2 ^ k ≤ S.card) ∧
+      (FusionTree.NumericPolicyCorrect k (FusionTree.labelAdaptive k) ∧
+          ∀ (y : FusionTree.Edge k → Bool),
+            FusionTree.PositiveCounts k y →
+              FusionTree.runQueries (fun y e => y e) (FusionTree.labelAdaptive k) y ≤ k + 1) ∧
+        ∀ (p : Fusion.ReviewPolicy (FusionTree.Edge k)),
+          FusionTree.NumericPolicyCorrect k p →
+            ∃ y, FusionTree.PositiveCounts k y ∧ k + 1 ≤ FusionTree.runQueries (fun y e => y e) p y
+'FusionTree.exact_numeric_budgets' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.auc_denominator_positive (k : ℕ) (hk : 1 ≤ k) : 0 < FusionTree.aucDenominator k
+'FusionTree.auc_denominator_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionTree.normalized_exactness (k : ℕ) (hk : 1 ≤ k) (y z : FusionTree.Edge k → Bool) :
+  ↑(FusionTree.labelTarget k y) / FusionTree.aucDenominator k =
+      ↑(FusionTree.labelTarget k z) / FusionTree.aucDenominator k ↔
+    FusionTree.labelTarget k y = FusionTree.labelTarget k z
+'FusionTree.normalized_exactness' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPaper.positive_scale_bounds (C D lo t hi : ℝ) (hD : 0 < D) (h : lo ≤ t ∧ t ≤ hi) :
+  (C + lo) / D ≤ (C + t) / D ∧ (C + t) / D ≤ (C + hi) / D
+'FusionPaper.positive_scale_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPaper.theorem1 {n h k : ℕ} (d : Fusion.CountData n h k) (a : Fin n → ℝ) (C D : ℝ) (hD : 0 < D)
+  (hne : ∃ y, Fusion.CountFeasible d y) :
+  ∃ lo hi,
+    Fusion.CountFeasible d lo ∧
+      Fusion.CountFeasible d hi ∧
+        ∀ (y : Fin n → ℝ),
+          FusionPartition.RealCountFeasible d y →
+            (C + ∑ i, a i * ↑(lo i)) / D ≤ (C + ∑ i, a i * y i) / D ∧
+              (C + ∑ i, a i * y i) / D ≤ (C + ∑ i, a i * ↑(hi i)) / D
+'FusionPaper.theorem1' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPaper.theorem2.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] (d : FusionHierarchy.Data ι)
+  (ha : FusionLaminar.Laminar d.A) (hb : FusionLaminar.Laminar d.B) (a : ι → ℝ) (C D : ℝ) (hD : 0 < D)
+  (hne : ∃ y, FusionHierarchy.IntegerCounts d y) :
+  ∃ lo hi,
+    FusionHierarchy.IntegerCounts d lo ∧
+      FusionHierarchy.IntegerCounts d hi ∧
+        ∀ (y : ι → ℝ),
+          FusionHierarchy.RealCounts d y →
+            (C + ∑ i, a i * ↑(lo i)) / D ≤ (C + ∑ i, a i * y i) / D ∧
+              (C + ∑ i, a i * y i) / D ≤ (C + ∑ i, a i * ↑(hi i)) / D
+'FusionPaper.theorem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPaper.theorem2_all_finite.{u_1} {ι : Type u_1} [Fintype ι] [DecidableEq ι] (d : FusionHierarchy.Data ι)
+  (ha : FusionLaminar.Laminar d.A) (hb : FusionLaminar.Laminar d.B) (a : ι → ℝ) (C D : ℝ) (hD : 0 < D)
+  (hne : ∃ y, FusionHierarchy.IntegerCounts d y) :
+  ∃ lo hi,
+    FusionHierarchy.IntegerCounts d lo ∧
+      FusionHierarchy.IntegerCounts d hi ∧
+        ∀ (y : ι → ℝ),
+          FusionHierarchy.RealCounts d y →
+            (C + ∑ i, a i * ↑(lo i)) / D ≤ (C + ∑ i, a i * y i) / D ∧
+              (C + ∑ i, a i * y i) / D ≤ (C + ∑ i, a i * ↑(hi i)) / D
+'FusionPaper.theorem2_all_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionPaper.theorem3_input_lower (k : ℕ) (p : Fusion.ReviewPolicy (FusionTree.Edge k))
+  (hp : FusionTree.NumericPolicyCorrect k p) :
+  ∃ y, FusionTree.PositiveCounts k y ∧ k + 1 ≤ FusionTree.runQueries (fun y e => y e) p y
+'FusionPaper.theorem3_input_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.summation_by_parts (a P : ℕ → ℝ) (n : ℕ) :
+  ∑ j ∈ Finset.range (n + 1), a j * (P (j + 1) - P j) =
+    a n * P (n + 1) - a 0 * P 0 + ∑ j ∈ Finset.range n, (a j - a (j + 1)) * P (j + 1)
+'Fusion.summation_by_parts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.summation_by_parts_fixed_total (a P : ℕ → ℝ) (n : ℕ) (h0 : P 0 = 0) (hn : P (n + 1) = 0) :
+  ∑ j ∈ Finset.range (n + 1), a j * (P (j + 1) - P j) = ∑ j ∈ Finset.range n, (a j - a (j + 1)) * P (j + 1)
+'Fusion.summation_by_parts_fixed_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.difference_of_interval (p q l u : ℝ) (hp : l ≤ p ∧ p ≤ u) (hq : l ≤ q ∧ q ≤ u) : |p - q| ≤ u - l
+'Fusion.difference_of_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.prefix_variation_bound (a P w : ℕ → ℝ) (n : ℕ) (h0 : P 0 = 0) (hn : P (n + 1) = 0)
+  (hw : ∀ j < n, |P (j + 1)| ≤ w j) :
+  |∑ j ∈ Finset.range (n + 1), a j * (P (j + 1) - P j)| ≤ ∑ j ∈ Finset.range n, w j * |a j - a (j + 1)|
+'Fusion.prefix_variation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.residual_bound {n : ℕ} (e d : Fin n → ℝ) (O : Finset (Fin n)) (hreview : ∀ i ∈ O, d i = 0)
+  (hbin : ∀ (i : Fin n), |d i| ≤ 1) : |∑ i, e i * d i| ≤ ∑ i ∈ Finset.univ \ O, |e i|
+'Fusion.residual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.coarsening_assembly (t r p q E VA VB : ℝ) (ht : t = r + p + q) (hr : |r| ≤ E) (hp : |p| ≤ VA) (hq : |q| ≤ VB) :
+  |t| ≤ E + VA + VB
+'Fusion.coarsening_assembly' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.monotone_variation (a : ℕ → ℝ) (n : ℕ) (ha : Monotone a) : ∑ j ∈ Finset.range n, |a j - a (j + 1)| = a n - a 0
+'Fusion.monotone_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.two_rank_variations (N VA VB : ℝ) (ha : VA ≤ 4 * (N - 1)) (hb : VB ≤ 4 * (N - 1)) : VA + VB ≤ 8 * (N - 1)
+'Fusion.two_rank_variations' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.prefix_difference {N : ℕ} (g : Fin N → ℕ) (y z : Fin N → ℝ) (j : ℕ) :
+  Fusion.prefixCount g (fun i => y i - z i) j = Fusion.prefixCount g y j - Fusion.prefixCount g z j
+'Fusion.prefix_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.bin_is_prefix_increment {N : ℕ} (g : Fin N → ℕ) (y : Fin N → ℝ) (j : ℕ) :
+  Fusion.realGroupCount g y j = Fusion.prefixCount g y (j + 1) - Fusion.prefixCount g y j
+'Fusion.bin_is_prefix_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.grouped_weight_sum {N n : ℕ} (g : Fin N → ℕ) (a : ℕ → ℝ) (y : Fin N → ℝ) (hg : ∀ (i : Fin N), g i < n + 1) :
+  ∑ i, a (g i) * y i = ∑ j ∈ Finset.range (n + 1), a j * (Fusion.prefixCount g y (j + 1) - Fusion.prefixCount g y j)
+'Fusion.grouped_weight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.prefix_at_zero {N : ℕ} (g : Fin N → ℕ) (y : Fin N → ℝ) : Fusion.prefixCount g y 0 = 0
+'Fusion.prefix_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.prefix_at_total {N n : ℕ} (g : Fin N → ℕ) (y : Fin N → ℝ) (hg : ∀ (i : Fin N), g i < n + 1) :
+  Fusion.prefixCount g y (n + 1) = ∑ i, y i
+'Fusion.prefix_at_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.coarsening_bound {N n m : ℕ} (gA gB : Fin N → ℕ) (a e y z : Fin N → ℝ) (alpha beta lA uA lB uB : ℕ → ℝ)
+  (O : Finset (Fin N)) (hgA : ∀ (i : Fin N), gA i < n + 1) (hgB : ∀ (i : Fin N), gB i < m + 1)
+  (hcoef : ∀ (i : Fin N), a i = alpha (gA i) + beta (gB i) + e i) (hy : ∀ (i : Fin N), 0 ≤ y i ∧ y i ≤ 1)
+  (hz : ∀ (i : Fin N), 0 ≤ z i ∧ z i ≤ 1) (hrev : ∀ i ∈ O, y i = z i) (htotal : ∑ i, y i = ∑ i, z i)
+  (hAy : ∀ j < n, lA j ≤ Fusion.prefixCount gA y (j + 1) ∧ Fusion.prefixCount gA y (j + 1) ≤ uA j)
+  (hAz : ∀ j < n, lA j ≤ Fusion.prefixCount gA z (j + 1) ∧ Fusion.prefixCount gA z (j + 1) ≤ uA j)
+  (hBy : ∀ j < m, lB j ≤ Fusion.prefixCount gB y (j + 1) ∧ Fusion.prefixCount gB y (j + 1) ≤ uB j)
+  (hBz : ∀ j < m, lB j ≤ Fusion.prefixCount gB z (j + 1) ∧ Fusion.prefixCount gB z (j + 1) ≤ uB j) :
+  |∑ i, a i * (y i - z i)| ≤
+    ∑ i ∈ Finset.univ \ O, |e i| + ∑ j ∈ Finset.range n, (uA j - lA j) * |alpha j - alpha (j + 1)| +
+      ∑ j ∈ Finset.range m, (uB j - lB j) * |beta j - beta (j + 1)|
+'Fusion.coarsening_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.weighted_monotone_variation (a w : ℕ → ℝ) (n : ℕ) (W : ℝ) (ha : Monotone a) (hw : ∀ j < n, w j ≤ W) :
+  ∑ j ∈ Finset.range n, w j * |a j - a (j + 1)| ≤ W * (a n - a 0)
+'Fusion.weighted_monotone_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.weighted_antitone_variation (a w : ℕ → ℝ) (n : ℕ) (W : ℝ) (ha : Antitone a) (hw : ∀ j < n, w j ≤ W) :
+  ∑ j ∈ Finset.range n, w j * |a j - a (j + 1)| ≤ W * (a 0 - a n)
+'Fusion.weighted_antitone_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.rank_prefix_eight_bound (alpha beta wA wB : ℕ → ℝ) (n m : ℕ) (N : ℝ) (ha : Monotone alpha) (hb : Antitone beta)
+  (ha0 : 1 ≤ alpha 0) (han : alpha n ≤ N) (hb0 : beta 0 ≤ -1) (hbm : -N ≤ beta m) (hwA : ∀ j < n, wA j ≤ 4)
+  (hwB : ∀ j < m, wB j ≤ 4) :
+  ∑ j ∈ Finset.range n, wA j * |alpha j - alpha (j + 1)| + ∑ j ∈ Finset.range m, wB j * |beta j - beta (j + 1)| ≤
+    8 * (N - 1)
+'Fusion.rank_prefix_eight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Fusion.clipped_width (l u L U W : ℝ) (h : u - l ≤ W) : min u U - max l L ≤ W
+'Fusion.clipped_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionSlack.slack_subsets (L U m : ℕ) (hLU : L ≤ U) : L ≤ m ∧ m ≤ U ↔ ∃ B, m + B.card = U
+'FusionSlack.slack_subsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionSlack.zero_slack_target.{u_1, u_2, u_3} {I : Type u_1} {Z : Type u_2} [DecidableEq I] [AddCommGroup Z]
+  {J : Type u_3} (v : I → Z) (A : Finset I) (B : Finset J) : ∑ i ∈ A, v i + ∑ _i ∈ B, 0 = ∑ i ∈ A, v i
+'FusionSlack.zero_slack_target' depends on axioms: [propext, Quot.sound]
+FusionSlack.transcript_target_equivalence.{u_1, u_2} {I : Type u_1} {Z : Type u_2} [DecidableEq I] [AddCommGroup Z]
+  (R : Finset I) (v : I → Z) (L U : ℕ) (hLU : L ≤ U) (observed : Finset I → Prop) (z : Z) :
+  (∃ A ⊆ R, L ≤ A.card ∧ A.card ≤ U ∧ observed A ∧ ∑ i ∈ A, v i = z) ↔
+    ∃ A ⊆ R, ∃ B, A.card + B.card = U ∧ observed A ∧ ∑ i ∈ A, v i + ∑ _i ∈ B, 0 = z
+'FusionSlack.transcript_target_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+FusionSlack.grouped_slack_encoding.{u_1, u_3} {I : Type u_1} [DecidableEq I] {G : Type u_3} (R A : G → Finset I)
+  (L U : G → ℕ) (hLU : ∀ (g : G), L g ≤ U g) :
+  (∀ (g : G), A g ⊆ R g ∧ L g ≤ (A g).card ∧ (A g).card ≤ U g) ↔
+    ∃ B, ∀ (g : G), A g ⊆ R g ∧ (A g).card + (B g).card = U g
+'FusionSlack.grouped_slack_encoding' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+exit=0
+

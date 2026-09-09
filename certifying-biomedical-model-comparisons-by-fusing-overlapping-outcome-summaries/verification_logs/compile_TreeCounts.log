@@ -1,0 +1,6 @@
+Fusion/TreeCounts.lean:110:2: warning: 'change (some (b, u) : Option (Bool × Node k)) = some (c, v) ↔ _' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Fusion/TreeCounts.lean:245:43: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Fusion/TreeCounts.lean:252:53: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`

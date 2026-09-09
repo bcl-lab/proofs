@@ -1,0 +1,73 @@
+Fusion/DisjointGame.lean:31:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.compatible_exists':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:38:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.next_good':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:48:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.observed_can':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:66:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.observed_compatible':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:87:4: warning: try 'simp at hh' instead of 'simpa using hh'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+Fusion/DisjointGame.lean:79:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.extend_completion':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:79:44: warning: unused variable `hc`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/DisjointGame.lean:133:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.dominated_self':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:134:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.dominated_next':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:141:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.balanced_initial':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:149:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.majority_can':
+  [Fintype G]
+  [Fintype I]
+  [DecidableEq G]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] [DecidableEq G] [DecidableEq I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/DisjointGame.lean:155:0: warning: automatically included section variable(s) unused in theorem 'FusionDisjoint.balanced_next':
+  [Fintype G]
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] [Fintype I] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,4 @@
+Fusion/Tree.lean:38:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Fusion/Tree.lean:259:4: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`

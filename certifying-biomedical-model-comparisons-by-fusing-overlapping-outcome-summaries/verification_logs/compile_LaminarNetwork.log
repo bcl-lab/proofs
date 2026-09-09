@@ -1,0 +1,10 @@
+Fusion/LaminarNetwork.lean:86:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.leafTerm_singleton':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+Fusion/LaminarNetwork.lean:89:0: warning: automatically included section variable(s) unused in theorem 'FusionHierarchy.leafTerm_nonsingleton':
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty ι] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
