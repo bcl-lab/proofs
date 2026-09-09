@@ -1,0 +1,1290 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-09T13:57:57.602433+00:00",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "module_count": 17,
+  "theorem_count": 153,
+  "compilation": "Fresh direct Lean compilation with warningAsError=true; dependency-ordered, at most 2 modules concurrently",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorems": [
+    {
+      "name": "HubAveraging.pair_energy_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pair_preserves_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sweep_preserves_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sweep_energy_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.equal_leaf_sweep_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartition_witness_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.reversed_bipartition_witness_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.common_witness_expectation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.expectation_lower_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.policy_witness_ratio",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.r_nonneg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.weighted_r_lt_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.coefficient_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.gamma_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.spectral_factorization",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartition_spectral_value",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.threshold_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.spectral_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.spectral_energy_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.beta_from_physical_sweep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.unit_hub_column_norm",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.coefficient_trace_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.degree_three_values",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.threshold_le_degree",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.all_opposite_orders_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.all_selectors_expected_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.block_energy_floor",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sum_preserving_block_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.two_sign_variance",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.supported_energy_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.concrete_cut_loss_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.closed_neighborhood_cut_constant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.cut_constant_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.cut_residual_ratio",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.local_solve_fraction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.loss_polynomial_from_moments",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.concave_quadratic_endpoint",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.independent_budget_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.exponential_chord",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.benchmark_500_exact",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.separation_ratio_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.hub_progress_500_upper",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.benchmark_500_real",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.benchmark_500_combined",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.disagreement_nonneg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.disagreement_of_total_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pairUpdate_off",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pairUpdate_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pairUpdate_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.networkSweep_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.networkSweep_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.actionOrder_nodup",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.actionOrder_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.actionOrder_length",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.regular_neighbor_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.regular_bipartition_total_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sign_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_witness_residual",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.centered_energy_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.disagreement_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.disagreement_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sweepLoss_nonneg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.action_disagreement_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.policyRatio_le_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.ratio_le_worstResidual",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.policy_witness_exact",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.signState_values",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.signState_opposite",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_policy_lower_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_minimax_lower_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.finset_centered_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.localS_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.localH_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lapQuadratic_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lap_energy_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_S_moment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_H_moment",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_loss_polynomial",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.localFormula_recurrence_coefficients",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.localFormula_average",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.randomSweepLoss_formula",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.perm_tail_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.permutationLoss_step",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_permutation_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pair_disagreement_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.directed_difference_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edgeAverage_disagreement",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edgeAverage_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edgeAverage_scale",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.independent_edge_contraction",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sign_relative",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sign_block_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.closedBlock_card",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.closedBlock_same_card",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sign_closedBlock_sum_sq",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.sign_closedBlock_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_cut_energy_cap",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.supported_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_cut_residual",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.energy_dot",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.orthogonal_dot",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.hermitian_polynomial_expansion",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.hermitian_threshold_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.laplacian_matrix",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lapQuadratic_upper",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lap_eigenvalue_upper",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.centered_zero_eigen_coordinates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.centered_graph_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.localFormula_b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_permutation_SH",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.hubMeanLoss_permutation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.hubMeanLoss_local_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.action_count_regular",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_policy_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_graph_operator",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.centeredState_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.centeredState_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.laplacian_centeredState",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.laplacian_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lapQuadratic_centeredState",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_threshold_all",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.action_energy_disagreement_loss",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_expected_residual",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_ratio_upper",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.exact_bipartite_minimax",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.cutCap_le_maximum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.cutMaximum_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.arbitrary_random_cut_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lap_eigenvector_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lap_eigenvector_centered",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.lap_eigenvector_moments",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_eigenvector_ratio",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_interval_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.uniform_endpoint_formula",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.exists_nonzero_lap_eigenvalue",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.exists_uniform_spectral_endpoints",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.graph_poincare",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edgeResidual_nonneg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edgeWorst_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.edge_budget_exponential",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_witness_disagreement",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.equal_budget_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.contrast_total",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.contrast_energy",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.contrast_neighbor_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.contrast_quadratic",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_gap_le_degree",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_degree_half",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.bipartite_gap_half",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.equal_budget_separation_graph",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.pairUpdate_symmetric",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.progress_ratio_nonneg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "HubAveraging.vanishing_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "HubAveraging.lean": "79065934b6d57b71254a8464fa94863a1ca8995d9a185959d957841ed57cb6f8",
+    "CutAndBudget.lean": "f9e8c5afd06f992255b3d7b84c42e3a59c5314a1a4eae621b89ed527f926576b",
+    "Network.lean": "43b277c86199afb301d8290119717ae6c4866c77f0ac4b1178e397f025b82fa1",
+    "GraphMoments.lean": "b0dc4e86615bed5d80e82eea57af229357646fc82306e5fc06903f4d724be777",
+    "RandomSweep.lean": "3ecf8fbe0e3d2c428aa2b2a60f2e09a7ee93820b4227566be0434a57ad57b05e",
+    "PermutationMean.lean": "15e845e502c492cdaa12795f29e9a4fcfa3a43bf53cf87b934e8c36181ceaf22",
+    "EdgeProcess.lean": "6e0917fbfd746f63dc972d24b2b7491fd4dfa67f3ef4a3b3f8cc6f1e65f862b3",
+    "GraphCut.lean": "d875967e04585bab6f4a1946ecbde08daa06f06a64e310acf90fa3dbaae88c7b",
+    "SpectralBridge.lean": "dabd0131e949d667fa299c5837bd42cd2e07f20cf1555d339ccbef3d1e8dfc21",
+    "GraphSpectral.lean": "fc5aaa43dbdd41221357e86021aa65a459c8f803487f6d91a5bda1688ec63fc7",
+    "UniformPolicy.lean": "f22d32d882471d70b95cc8d10976febb1b56c9d5047a3dde9b95f2aa5e8ca6fc",
+    "Minimax.lean": "397a9c6284f83d513702d9e6815cbf88291bcb964a2ef1410038b73fcb8d487d",
+    "RandomCut.lean": "6038ccfc00632b0679d0d24d13e894213dc15ad3035e90aa532b9f0db85e48cd",
+    "SpectrumEndpoints.lean": "457506f6d192b7f526c47c43703977719d1fd89cbdb53399cd8e9333d8fd6a9b",
+    "EqualBudget.lean": "64bf63fb2a4812e5b7ad84b97ba181e3338cf3aa840314671cc8521d1cf49840",
+    "GapRange.lean": "d73a56d62d7727332fbe267202a04414f96f69c89cbe92fb97e997ea85a7d947",
+    "Asymptotic.lean": "43fcccbc60f118aadeb8a487243dab628dab165328b0d8284f1654b0849a320d",
+    "Audit.lean": "a574f69d1911e9737baab154aa5b729b82c78e0f95c48a75f0037d01bc63a749",
+    "verify.py": "85eafd5e28fba8bb6f7325bcde8dc71e090d5d877d54b536839d743270471fda",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lakefile.toml": "1235385782081da92a4ee6d0cf8f2b5b61269331198ce82fb38a2b4cebd7db4e",
+    "lake-manifest.json": "62bae5df8d837914d27b7a27bb11674fc0f3f250008bf5931c28bf20832aee06"
+  },
+  "numbered_manuscript_results": {
+    "Lemma 1": [
+      "hubMeanLoss_local_identity",
+      "coefficient_bounds"
+    ],
+    "Proposition 2": [
+      "uniform_graph_operator",
+      "exists_uniform_spectral_endpoints"
+    ],
+    "Theorem 3": [
+      "bipartite_policy_lower_bound",
+      "exact_bipartite_minimax"
+    ],
+    "Corollary 4": [
+      "edgeWorst_bound",
+      "edge_budget_exponential",
+      "equal_budget_separation_graph",
+      "vanishing_separation"
+    ],
+    "Proposition 5": [
+      "arbitrary_random_cut_bound",
+      "cutMaximum_le"
+    ]
+  },
+  "all_five_numbered_results_formalized": true,
+  "full_manuscript_formalized": false,
+  "independent_external_checker_run": false,
+  "scope_note": "The five numbered mathematical results are formalized. Numerical experiments, plots, novelty, reference interpretation, and every ancillary example are not all formalized."
+}

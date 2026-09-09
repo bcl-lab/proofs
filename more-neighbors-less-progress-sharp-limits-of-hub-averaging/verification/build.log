@@ -1,0 +1,17 @@
+HubAveraging: ACCEPTED
+CutAndBudget: ACCEPTED
+Network: ACCEPTED
+GraphMoments: ACCEPTED
+RandomSweep: ACCEPTED
+PermutationMean: ACCEPTED
+EdgeProcess: ACCEPTED
+GraphCut: ACCEPTED
+SpectralBridge: ACCEPTED
+GraphSpectral: ACCEPTED
+UniformPolicy: ACCEPTED
+Minimax: ACCEPTED
+RandomCut: ACCEPTED
+SpectrumEndpoints: ACCEPTED
+EqualBudget: ACCEPTED
+GapRange: ACCEPTED
+Asymptotic: ACCEPTED
